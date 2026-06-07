@@ -46,7 +46,7 @@ var knownJakarta = map[string]bool{
 var knownJogja = map[string]bool{
 	"umy": true, "universitas muhammadiyah yogyakarta": true,
 	"ugm": true, "universitas gadjah mada": true,
-	"kauman": true, "masjid agung kauman": true,
+	"kauman": true, "masjid agung kauman": true, "masjid gedhe kauman": true, "masjid kauman": true,
 	"malioboro": true, "tugu jogja": true, "stasiun tugu": true, "tugu yogyakarta": true,
 	"taman sari": true, "prambanan": true, "jogja": true, "yogyakarta": true,
 	"keraton": true, "keraton jogja": true, "alun alun": true, "alun-alun": true,
@@ -54,6 +54,12 @@ var knownJogja = map[string]bool{
 	"kentungan": true, "seturan": true, "babarsari": true, "gejayan": true,
 	"demangan": true, "timoho": true, "janti": true, "gowongan": true,
 	"candi prambanan": true, "kaliurang": true, "parangtritis": true, "gunung merapi": true,
+}
+
+// nameAliases maps place names that geocode incorrectly to their correct OSM names.
+var nameAliases = map[string]string{
+	"masjid agung kauman": "Masjid Gedhe Kauman",
+	"masjid agung kauman, yogyakarta": "Masjid Gedhe Kauman, Yogyakarta",
 }
 
 func isVague(name string) bool {
@@ -244,7 +250,19 @@ func (e *BareEngine) resolveWaypoints(ctx context.Context, names []string) ([]Wa
 			continue
 		}
 
-		if isVague(name) {
+		// Add city context for known landmarks BEFORE isVague check
+		// This prevents isVague from overriding known city contexts
+		geoName := name
+		nameLower := strings.ToLower(name)
+		if !strings.Contains(nameLower, "jakarta") && !strings.Contains(nameLower, "yogyakarta") && !strings.Contains(nameLower, "jogja") {
+			if knownJakarta[nameLower] {
+				geoName = name + ", Jakarta"
+			} else if knownJogja[nameLower] {
+				geoName = name + ", Yogyakarta"
+			}
+		}
+
+		if isVague(name) && geoName == name {
 			anchor := e.geocoder.Geocode("Jakarta")
 			if anchor != nil && anchor.Error == "" {
 				pois := e.poiSrch.Search(name, anchor.Lat, anchor.Lng, 5)
@@ -256,15 +274,9 @@ func (e *BareEngine) resolveWaypoints(ctx context.Context, names []string) ([]Wa
 			}
 		}
 		// Named place: geocode it
-		// Add city context for known landmarks without it
-		geoName := name
-		nameLower := strings.ToLower(name)
-		if !strings.Contains(nameLower, "jakarta") && !strings.Contains(nameLower, "yogyakarta") && !strings.Contains(nameLower, "jogja") {
-			if knownJakarta[nameLower] {
-				geoName = name + ", Jakarta"
-			} else if knownJogja[nameLower] {
-				geoName = name + ", Yogyakarta"
-			}
+		// Check for name aliases (places that geocode to the wrong city)
+		if alias, ok := nameAliases[strings.ToLower(geoName)]; ok {
+			geoName = alias
 		}
 		result := e.geocoder.Geocode(geoName)
 		if result.Error != "" {

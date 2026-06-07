@@ -96,8 +96,20 @@ func (e *PipelineEngine) resolveWaypoints(ctx context.Context, names []string) (
 			// fallback: use as named place
 		}
 
-		// Check if it's a vague/query term
-		if isVague(name) {
+		// Named place: geocode it with city context
+		// Do this BEFORE isVague check to avoid ", Jakarta" overriding known cities
+		geoName := name
+		nameLower := strings.ToLower(name)
+		if !strings.Contains(nameLower, "jakarta") && !strings.Contains(nameLower, "yogyakarta") && !strings.Contains(nameLower, "jogja") {
+			if knownJakarta[nameLower] {
+				geoName = name + ", Jakarta"
+			} else if knownJogja[nameLower] {
+				geoName = name + ", Yogyakarta"
+			}
+		}
+
+		// Check for vague/query terms — only if no city context was assigned
+		if isVague(name) && geoName == name {
 			if lastAnchor != nil {
 				pois := e.poiSrch.Search(name, lastAnchor.Lat, lastAnchor.Lng, 3)
 				if len(pois) > 0 {
@@ -108,19 +120,16 @@ func (e *PipelineEngine) resolveWaypoints(ctx context.Context, names []string) (
 				}
 			}
 			// fallback: geocode with Jakarta as context
-			name = name + ", Jakarta"
+			geoName = name + ", Jakarta"
 		}
 
-		// Named place: geocode it with city context
-		geoName := name
-		nameLower := strings.ToLower(name)
-		if !strings.Contains(nameLower, "jakarta") && !strings.Contains(nameLower, "yogyakarta") && !strings.Contains(nameLower, "jogja") {
-			if knownJakarta[nameLower] {
-				geoName = name + ", Jakarta"
-			} else if knownJogja[nameLower] {
-				geoName = name + ", Yogyakarta"
-			}
+		// Check for name aliases (places that geocode to the wrong city)
+		aliasGeo := geoName
+		aliasLower := strings.ToLower(geoName)
+		if aliasLower == "masjid agung kauman, yogyakarta" {
+			aliasGeo = "Masjid Gedhe Kauman, Yogyakarta"
 		}
+		geoName = aliasGeo
 		result := e.geocoder.Geocode(geoName)
 		if result.Error != "" {
 			return nil, fmt.Errorf("pipeline: geocode %q: %s", name, result.Error)
