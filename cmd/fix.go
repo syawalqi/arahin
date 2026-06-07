@@ -54,7 +54,7 @@ func Fix(cfg *config.Config) error {
 		// Manual use — try DB (only works when daemon isn't running)
 		db, err := tryOpenDB()
 		if err != nil {
-			return fmt.Errorf("cannot open state DB (daemon may be running): %w\nTry: flare fix --stdin (pipe ticket JSON)", err)
+			return fmt.Errorf("cannot open state DB (daemon may be running): %w\nTry: arahin fix --stdin (pipe ticket JSON)", err)
 		}
 		defer db.Close()
 
@@ -79,7 +79,7 @@ func Fix(cfg *config.Config) error {
 		}
 
 	default:
-		return fmt.Errorf("usage: flare fix --ticket <id> | flare fix --latest | flare fix --stdin (pipe JSON)")
+		return fmt.Errorf("usage: arahin fix --ticket <id> | flare fix --latest | flare fix --stdin (pipe JSON)")
 	}
 
 	fmt.Printf("🛠 Fixing ticket #%d: %s — %s\n", ticket.ID, ticket.CheckName, ticket.Message)
@@ -158,7 +158,7 @@ func Fix(cfg *config.Config) error {
 	fmt.Printf("  → Fix log saved to %s\n", logPath)
 
 	// Notify user
-	msg := fmt.Sprintf("🔴 Flare fix failed for ticket #%d\nCheck: %s\nMessage: %s\nCould not fix after %d LLM iterations. Log: %s",
+	msg := fmt.Sprintf("🔴 ARAHIN fix failed for ticket #%d\nCheck: %s\nMessage: %s\nCould not fix after %d LLM iterations. Log: %s",
 		ticket.ID, ticket.CheckName, ticket.Message, maxIter, logPath)
 
 	fmt.Println(msg)
@@ -175,7 +175,7 @@ func tryOpenDB() (*state.DB, error) {
 func buildFixPrompt(ticket *state.FixTicket, systemState string) string {
 	var b strings.Builder
 
-	b.WriteString(`You are Flare, a server management agent running on a Linux VPS.
+	b.WriteString(`You are ARAHIN, a route planning agent running on a Linux VPS.
 Your task is to diagnose and fix a server anomaly.
 
 ## Anomaly Details

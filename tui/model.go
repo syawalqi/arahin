@@ -644,7 +644,7 @@ func (m *model) handleCommand(input string) tea.Cmd {
 				"  /plan            Toggle plan mode (read-only analysis)\n" +
 				"  /save            Save conversation to /tmp/\n" +
 				"  /scan            Rescan server and update memory\n" +
-				"  /skill           List FLARE's built-in abilities\n" +
+				"  /skill           List ARAHIN's built-in abilities\n" +
 				"  /help            Show this help\n" +
 				"  /quit            Exit\n" +
 				"  /update          Check for updates\n\n" +
@@ -686,14 +686,14 @@ func (m *model) handleCommand(input string) tea.Cmd {
 	case "/skill":
 		m.messages = append(m.messages, ChatMessage{
 			Role: "assistant",
-			Content: "FLARE's built-in abilities:\n" +
+			Content: "ARAHIN's built-in abilities:\n" +
 				"  • Run shell commands on the server\n" +
 				"  • Read/write files\n" +
 				"  • Manage systemd services\n" +
 				"  • Search journal logs\n" +
 				"  • Health monitoring (daemon mode)\n" +
 				"  • Webhook alerts\n\n" +
-				"New abilities can be added to the flare-ultimate skill in Hermes.",
+				"New abilities can be added to the arahin-ultimate skill in Hermes.",
 		})
 		m.updateViewport()
 		m.viewport.GotoBottom()
@@ -874,7 +874,7 @@ func (m *model) selfUpdate() tea.Cmd {
 
 	return func() tea.Msg {
 		// Fetch latest release from GitHub
-		resp, err := http.Get("https://api.github.com/repos/syawalqi/flare/releases/latest")
+		resp, err := http.Get("https://api.github.com/repos/syawalqi/arahin/releases/latest")
 		if err != nil {
 			return editorFinishedMsg{path: "", err: fmt.Errorf("update check failed: %w", err)}
 		}
@@ -899,14 +899,14 @@ func (m *model) selfUpdate() tea.Cmd {
 		current := m.version
 
 		if current == "dev" || current == latest {
-			msg := fmt.Sprintf("✓ FLARE is up to date (%s).", current)
+			msg := fmt.Sprintf("✓ ARAHIN is up to date (%s).", current)
 			return updateResultMsg{msg: msg}
 		}
 
 		// Find the right binary for this system
 		osName := runtime.GOOS
 		arch := runtime.GOARCH
-		assetName := fmt.Sprintf("flare-%s-%s", osName, arch)
+		assetName := fmt.Sprintf("arahin-%s-%s", osName, arch)
 
 		var downloadURL string
 		for _, a := range release.Assets {
@@ -949,7 +949,7 @@ func (m *model) selfUpdate() tea.Cmd {
 			return editorFinishedMsg{path: "", err: fmt.Errorf("replace binary: %w", err)}
 		}
 
-		msg := fmt.Sprintf("✓ Updated FLARE %s → %s. Restart to use.", current, latest)
+		msg := fmt.Sprintf("✓ Updated ARAHIN %s → %s. Restart to use.", current, latest)
 		return updateResultMsg{msg: msg}
 	}
 }
@@ -1003,7 +1003,7 @@ func (m *model) togglePlanMode() {
 
 // saveConversation writes the conversation to a timestamped file.
 func (m *model) saveConversation() tea.Cmd {
-	path := fmt.Sprintf("/tmp/flare-chat-%s.txt", time.Now().Format("20060102-150405"))
+	path := fmt.Sprintf("/tmp/arahin-chat-%s.txt", time.Now().Format("20060102-150405"))
 	var b strings.Builder
 	for i, msg := range m.messages {
 		b.WriteString(fmt.Sprintf("[%d] %s:\n", i+1, msg.Role))

@@ -52,7 +52,7 @@ func Setup(cfg *config.Config) error {
 		return fmt.Errorf("save memory: %w", err)
 	}
 	fmt.Printf("✅ Memory saved to %s (%d bytes)\n", memoryPath, len(content))
-	fmt.Println("\nSetup complete! Run 'flare chat' to start.")
+	fmt.Println("\nSetup complete! Run 'arahin chat' to start.")
 	return nil
 }
 

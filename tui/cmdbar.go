@@ -18,9 +18,9 @@ var CmdBarItems = []CmdBarItem{
 	{Label: "/plan", Key: "toggle plan mode", Desc: "Toggle read-only analysis mode"},
 	{Label: "/save", Key: "save chat", Desc: "Save conversation to /tmp/"},
 	{Label: "/scan", Key: "rescan server", Desc: "Rescan system and update context"},
-	{Label: "/skill", Key: "list abilities", Desc: "List FLARE's built-in skills"},
+	{Label: "/skill", Key: "list abilities", Desc: "List ARAHIN's built-in skills"},
 	{Label: "/help", Key: "show help", Desc: "Show all commands and usage"},
-	{Label: "/quit", Key: "exit", Desc: "Exit FLARE"},
+	{Label: "/quit", Key: "exit", Desc: "Exit ARAHIN"},
 	{Label: "/update", Key: "self-update", Desc: "Check and apply updates"},
 }
 

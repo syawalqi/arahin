@@ -17,7 +17,7 @@ import (
 )
 
 func Daemon(cfg *config.Config) error {
-	fmt.Println("Flare daemon starting...")
+	fmt.Println("Arahin daemon starting...")
 
 	// Open state database
 	stateDir := os.ExpandEnv("$HOME/.local/state/arahin")
@@ -143,9 +143,9 @@ func runChecks(engine *scheduler.CheckEngine, notifiers []alert.Notifier, db *st
 
 		fmt.Printf("  → Created fix ticket #%d\n", ticket.ID)
 
-		// Step 3: Spawn flare fix in background (pipe ticket via stdin to avoid DB lock)
+		// Step 3: Spawn arahin fix in background (pipe ticket via stdin to avoid DB lock)
 		go func(tid uint64, name string, ticket *state.FixTicket) {
-			cmd := exec.Command("flare", "fix", "--stdin")
+			cmd := exec.Command("arahin", "fix", "--stdin")
 			stdin, err := cmd.StdinPipe()
 			if err != nil {
 				fmt.Printf("  [ticket #%d] stdin pipe error: %v\n", tid, err)
@@ -162,7 +162,7 @@ func runChecks(engine *scheduler.CheckEngine, notifiers []alert.Notifier, db *st
 
 			output, err := cmd.CombinedOutput()
 			if err != nil {
-				fmt.Printf("  [ticket #%d] flare fix exited: %v\n", tid, err)
+				fmt.Printf("  [ticket #%d] arahin fix exited: %v\n", tid, err)
 			}
 			if len(output) > 0 {
 				fmt.Printf("  [ticket #%d] output:\n%s\n", tid, string(output))
@@ -208,7 +208,7 @@ func sendAlert(notifiers []alert.Notifier, db *state.DB, result scheduler.CheckR
 
 func AlertCli(cfg *config.Config) error {
 	if len(os.Args) < 4 {
-		return fmt.Errorf("usage: flare alert <title> <body>")
+		return fmt.Errorf("usage: arahin alert <title> <body>")
 	}
 	title := os.Args[2]
 	body := os.Args[3]

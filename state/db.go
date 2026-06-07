@@ -1,4 +1,4 @@
-// Package state provides persistent storage for Flare daemon state.
+// Package state provides persistent storage for ARAHIN daemon state.
 package state
 
 import (

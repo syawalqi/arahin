@@ -23,7 +23,7 @@ var (
 			Padding(1, 2).
 			Width(70)
 
-	// Logo style — the FLARE ASCII eye (small version)
+	// Logo style — the ARAHIN ASCII eye (small version)
 	logoStyle = lipgloss.NewStyle().
 			Foreground(primary).
 			Bold(true).

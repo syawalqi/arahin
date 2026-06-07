@@ -255,14 +255,14 @@ func (m *model) View() string {
 	)
 }
 
-// renderLogo returns the FLARE ASCII eye.
+// renderLogo returns the ARAHIN ASCII eye.
 func renderLogo() string {
 	eye := `    ▄▄▄▄▄▄▄▄▄
    ██       ██
   ██  █ █ █  ██
    ██       ██
     ▀▀▀▀▀▀▀▀▀`
-	return logoStyle.Render(eye) + "\n" + titleStyle.Render("⚡ Flare Setup")
+	return logoStyle.Render(eye) + "\n" + titleStyle.Render("⚡ Arahin Setup")
 }
 
 // renderFooter shows keyboard shortcuts for the current step.

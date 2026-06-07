@@ -14,7 +14,7 @@ var version = "dev"
 func main() {
 	cfg := loadConfig()
 	if len(os.Args) < 2 {
-		// Default to chat when invoked as just "flare"
+		// Default to chat when invoked as just "arahin"
 		runChat(cfg)
 		return
 	}
@@ -77,14 +77,14 @@ func loadConfig() *config.Config {
 }
 
 func usage() {
-	fmt.Print(`Flare — Server Management AI Agent
+	fmt.Print(`Arahin — Route Planning AI
 
 Usage:
-  flare setup      Interactive first-run configuration
-  flare chat       Interactive chat with LLM agent
-  flare daemon     Background monitoring daemon
-  flare fix        Fix an anomaly (auto-remediate with LLM)
-  flare alert      Send an alert (script hook)
-  flare help       Show this help
+  arahin setup      Interactive first-run configuration
+  arahin chat       Interactive chat with LLM agent
+  arahin daemon     Background monitoring daemon
+  arahin fix        Fix an anomaly (auto-remediate with LLM)
+  arahin alert      Send an alert (script hook)
+  arahin help       Show this help
 `)
 }

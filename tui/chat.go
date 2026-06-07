@@ -56,7 +56,7 @@ func renderMessages(messages []ChatMessage, streamContent, streamReasoning strin
 		case "user":
 			b.WriteString(renderUserBox(wrapText(msg.Content, width-2), width))
 		case "assistant":
-			b.WriteString(assistantMsgStyle.Render("Flare:") + "\n")
+			b.WriteString(assistantMsgStyle.Render("Arahin:") + "\n")
 			rendered := renderMarkdown(msg.Content, width)
 			if rendered != "" {
 				b.WriteString(rendered + "\n")
@@ -87,7 +87,7 @@ func renderMessages(messages []ChatMessage, streamContent, streamReasoning strin
 
 	// During streaming — content
 	if streamContent != "" {
-		b.WriteString(assistantMsgStyle.Render("Flare:") + "\n")
+		b.WriteString(assistantMsgStyle.Render("Arahin:") + "\n")
 		rendered := renderMarkdown(streamContent, width)
 		if rendered != "" {
 			b.WriteString(rendered)
@@ -242,7 +242,7 @@ func renderToolCallsBlock(toolCalls []string, width int, expanded bool) string {
 
 // --- Startup logo (highly detailed static ASCII eye) ---
 
-var flareTagline = "Flare - Server Management AI Agent"
+var arahinTagline = "Arahin - Multi-Stop Route Planner"
 
 // renderEye displays the user's custom ASCII art eclipse/petal design.
 func renderEye(width int, viewportHeight int) string {
@@ -305,11 +305,11 @@ func renderEye(width int, viewportHeight int) string {
 	b.WriteString("\n")
 
 	// Tagline centered
-	tagPad := (width - len(flareTagline)) / 2
+	tagPad := (width - len(arahinTagline)) / 2
 	if tagPad < 0 {
 		tagPad = 0
 	}
-	b.WriteString(strings.Repeat(" ", tagPad) + dimmedStyle.Render(flareTagline) + "\n")
+	b.WriteString(strings.Repeat(" ", tagPad) + dimmedStyle.Render(arahinTagline) + "\n")
 
 	// Hint
 	hint := "Send a message to start."

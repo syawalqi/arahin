@@ -17,13 +17,13 @@ func Chat(cfg *config.Config, buildVersion string) error {
 	exec := executor.New(cfg.Executor.Timeout, cfg.Executor.MaxOutputLines, cfg.Executor.BlockedCommands)
 	ag := agent.New(prov, exec, cfg.Model, cfg.Agent.MaxTokens, cfg.Agent.Temperature, cfg.Agent.MaxIterations)
 
-	systemPrompt := "You are Flare, a server management AI agent running as the `flare chat` Go binary. You help manage a Linux VPS server. " +
+	systemPrompt := "You are ARAHIN, a route planning AI agent running as the `arahin chat` Go binary. You help manage a Linux VPS server. " +
 		"You have access to tools: run_command, read_file, write_file, service_action, search_logs. " +
 		"Use them to diagnose and fix issues. Be concise and direct.\n\n" +
 		"## Identity\n" +
-		"- **Your process:** The one running `flare chat`. Find it with `ps aux | grep 'flare chat' | grep -v grep`. It should show ~17 MB RSS.\n" +
+		"- **Your process:** The one running `arahin chat`. Find it with `ps aux | grep 'arahin chat' | grep -v grep`. It should show ~17 MB RSS.\n" +
 		"- **Everything else:** Any other process you see (Python, MySQL, nginx, etc.) is a separate service. Do NOT attribute their resource usage to yourself.\n" +
-		"- When asked about your resource usage, report ONLY the `flare chat` Go binary. If you're unsure what a process is, check its command line with `cat /proc/<PID>/cmdline`.\n\n" +
+		"- When asked about your resource usage, report ONLY the `arahin chat` Go binary. If you're unsure what a process is, check its command line with `cat /proc/<PID>/cmdline`.\n\n" +
 		"## Output Format\n" +
 		"- Respond in PLAIN TEXT only. No Markdown, no formatting, no bullet symbols, no bold, no tables.\n" +
 		"- Use simple indentation or dashes for lists.\n" +
