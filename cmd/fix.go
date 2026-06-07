@@ -151,7 +151,7 @@ func Fix(cfg *config.Config) error {
 	}
 
 	// Log what the LLM tried
-	stateDir := os.ExpandEnv("$HOME/.local/state/flare")
+	stateDir := os.ExpandEnv("$HOME/.local/state/arahin")
 	os.MkdirAll(stateDir, 0755)
 	logPath := fmt.Sprintf("%s/fix-%d-attempt.log", stateDir, ticket.ID)
 	os.WriteFile(logPath, []byte(logBuf.String()), 0644)
@@ -167,8 +167,8 @@ func Fix(cfg *config.Config) error {
 
 // tryOpenDB attempts to open the state DB with a short timeout.
 func tryOpenDB() (*state.DB, error) {
-	stateDir := os.ExpandEnv("$HOME/.local/state/flare")
-	return state.Open(stateDir + "/flare.db")
+	stateDir := os.ExpandEnv("$HOME/.local/state/arahin")
+	return state.Open(stateDir + "/arahin.db")
 }
 
 // buildFixPrompt creates the system prompt for the LLM fix agent.

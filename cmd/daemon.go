@@ -20,11 +20,11 @@ func Daemon(cfg *config.Config) error {
 	fmt.Println("Flare daemon starting...")
 
 	// Open state database
-	stateDir := os.ExpandEnv("$HOME/.local/state/flare")
+	stateDir := os.ExpandEnv("$HOME/.local/state/arahin")
 	if err := os.MkdirAll(stateDir, 0755); err != nil {
 		return fmt.Errorf("mkdir state: %w", err)
 	}
-	db, err := state.Open(stateDir + "/flare.db")
+	db, err := state.Open(stateDir + "/arahin.db")
 	if err != nil {
 		return fmt.Errorf("open db: %w", err)
 	}
@@ -47,7 +47,7 @@ func Daemon(cfg *config.Config) error {
 
 	fmt.Printf("Check interval: %s\n", interval)
 	fmt.Printf("Services monitored: %v\n", cfg.Checks.Services)
-	fmt.Printf("State DB: %s\n", stateDir+"/flare.db")
+	fmt.Printf("State DB: %s\n", stateDir+"/arahin.db")
 	fmt.Printf("Alert delivery: %s\n", cfg.Alerts.Delivery)
 	if len(notifiers) > 0 {
 		fmt.Printf("Notifiers active: %d\n", len(notifiers))
@@ -214,8 +214,8 @@ func AlertCli(cfg *config.Config) error {
 	body := os.Args[3]
 
 	// Store in DB
-	stateDir := os.ExpandEnv("$HOME/.local/state/flare")
-	db, err := state.Open(stateDir + "/flare.db")
+	stateDir := os.ExpandEnv("$HOME/.local/state/arahin")
+	db, err := state.Open(stateDir + "/arahin.db")
 	if err == nil {
 		defer db.Close()
 		db.CreateAlert(title, body, state.SeverityWarning)

@@ -23,7 +23,7 @@ func Setup(cfg *config.Config) error {
 	cfg.Model = result.Model
 	cfg.DaemonModel = result.Model
 
-	configDir := os.ExpandEnv("$HOME/.config/flare")
+	configDir := os.ExpandEnv("$HOME/.config/arahin")
 	if err := os.MkdirAll(configDir, 0755); err != nil {
 		return fmt.Errorf("mkdir config: %w", err)
 	}

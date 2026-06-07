@@ -29,15 +29,15 @@ func Chat(cfg *config.Config, buildVersion string) error {
 		"- Use simple indentation or dashes for lists.\n" +
 		"- Code examples or commands: put them on their own line, prefixed with `$ ` for shell commands."
 
-	memoryPath := os.ExpandEnv("$HOME/.config/flare/memory.md")
+	memoryPath := os.ExpandEnv("$HOME/.config/arahin/memory.md")
 	if data, err := os.ReadFile(memoryPath); err == nil && len(data) > 0 {
 		systemPrompt += "\n\n## Server Context\n" + string(data)
 	}
 
 	m := tui.NewModel(ag, systemPrompt,
-		os.ExpandEnv("$HOME/.config/flare/config.yaml"),
+		os.ExpandEnv("$HOME/.config/arahin/config.yaml"),
 		memoryPath,
-		os.ExpandEnv("$HOME/.config/flare"),
+		os.ExpandEnv("$HOME/.config/arahin"),
 		buildVersion,
 	)
 	p := tea.NewProgram(m, tea.WithAltScreen(), tea.WithMouseCellMotion())

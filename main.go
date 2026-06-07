@@ -62,7 +62,7 @@ func runChat(cfg *config.Config) {
 
 func loadConfig() *config.Config {
 	cfg := config.Default()
-	configPath := os.ExpandEnv("$HOME/.config/flare/config.yaml")
+	configPath := os.ExpandEnv("$HOME/.config/arahin/config.yaml")
 	if parsed, err := config.Load(configPath); err == nil {
 		cfg = parsed
 	}
