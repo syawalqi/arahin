@@ -97,6 +97,25 @@ func DefaultBaseURL(provider string) string {
 	}
 }
 
+// ResolveProvider extracts the provider name from the model string (format: "provider/model"),
+// falling back to the fallback provider if no known prefix is found.
+func ResolveProvider(model, fallback string) string {
+	for i := 0; i < len(model); i++ {
+		if model[i] == '/' {
+			prefix := model[:i]
+			switch prefix {
+			case "opencode-go", "opencodego", "openrouter", "opencode":
+				return prefix
+			}
+			break
+		}
+	}
+	if fallback != "" {
+		return fallback
+	}
+	return "opencode-go"
+}
+
 type Provider interface {
 	Chat(ctx context.Context, req ChatRequest) (*ChatResponse, error)
 	ChatStream(ctx context.Context, req ChatRequest) (<-chan StreamEvent, error)

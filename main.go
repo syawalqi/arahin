@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 
 	"github.com/syawalqi/arahin/cmd"
 	"github.com/syawalqi/arahin/config"
@@ -42,6 +43,21 @@ func main() {
 	case "alert":
 		if err := cmd.AlertCli(cfg); err != nil {
 			fmt.Fprintf(os.Stderr, "alert error: %v\n", err)
+			os.Exit(1)
+		}
+	case "route":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "usage: arahin route <prompt>")
+			os.Exit(1)
+		}
+		prompt := strings.Join(os.Args[2:], " ")
+		if err := cmd.Route(cfg, prompt); err != nil {
+			fmt.Fprintf(os.Stderr, "route error: %v\n", err)
+			os.Exit(1)
+		}
+	case "serve":
+		if err := cmd.Serve(cfg); err != nil {
+			fmt.Fprintf(os.Stderr, "serve error: %v\n", err)
 			os.Exit(1)
 		}
 	case "help", "--help", "-h":
@@ -85,6 +101,8 @@ Usage:
   arahin daemon     Background monitoring daemon
   arahin fix        Fix an anomaly (auto-remediate with LLM)
   arahin alert      Send an alert (script hook)
+  arahin route      Plan a multi-stop route (CLI)
+  arahin serve      Start web server with map UI
   arahin help       Show this help
 `)
 }

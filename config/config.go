@@ -6,6 +6,12 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
+type RouteConfig struct {
+	Mode  string `yaml:"mode"`
+	Port  string `yaml:"port"`
+	Model string `yaml:"model"`
+}
+
 type Config struct {
 	Provider    string `yaml:"provider"`
 	APIKey      string `yaml:"api_key"`
@@ -16,6 +22,7 @@ type Config struct {
 	Alerts   AlertConfig   `yaml:"alerts"`
 	Executor ExecConfig    `yaml:"executor"`
 	Agent    AgentConfig   `yaml:"agent"`
+	Route    RouteConfig   `yaml:"route"`
 }
 
 type CheckConfig struct {
@@ -92,6 +99,11 @@ func Default() *Config {
 			MaxIterations: DefaultMaxIterations,
 			Temperature:   DefaultTemperature,
 			MaxTokens:     DefaultMaxTokens,
+		},
+		Route: RouteConfig{
+			Mode:  DefaultRouteMode,
+			Port:  DefaultRoutePort,
+			Model: DefaultRouteModel,
 		},
 	}
 }

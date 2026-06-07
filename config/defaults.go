@@ -19,4 +19,9 @@ const (
 	DefaultMaxIterations      = 100
 	DefaultTemperature        = 0.3
 	DefaultMaxTokens          = 4096
+
+	// ARAHIN route planner defaults
+	DefaultRouteMode  = "pipeline"
+	DefaultRoutePort  = "9122"
+	DefaultRouteModel = "deepseek-v4-flash"
 )
