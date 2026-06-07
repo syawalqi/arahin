@@ -1,4 +1,4 @@
-module github.com/syawalqi/flare
+module github.com/syawalqi/arahin
 
 go 1.26.4
 
