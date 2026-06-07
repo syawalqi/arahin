@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-REPO="syawalqi/flare"
-BIN_NAME="flare"
+REPO="syawalqi/arahin"
+BIN_NAME="arahin"
 INSTALL_DIR="/usr/local/bin"
 
 # Detect OS and architecture
@@ -20,10 +20,10 @@ case "$OS" in
     *) echo "Unsupported OS: $OS"; exit 1 ;;
 esac
 
-ASSET="flare-${OS}-${ARCH}"
+ASSET="arahin-${OS}-${ARCH}"
 VERSION="v1.0.0"
 
-echo "📦 Downloading FLARE ${VERSION} for ${OS}/${ARCH}..."
+echo "📦 Downloading ARAHIN ${VERSION} for ${OS}/${ARCH}..."
 
 # Download the binary from GitHub releases
 DOWNLOAD_URL="https://github.com/${REPO}/releases/download/${VERSION}/${ASSET}"
@@ -39,6 +39,6 @@ fi
 chmod +x "/tmp/${ASSET}"
 sudo mv "/tmp/${ASSET}" "${INSTALL_DIR}/${BIN_NAME}"
 
-echo "✅ FLARE ${VERSION} installed to ${INSTALL_DIR}/${BIN_NAME}"
+echo "✅ ARAHIN ${VERSION} installed to ${INSTALL_DIR}/${BIN_NAME}"
 echo ""
-echo "Run 'flare setup' to configure your API key, then 'flare chat' to start."
+echo "Run 'arahin setup' to configure your API key, then 'arahin chat' to start."

@@ -1,16 +1,16 @@
 .PHONY: build clean test run fmt
 
 build:
-	go build -o flare .
+	go build -o arahin .
 
 clean:
-	rm -f flare
+	rm -f arahin
 
 test:
 	go test ./...
 
 run: build
-	./flare chat
+	./arahin chat
 
 fmt:
 	go fmt ./...
