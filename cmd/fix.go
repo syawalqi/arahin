@@ -79,7 +79,7 @@ func Fix(cfg *config.Config) error {
 		}
 
 	default:
-		return fmt.Errorf("usage: arahin fix --ticket <id> | flare fix --latest | flare fix --stdin (pipe JSON)")
+		return fmt.Errorf("usage: arahin fix --ticket <id> | arahin fix --latest | arahin fix --stdin (pipe JSON)")
 	}
 
 	fmt.Printf("🛠 Fixing ticket #%d: %s — %s\n", ticket.ID, ticket.CheckName, ticket.Message)
