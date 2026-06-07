@@ -111,8 +111,17 @@ func (e *PipelineEngine) resolveWaypoints(ctx context.Context, names []string) (
 			name = name + ", Jakarta"
 		}
 
-		// Named place: geocode it
-		result := e.geocoder.Geocode(name)
+		// Named place: geocode it with city context
+		geoName := name
+		nameLower := strings.ToLower(name)
+		if !strings.Contains(nameLower, "jakarta") && !strings.Contains(nameLower, "yogyakarta") && !strings.Contains(nameLower, "jogja") {
+			if knownJakarta[nameLower] {
+				geoName = name + ", Jakarta"
+			} else if knownJogja[nameLower] {
+				geoName = name + ", Yogyakarta"
+			}
+		}
+		result := e.geocoder.Geocode(geoName)
 		if result.Error != "" {
 			return nil, fmt.Errorf("pipeline: geocode %q: %s", name, result.Error)
 		}

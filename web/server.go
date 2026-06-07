@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"html/template"
 	"log"
+	"math"
 	"net/http"
 	"strings"
 	"time"
@@ -197,28 +198,28 @@ function app() {
 			var source = new EventSource(url);
 			var lastHTML = '';
 
-			source.addEventListener('reasoning', function(e) {
-				logEl.innerHTML += '<div class="reasoning">' + escapeHtml(e.data) + '</div>';
+			source.addEventListener('reasoning', function(evt) {
+				try { var d = JSON.parse(evt.data); logEl.innerHTML += '<div class="reasoning">' + escapeHtml(d.content) + '</div>'; } catch(_) { logEl.innerHTML += '<div class="reasoning">' + escapeHtml(evt.data) + '</div>'; }
 				logEl.scrollTop = logEl.scrollHeight;
 			});
 
-			source.addEventListener('waypoints', function(e) {
-				logEl.innerHTML += '<div class="result">Waypoints: ' + escapeHtml(e.data) + '</div>';
+			source.addEventListener('waypoints', function(evt) {
+				try { var d = JSON.parse(evt.data); logEl.innerHTML += '<div class="result">Waypoints: ' + escapeHtml(d.content) + '</div>'; } catch(_) { logEl.innerHTML += '<div class="result">Waypoints: ' + escapeHtml(evt.data) + '</div>'; }
 				logEl.scrollTop = logEl.scrollHeight;
 			});
 
-			source.addEventListener('tool_call', function(e) {
-				logEl.innerHTML += '<div class="tool">' + escapeHtml(e.data) + '</div>';
+			source.addEventListener('tool_call', function(evt) {
+				try { var d = JSON.parse(evt.data); logEl.innerHTML += '<div class="tool">' + escapeHtml(d.content) + '</div>'; } catch(_) { logEl.innerHTML += '<div class="tool">' + escapeHtml(evt.data) + '</div>'; }
 				logEl.scrollTop = logEl.scrollHeight;
 			});
 
-			source.addEventListener('result', function(e) {
-				logEl.innerHTML += '<div class="result">' + escapeHtml(e.data) + '</div>';
+			source.addEventListener('result', function(evt) {
+				try { var d = JSON.parse(evt.data); logEl.innerHTML += '<div class="result">' + escapeHtml(d.content) + '</div>'; } catch(_) { logEl.innerHTML += '<div class="result">' + escapeHtml(evt.data) + '</div>'; }
 				logEl.scrollTop = logEl.scrollHeight;
 			});
 
-			source.addEventListener('error', function(e) {
-				logEl.innerHTML += '<div class="error">Error: ' + escapeHtml(e.data) + '</div>';
+			source.addEventListener('error', function(evt) {
+				try { var d = JSON.parse(evt.data); logEl.innerHTML += '<div class="error">Error: ' + escapeHtml(d.content) + '</div>'; } catch(_) { logEl.innerHTML += '<div class="error">Error: ' + escapeHtml(evt.data) + '</div>'; }
 				logEl.scrollTop = logEl.scrollHeight;
 			});
 
@@ -484,8 +485,8 @@ func (s *Server) runRoute(ctx context.Context, prompt, mode string, sendEvent fu
 		Events:          events,
 		Waypoints:       ordered,
 		Segments:        segments,
-		TotalDistanceKM: totalDist,
-		TotalDurationMin: totalDur,
+		TotalDistanceKM:  math.Round(totalDist*10) / 10,
+		TotalDurationMin: math.Round(totalDur),
 		MapHTML:         html,
 	}
 }

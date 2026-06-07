@@ -176,9 +176,21 @@ func extractWaypointNames(prompt string) []string {
 		afterMampir := strings.TrimSpace(remaining[idx+7:])
 		
 		// Check for "mampir X untuk Y" — X is the stop, Y is the purpose (POI search)
-		if untukIdx := strings.Index(afterMampir, " untuk "); untukIdx >= 0 {
+		// Handle both "mampir X untuk Y" and "mampir untuk Y" (no stop)
+		untukIdx := -1
+		if strings.HasPrefix(afterMampir, "untuk ") {
+			untukIdx = 0
+		} else {
+			untukIdx = strings.Index(afterMampir, " untuk ")
+		}
+		if untukIdx >= 0 {
 			stop := strings.TrimSpace(afterMampir[:untukIdx])
-			poi := strings.TrimSpace(afterMampir[untukIdx+7:])
+			// After "untuk" — 7 chars for " untuk " or 6 for "untuk "
+			after := afterMampir[untukIdx+6:]
+			if strings.HasPrefix(after, " ") {
+				after = strings.TrimSpace(after)
+			}
+			poi := strings.TrimSpace(after)
 			if stop != "" {
 				parts = append(parts, titleCase(stop))
 			}
