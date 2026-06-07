@@ -16,11 +16,11 @@ import (
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/syawalqi/flare/agent"
-	"github.com/syawalqi/flare/config"
-	"github.com/syawalqi/flare/executor"
-	"github.com/syawalqi/flare/llm"
-	"github.com/syawalqi/flare/memory"
+	"github.com/syawalqi/arahin/agent"
+	"github.com/syawalqi/arahin/config"
+	"github.com/syawalqi/arahin/executor"
+	"github.com/syawalqi/arahin/llm"
+	"github.com/syawalqi/arahin/memory"
 )
 
 type streamResultMsg struct {

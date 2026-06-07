@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/syawalqi/flare/cmd"
-	"github.com/syawalqi/flare/config"
+	"github.com/syawalqi/arahin/cmd"
+	"github.com/syawalqi/arahin/config"
 )
 
 // Version is set at build time via -ldflags.

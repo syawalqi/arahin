@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/syawalqi/flare/state"
+	"github.com/syawalqi/arahin/state"
 )
 
 // Notifier is the interface for alert delivery channels.

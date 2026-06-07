@@ -8,8 +8,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/syawalqi/flare/executor"
-	"github.com/syawalqi/flare/llm"
+	"github.com/syawalqi/arahin/executor"
+	"github.com/syawalqi/arahin/llm"
 )
 
 type ToolHandler func(ctx context.Context, args json.RawMessage) (string, error)

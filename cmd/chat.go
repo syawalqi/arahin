@@ -5,11 +5,11 @@ import (
 	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/syawalqi/flare/agent"
-	"github.com/syawalqi/flare/config"
-	"github.com/syawalqi/flare/executor"
-	"github.com/syawalqi/flare/llm"
-	"github.com/syawalqi/flare/tui"
+	"github.com/syawalqi/arahin/agent"
+	"github.com/syawalqi/arahin/config"
+	"github.com/syawalqi/arahin/executor"
+	"github.com/syawalqi/arahin/llm"
+	"github.com/syawalqi/arahin/tui"
 )
 
 func Chat(cfg *config.Config, buildVersion string) error {

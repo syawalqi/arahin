@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/syawalqi/flare/config"
-	"github.com/syawalqi/flare/executor"
-	"github.com/syawalqi/flare/memory"
-	"github.com/syawalqi/flare/tui/setup"
+	"github.com/syawalqi/arahin/config"
+	"github.com/syawalqi/arahin/executor"
+	"github.com/syawalqi/arahin/memory"
+	"github.com/syawalqi/arahin/tui/setup"
 )
 
 func Setup(cfg *config.Config) error {

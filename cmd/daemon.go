@@ -8,12 +8,12 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/syawalqi/flare/alert"
-	"github.com/syawalqi/flare/config"
-	"github.com/syawalqi/flare/executor"
-	"github.com/syawalqi/flare/memory"
-	"github.com/syawalqi/flare/scheduler"
-	"github.com/syawalqi/flare/state"
+	"github.com/syawalqi/arahin/alert"
+	"github.com/syawalqi/arahin/config"
+	"github.com/syawalqi/arahin/executor"
+	"github.com/syawalqi/arahin/memory"
+	"github.com/syawalqi/arahin/scheduler"
+	"github.com/syawalqi/arahin/state"
 )
 
 func Daemon(cfg *config.Config) error {

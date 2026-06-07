@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/syawalqi/flare/config"
-	"github.com/syawalqi/flare/executor"
-	"github.com/syawalqi/flare/state"
+	"github.com/syawalqi/arahin/config"
+	"github.com/syawalqi/arahin/executor"
+	"github.com/syawalqi/arahin/state"
 )
 
 type CheckEngine struct {
