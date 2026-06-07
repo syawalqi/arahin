@@ -34,6 +34,9 @@ type RouteResult struct {
 	MapHTML     string              `json:"map_html,omitempty"`
 }
 
+// ProgressFunc is an optional callback for real-time progress events.
+type ProgressFunc func(typ, msg string)
+
 // RouteEngine is the interface all 3 modes implement.
 type RouteEngine interface {
 	Plan(ctx context.Context, prompt string) ([]Waypoint, error)

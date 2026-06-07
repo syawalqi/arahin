@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"html/template"
 	"math"
+	"time"
 
 	"github.com/syawalqi/arahin/engine"
 	"github.com/syawalqi/arahin/tools"
@@ -17,6 +18,7 @@ type MapConfig struct {
 	Segments  []*tools.RouteSegment
 	TotalKM   float64
 	TotalMin  float64
+	PlanTime  time.Duration
 }
 
 // RenderRouteHTML generates a self-contained Leaflet HTML page as a string.
@@ -84,6 +86,7 @@ func RenderRouteHTML(cfg MapConfig) (string, error) {
 		"CenterLng":     fmt.Sprintf("%.6f", centerLng),
 		"WaypointCount": len(cfg.Waypoints),
 		"Waypoints":     wpList,
+		"PlanTime":      fmt.Sprintf("%.1f", cfg.PlanTime.Seconds()),
 	})
 	if err != nil {
 		return "", fmt.Errorf("render template: %w", err)
@@ -119,8 +122,9 @@ h1 { font-size: 1.5rem; margin-bottom: 8px; color: #e94560; }
 <div class="container">
 <h1>ARAHIN — Route</h1>
 <div class="info">
-Total: <strong>{{.TotalKM}} km</strong> (~{{.TotalMin}} min) &middot;
-<strong>{{.WaypointCount}}</strong> waypoints
+Travel: <strong>{{.TotalKM}} km</strong> (~{{.TotalMin}} min) ·
+<strong>{{.WaypointCount}}</strong> stops ·
+Processed: {{.PlanTime}}s
 </div>
 <div id="map"></div>
 <div class="waypoint-list">

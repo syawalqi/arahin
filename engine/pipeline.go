@@ -14,15 +14,20 @@ type PipelineEngine struct {
 	model    string
 	geocoder *tools.Geocoder
 	poiSrch  *tools.POISearcher
+	Progress ProgressFunc
 }
 
-func NewPipelineEngine(provider llm.Provider, model string, gc *tools.Geocoder, ps *tools.POISearcher) *PipelineEngine {
-	return &PipelineEngine{
+func NewPipelineEngine(provider llm.Provider, model string, gc *tools.Geocoder, ps *tools.POISearcher, progress ...ProgressFunc) *PipelineEngine {
+	e := &PipelineEngine{
 		llm:      provider,
 		model:    model,
 		geocoder: gc,
 		poiSrch:  ps,
 	}
+	if len(progress) > 0 {
+		e.Progress = progress[0]
+	}
+	return e
 }
 
 func (e *PipelineEngine) Name() Mode { return ModePipeline }
@@ -84,6 +89,9 @@ func (e *PipelineEngine) resolveWaypoints(ctx context.Context, names []string) (
 
 		// Check if it's a known category (masjid, restoran, etc)
 		if _, isCategory := categoryMap[queryLower]; isCategory {
+			if e.Progress != nil {
+				e.Progress("tool_call", "Searching for "+name+" near previous waypoint...")
+			}
 			if lastAnchor != nil {
 				pois := e.poiSrch.Search(queryLower, lastAnchor.Lat, lastAnchor.Lng, 3)
 				if len(pois) > 0 {
@@ -110,6 +118,9 @@ func (e *PipelineEngine) resolveWaypoints(ctx context.Context, names []string) (
 
 		// Check for vague/query terms — only if no city context was assigned
 		if isVague(name) && geoName == name {
+			if e.Progress != nil {
+				e.Progress("tool_call", "Searching for \""+name+"\" near previous waypoint...")
+			}
 			if lastAnchor != nil {
 				pois := e.poiSrch.Search(name, lastAnchor.Lat, lastAnchor.Lng, 3)
 				if len(pois) > 0 {
@@ -125,11 +136,15 @@ func (e *PipelineEngine) resolveWaypoints(ctx context.Context, names []string) (
 
 		// Check for name aliases (places that geocode to the wrong city)
 		aliasGeo := geoName
-		aliasLower := strings.ToLower(geoName)
+		aliasLower := strings.ToLower(aliasGeo)
 		if aliasLower == "masjid agung kauman, yogyakarta" {
 			aliasGeo = "Masjid Gedhe Kauman, Yogyakarta"
 		}
 		geoName = aliasGeo
+		if e.Progress != nil {
+			e.Progress("reasoning", "Geocoding: "+name)
+		}
+
 		result := e.geocoder.Geocode(geoName)
 		if result.Error != "" {
 			return nil, fmt.Errorf("pipeline: geocode %q: %s", name, result.Error)

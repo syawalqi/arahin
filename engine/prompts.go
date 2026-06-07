@@ -14,21 +14,29 @@ Include city context. Put vague descriptions and POI types (masjid, restoran, et
 Return ONLY the JSON array. No thinking.
 Example: ["Monas, Jakarta", "sate dekat Cawang", "Taman Mini, Jakarta"]`
 
-const AgentPrompt = `You are ARAHIN. Extract waypoints from the user's route request.
-Be terse. No greetings, no emoji, no explanations.
+const AgentPrompt = `You are ARAHIN, a route planner. Your job is to identify the places in the user's request, geocode them, and submit the complete route.
 
-Tools:
-- geocode(place_name): convert place name to coordinates. Include city context.
-- poi_search(query, lat, lng, radius?): find POIs near coordinates.
-  Use keyword mode for vague descriptions: poi_search("sate enak", ...)
-  Use category mode for structured: poi_search("masjid", ...)
+STRICT RULES — READ CAREFULLY:
 
-Rules:
-1. Call ONE tool per turn.
-2. Call poi_search at most TWICE per search. Pick best result, move on.
-3. Do NOT re-geocode the same place.
-4. When ALL waypoints collected, output ONLY a JSON array:
-   [{"name": "...", "lat": ..., "lng": ...}, ...]`
+1. ONLY use places EXPLICITLY mentioned in the user's request. Do NOT invent or guess landmarks, attractions, or waypoints. If the user says "dari UMY ke Masjid Agung Kauman mampir makan bebek", the places are: UMY, Masjid Agung Kauman, and a duck restaurant. NOT "Taman Pintar" or any other place.
+
+2. Identify the pattern:
+   - "dari X" = start
+   - "ke Y" = destination or stop
+   - "mampir/mampir untuk Z" = intermediate stop or POI search
+
+3. Geocode each place EXACTLY ONCE using geocode(). Include city context.
+   If the result is wrong (city outside expected area), try a more specific name.
+
+4. For vague requests ("makan bebek", "sate"), use poi_search() near the relevant waypoint. Max 2 searches per unique query. After 2 attempts, pick the best result.
+
+5. When ALL waypoints are collected (each has name+lat+lng), call submit_waypoints() with the ordered waypoints list. Do NOT output JSON directly — always use submit_waypoints.
+
+6. You may call multiple tools per turn to be efficient. When all waypoints are ready, call submit_waypoints().
+
+7. If a geocode returns an error, try once more with a simpler name. If it still fails, skip that place and continue.
+
+Remember: you ONLY know the places I told you. Do not add places.`
 
 // ToolSchemas returns the tool definitions for Agent mode.
 func ToolSchemas() []llm.ToolDef {
@@ -54,7 +62,7 @@ func ToolSchemas() []llm.ToolDef {
 			Type: "function",
 			Function: llm.ToolFuncDef{
 				Name:        "poi_search",
-				Description: "Find POIs near coordinates. Keyword mode for 'sate enak'. Category mode for 'cari masjid'.",
+				Description: "Find POIs near coordinates. Keyword mode for 'sate enak'. Category mode for 'masjid'.",
 				Parameters: map[string]interface{}{
 					"type": "object",
 					"properties": map[string]interface{}{
@@ -74,6 +82,31 @@ func ToolSchemas() []llm.ToolDef {
 						},
 					},
 					"required": []string{"query", "lat", "lng"},
+				},
+			},
+		},
+		{
+			Type: "function",
+			Function: llm.ToolFuncDef{
+				Name:        "submit_waypoints",
+				Description: "Call this when ALL waypoints are collected. Submit the complete ordered route.",
+				Parameters: map[string]interface{}{
+					"type": "object",
+					"properties": map[string]interface{}{
+						"waypoints": map[string]interface{}{
+							"type": "array",
+							"items": map[string]interface{}{
+								"type": "object",
+								"properties": map[string]interface{}{
+									"name": map[string]interface{}{"type": "string", "description": "Display name"},
+									"lat":  map[string]interface{}{"type": "number"},
+									"lng":  map[string]interface{}{"type": "number"},
+								},
+								"required": []string{"name", "lat", "lng"},
+							},
+						},
+					},
+					"required": []string{"waypoints"},
 				},
 			},
 		},

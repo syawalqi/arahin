@@ -101,7 +101,13 @@ func loadConfig() *config.Config {
 	if key := os.Getenv("LLM_API_KEY"); key != "" {
 		cfg.APIKey = key
 	}
-	if key := os.Getenv("OPENROUTER_API_KEY"); key != "" && cfg.Provider == "openrouter" {
+	if key := os.Getenv("OPENCODE_GO_API_KEY"); key != "" && cfg.APIKey == "" {
+		cfg.APIKey = key
+	}
+	if key := os.Getenv("COUNCIL_API_KEY"); key != "" && cfg.APIKey == "" {
+		cfg.APIKey = key
+	}
+	if key := os.Getenv("OPENROUTER_API_KEY"); key != "" && cfg.Provider == "openrouter" && cfg.APIKey == "" {
 		cfg.APIKey = key
 	}
 	return cfg

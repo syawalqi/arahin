@@ -69,18 +69,27 @@ func (s *POISearcher) Search(query string, lat, lng float64, radiusKm int) []POI
 			cat, radiusKm*1000, lat, lng,
 		)
 	} else {
-		// Keyword mode
+		// Keyword mode — search both node and way for name regex + amenity
 		keywords := extractKeywords(query)
 		if len(keywords) == 0 {
 			// Fallback: dump nearby amenities
 			overpassQuery = fmt.Sprintf(
-				`[out:json][timeout:25];node["amenity"](around:%d,%f,%f);out 5;`,
-				radiusKm*1000, lat, lng,
+				`[out:json][timeout:25];(node["amenity"](around:%d,%f,%f);way["amenity"](around:%d,%f,%f););out center 5;`,
+				radiusKm*1000, lat, lng, radiusKm*1000, lat, lng,
 			)
 		} else {
 			patterns := strings.Join(keywords, "|")
+			// Search nodes and ways by name OR by amenity+cuisine match
 			overpassQuery = fmt.Sprintf(
-				`[out:json][timeout:25];node["name"~"%s",i](around:%d,%f,%f);out 5;`,
+				`[out:json][timeout:25];(`+
+					`node["name"~"%s",i](around:%d,%f,%f);`+
+					`way["name"~"%s",i](around:%d,%f,%f);`+
+					`node["cuisine"~"%s",i](around:%d,%f,%f);`+
+					`way["cuisine"~"%s",i](around:%d,%f,%f);`+
+				`);out center 5;`,
+				patterns, radiusKm*1000, lat, lng,
+				patterns, radiusKm*1000, lat, lng,
+				patterns, radiusKm*1000, lat, lng,
 				patterns, radiusKm*1000, lat, lng,
 			)
 		}
@@ -102,9 +111,14 @@ func (s *POISearcher) Search(query string, lat, lng float64, radiusKm int) []POI
 
 	var result struct {
 		Elements []struct {
-			Lat  float64          `json:"lat"`
-			Lon  float64          `json:"lon"`
+			Lat    float64          `json:"lat"`
+			Lon    float64          `json:"lon"`
+			Center struct {
+				Lat float64 `json:"lat"`
+				Lon float64 `json:"lon"`
+			} `json:"center"`
 			Tags map[string]string `json:"tags"`
+			Type string            `json:"type"`
 		} `json:"elements"`
 	}
 	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
@@ -119,16 +133,21 @@ func (s *POISearcher) Search(query string, lat, lng float64, radiusKm int) []POI
 		if name == "" {
 			continue
 		}
+		// Use center for way/relation, direct lat/lon for nodes
+		lat, lng := el.Lat, el.Lon
+		if el.Type == "way" || el.Type == "relation" {
+			lat, lng = el.Center.Lat, el.Center.Lon
+		}
 		// Dedup by ~100m grid
-		key := fmt.Sprintf("%.3f,%.3f", el.Lat, el.Lon)
+		key := fmt.Sprintf("%.3f,%.3f", lat, lng)
 		if seen[key] {
 			continue
 		}
 		seen[key] = true
 		pois = append(pois, POI{
 			Name:     name,
-			Lat:      el.Lat,
-			Lng:      el.Lon,
+			Lat:      lat,
+			Lng:      lng,
 			Category: el.Tags["amenity"],
 		})
 		if len(pois) >= 5 {

@@ -15,15 +15,20 @@ type BareEngine struct {
 	model    string
 	geocoder *tools.Geocoder
 	poiSrch  *tools.POISearcher
+	Progress ProgressFunc
 }
 
-func NewBareEngine(provider llm.Provider, model string, gc *tools.Geocoder, ps *tools.POISearcher) *BareEngine {
-	return &BareEngine{
+func NewBareEngine(provider llm.Provider, model string, gc *tools.Geocoder, ps *tools.POISearcher, progress ...ProgressFunc) *BareEngine {
+	e := &BareEngine{
 		llm:      provider,
 		model:    model,
 		geocoder: gc,
 		poiSrch:  ps,
 	}
+	if len(progress) > 0 {
+		e.Progress = progress[0]
+	}
+	return e
 }
 
 func (e *BareEngine) Name() Mode { return ModeBare }
@@ -273,8 +278,11 @@ func (e *BareEngine) resolveWaypoints(ctx context.Context, names []string) ([]Wa
 				}
 			}
 		}
-		// Named place: geocode it
+	// Named place: geocode it
 		// Check for name aliases (places that geocode to the wrong city)
+		if e.Progress != nil {
+			e.Progress("reasoning", "Geocoding: "+name)
+		}
 		if alias, ok := nameAliases[strings.ToLower(geoName)]; ok {
 			geoName = alias
 		}

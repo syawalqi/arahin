@@ -119,8 +119,9 @@ h1 { font-size: 1.5rem; color: #e94560; margin-bottom: 4px; }
 <template x-for="(wp, i) in (result?.waypoints || [])" :key="i">
 <tr><td x-text="(i===0?'Start':(i===result.waypoints.length-1?'End':'Stop '+(i+1)))+':'" style="color: #aaa;"></td><td x-text="wp.name"></td></tr>
 </template>
-<tr><td>Total Distance</td><td x-text="result?.total_distance_km + ' km'" style="color: #81c784;"></td></tr>
-<tr><td>Total Duration</td><td x-text="result?.total_duration_min + ' min'" style="color: #81c784;"></td></tr>
+<tr><td>Travel Time</td><td x-text="result?.total_duration_min + ' min'" style="color: #81c784;"></td></tr>
+<tr><td>Travel Distance</td><td x-text="result?.total_distance_km + ' km'" style="color: #81c784;"></td></tr>
+<tr><td>Processed in</td><td x-text="result?.process_time_s + 's'" style="color: #ffb74d;"></td></tr>
 </table>
 </div>
 </div>
@@ -132,7 +133,7 @@ var polyline = null;
 
 function initMap() {
 if (map) return;
-map = L.map('map').setView([-6.2, 106.8], 12);
+map = L.map('map').setView([-7.8, 110.36], 12);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '&copy; <a href="https://osm.org/copyright">OSM</a>',
 maxZoom: 19
@@ -197,6 +198,8 @@ function app() {
 			var url = '/api/route/stream?prompt=' + encodedPrompt + '&mode=' + this.mode;
 			var source = new EventSource(url);
 			var lastHTML = '';
+			var streamDone = false;
+			var streamError = null;
 
 			source.addEventListener('reasoning', function(evt) {
 				try { var d = JSON.parse(evt.data); logEl.innerHTML += '<div class="reasoning">' + escapeHtml(d.content) + '</div>'; } catch(_) { logEl.innerHTML += '<div class="reasoning">' + escapeHtml(evt.data) + '</div>'; }
@@ -219,7 +222,7 @@ function app() {
 			});
 
 			source.addEventListener('error', function(evt) {
-				try { var d = JSON.parse(evt.data); logEl.innerHTML += '<div class="error">Error: ' + escapeHtml(d.content) + '</div>'; } catch(_) { logEl.innerHTML += '<div class="error">Error: ' + escapeHtml(evt.data) + '</div>'; }
+				try { var d = JSON.parse(evt.data); streamError = d.content; logEl.innerHTML += '<div class="error">Error: ' + escapeHtml(d.content) + '</div>'; } catch(_) { logEl.innerHTML += '<div class="error">Error: ' + escapeHtml(evt.data) + '</div>'; }
 				logEl.scrollTop = logEl.scrollHeight;
 			});
 
@@ -237,6 +240,7 @@ function app() {
 
 			source.addEventListener('done', function() {
 				source.close();
+				streamDone = true;
 				self.busy = false;
 				// Fetch final result from POST endpoint
 				fetch('/api/route', {
@@ -248,7 +252,7 @@ function app() {
 				.then(function(data) {
 					if (data.waypoints && data.waypoints.length > 0) {
 						plotRoute(data.waypoints, data.segments);
-						self.result = {waypoints: data.waypoints, total_distance_km: data.total_distance_km, total_duration_min: data.total_duration_min};
+						self.result = {waypoints: data.waypoints, total_distance_km: data.total_distance_km, total_duration_min: data.total_duration_min, process_time_s: data.process_time_s};
 					}
 				})
 				.catch(function() {});
@@ -257,7 +261,9 @@ function app() {
 			source.onerror = function() {
 				source.close();
 				self.busy = false;
-				logEl.innerHTML += '<div class="error">Connection lost.</div>';
+				if (!streamDone && !streamError) {
+					logEl.innerHTML += '<div class="error">Connection lost.</div>';
+				}
 			};
 
 			// Fetch final result after stream completes
@@ -293,13 +299,14 @@ type routeEvent struct {
 }
 
 type routeResponse struct {
-	Events         []routeEvent         `json:"events"`
-	Waypoints      []engine.Waypoint    `json:"waypoints,omitempty"`
-	Segments       []*tools.RouteSegment `json:"segments,omitempty"`
-	TotalDistanceKM float64              `json:"total_distance_km"`
-	TotalDurationMin float64             `json:"total_duration_min"`
-	MapHTML        string               `json:"map_html,omitempty"`
-	Error          string               `json:"error,omitempty"`
+	Events           []routeEvent          `json:"events"`
+	Waypoints        []engine.Waypoint     `json:"waypoints,omitempty"`
+	Segments         []*tools.RouteSegment `json:"segments,omitempty"`
+	TotalDistanceKM   float64              `json:"total_distance_km"`
+	TotalDurationMin  float64              `json:"total_duration_min"`
+	MapHTML          string               `json:"map_html,omitempty"`
+	Error            string               `json:"error,omitempty"`
+	ProcessTime      float64              `json:"process_time_s"`
 }
 
 func (s *Server) handleRoute(w http.ResponseWriter, r *http.Request) {
@@ -380,6 +387,7 @@ func (s *Server) handleRouteStream(w http.ResponseWriter, r *http.Request) {
 // sendEvent is an optional callback for real-time streaming (SSE).
 func (s *Server) runRoute(ctx context.Context, prompt, mode string, sendEvent func(typ, content string)) routeResponse {
 	events := make([]routeEvent, 0)
+	startTime := time.Now()
 	addEvent := func(typ, content string) {
 		events = append(events, routeEvent{Type: typ, Content: content})
 		if sendEvent != nil {
@@ -405,11 +413,17 @@ func (s *Server) runRoute(ctx context.Context, prompt, mode string, sendEvent fu
 	var eng engine.RouteEngine
 	switch engine.Mode(modeName) {
 	case engine.ModeBare:
-		eng = engine.NewBareEngine(provider, modelName, geocoder, poiSearcher)
+		eng = engine.NewBareEngine(provider, modelName, geocoder, poiSearcher, func(typ, msg string) {
+			addEvent(typ, msg)
+		})
 	case engine.ModePipeline:
-		eng = engine.NewPipelineEngine(provider, modelName, geocoder, poiSearcher)
+		eng = engine.NewPipelineEngine(provider, modelName, geocoder, poiSearcher, func(typ, msg string) {
+			addEvent(typ, msg)
+		})
 	case engine.ModeAgent:
-		eng = engine.NewAgentEngine(provider, modelName, geocoder, poiSearcher)
+		eng = engine.NewAgentEngine(provider, modelName, geocoder, poiSearcher, func(typ, msg string) {
+			addEvent(typ, msg)
+		})
 	default:
 		return routeResponse{
 			Error: fmt.Sprintf("unknown mode: %s", modeName),
@@ -419,7 +433,9 @@ func (s *Server) runRoute(ctx context.Context, prompt, mode string, sendEvent fu
 	addEvent("reasoning", fmt.Sprintf("Mode: %s | Model: %s", eng.Name(), modelName))
 	addEvent("reasoning", "Extracting waypoints from description...")
 
+	planStart := time.Now()
 	waypoints, err := eng.Plan(ctx, prompt)
+	planElapsed := time.Since(planStart)
 	if err != nil {
 		return routeResponse{
 			Events: append(events, routeEvent{Type: "error", Content: err.Error()}),
@@ -468,7 +484,9 @@ func (s *Server) runRoute(ctx context.Context, prompt, mode string, sendEvent fu
 		addEvent("result", fmt.Sprintf("%s -> %s : %.1f km (%.0f min)", ordered[i].Name, ordered[i+1].Name, seg.DistanceKm, seg.DurationMin))
 	}
 
-	addEvent("result", fmt.Sprintf("Total: %.1f km (%.0f min)", totalDist, totalDur))
+	addEvent("result", fmt.Sprintf("Travel time: %.1f km (%.0f min)", totalDist, totalDur))
+	elapsed := time.Since(startTime)
+	addEvent("reasoning", fmt.Sprintf("Processed in: %.1f seconds", elapsed.Seconds()))
 
 	// Render map
 	html, err := render.RenderRouteHTML(render.MapConfig{
@@ -476,6 +494,7 @@ func (s *Server) runRoute(ctx context.Context, prompt, mode string, sendEvent fu
 		Segments:  segments,
 		TotalKM:   totalDist,
 		TotalMin:  totalDur,
+		PlanTime:  planElapsed,
 	})
 	if err != nil {
 		addEvent("error", "Map render failed: "+err.Error())
@@ -488,6 +507,7 @@ func (s *Server) runRoute(ctx context.Context, prompt, mode string, sendEvent fu
 		TotalDistanceKM:  math.Round(totalDist*10) / 10,
 		TotalDurationMin: math.Round(totalDur),
 		MapHTML:         html,
+		ProcessTime:     planElapsed.Seconds(),
 	}
 }
 
