@@ -1,10 +1,10 @@
 [Unit]
-Description=Flare Daemon — 24/7 VPS monitoring agent
+Description=Arahin Daemon — Route planning AI agent
 After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/flare daemon
+ExecStart=/usr/local/bin/arahin daemon
 Restart=always
 RestartSec=10
 StandardOutput=journal
@@ -15,7 +15,7 @@ NoNewPrivileges=yes
 PrivateDevices=yes
 ProtectSystem=strict
 ProtectHome=read-only
-ReadWritePaths=/root/.local/state/flare /root/.config/flare
+ReadWritePaths=/root/.local/state/arahin /root/.config/arahin
 
 [Install]
 WantedBy=multi-user.target
