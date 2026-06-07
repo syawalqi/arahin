@@ -64,6 +64,48 @@ type tcStreamDelta struct {
 	} `json:"function,omitempty"`
 }
 
+// ChatCollect calls ChatStream internally and collects the full content.
+// For reasoning models (DeepSeek V4 Flash), content may come in reasoning_content events.
+// Returns collected content + any tool calls + reasoning_content for history preservation.
+func (p *OpenAIProvider) ChatCollect(ctx context.Context, req ChatRequest) (*ChatResponse, error) {
+	req.Stream = true
+	events, err := p.ChatStream(ctx, req)
+	if err != nil {
+		return nil, fmt.Errorf("stream: %w", err)
+	}
+
+	var content, reasoning strings.Builder
+	var toolCalls []ToolCall
+
+	for evt := range events {
+		switch evt.Type {
+		case EventToken:
+			content.WriteString(evt.Content)
+		case EventReasoning:
+			reasoning.WriteString(evt.Content)
+		case EventToolCall:
+			if evt.ToolCallDelta != nil {
+				toolCalls = append(toolCalls, *evt.ToolCallDelta)
+			}
+		case EventError:
+			return nil, fmt.Errorf("stream error: %w", evt.Error)
+		case EventDone:
+		}
+	}
+
+	// Use content if available, otherwise fall back to reasoning
+	finalContent := content.String()
+	if finalContent == "" {
+		finalContent = reasoning.String()
+	}
+
+	return &ChatResponse{
+		Content:          finalContent,
+		ReasoningContent: reasoning.String(),
+		ToolCalls:        toolCalls,
+	}, nil
+}
+
 func (p *OpenAIProvider) authHeader() (string, string) {
 	return "Authorization", "Bearer " + p.apiKey
 }
@@ -120,14 +162,16 @@ func (p *OpenAIProvider) Chat(ctx context.Context, req ChatRequest) (*ChatRespon
 
 	msg := result.Choices[0].Message
 	content := msg.Content
-	if content == "" && msg.ReasoningContent != "" {
+	if content == "" && msg.ReasoningContent != "" && len(msg.ToolCalls) == 0 {
+		// No tool calls and no content: reasoning model put output in reasoning_content
 		content = msg.ReasoningContent
 	}
 
 	return &ChatResponse{
-		Content:   content,
-		ToolCalls: msg.ToolCalls,
-		Usage:     result.Usage,
+		Content:          content,
+		ReasoningContent: msg.ReasoningContent,
+		ToolCalls:        msg.ToolCalls,
+		Usage:            result.Usage,
 	}, nil
 }
 

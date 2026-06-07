@@ -48,7 +48,7 @@ func (e *AgentEngine) Plan(ctx context.Context, prompt string) ([]Waypoint, erro
 	seenPlaces := make(map[string]bool) // track already-geocoded places to avoid repeats
 
 	for turn := 0; turn < e.maxTurns; turn++ {
-		resp, err := e.llm.Chat(ctx, llm.ChatRequest{
+		resp, err := e.llm.ChatCollect(ctx, llm.ChatRequest{
 			Model:       e.model,
 			Temperature: 0.3,
 			MaxTokens:   2048,
@@ -75,11 +75,12 @@ func (e *AgentEngine) Plan(ctx context.Context, prompt string) ([]Waypoint, erro
 		}
 
 		// LLM wants to call tools
-		// Append assistant message with tool calls
+		// Append assistant message with tool calls — preserve reasoning_content for DeepSeek
 		assistantMsg := llm.Message{
-			Role:      llm.RoleAssistant,
-			Content:   "",
-			ToolCalls: make([]llm.ToolCall, len(resp.ToolCalls)),
+			Role:             llm.RoleAssistant,
+			Content:          "",
+			ReasoningContent: resp.ReasoningContent,
+			ToolCalls:        make([]llm.ToolCall, len(resp.ToolCalls)),
 		}
 		copy(assistantMsg.ToolCalls, resp.ToolCalls)
 		messages = append(messages, assistantMsg)

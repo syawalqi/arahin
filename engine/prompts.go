@@ -4,21 +4,15 @@ import "github.com/syawalqi/arahin/llm"
 
 // System prompts for the 3 modes, copied from V2 Implementation Guide.
 
-const BarePrompt = `Extract all waypoints as a flat JSON array of strings.
-Include city: ["Monas, Jakarta", "sate dekat Cawang", "Taman Mini, Jakarta"]
-Output ONLY the JSON array.`
+const BarePrompt = `Extract all waypoints as a JSON array of strings.
+Each waypoint includes the city name.
+Return ONLY the JSON array. No thinking.
+Example: ["Monas, Jakarta", "sate dekat Cawang", "Taman Mini, Jakarta"]`
 
-const PipelinePrompt = `Classify each waypoint in this route description into task types.
-Output ONLY a JSON array of task objects:
-- "type": "named" (exact place — geocode it), "query" (vague description — POI search), or "category" (amenity type — POI search)
-- "place": for named types, the place name with city context
-- "query" or "category": for POI search types
-- "anchor": for POI search types, the nearest named place as search center
-
-Output tasks in route sequence order: start → mid stops → destination.
-Search/category tasks belong immediately after their anchor point.
-
-Example: [{"type": "named", "place": "Monas, Jakarta"}, {"type": "query", "query": "sate", "anchor": "Cawang, Jakarta"}, {"type": "named", "place": "Taman Mini, Jakarta"}]`
+const PipelinePrompt = `Extract all waypoints as a JSON array of strings.
+Include city context. Put vague descriptions and POI types (masjid, restoran, etc.) as separate entries.
+Return ONLY the JSON array. No thinking.
+Example: ["Monas, Jakarta", "sate dekat Cawang", "Taman Mini, Jakarta"]`
 
 const AgentPrompt = `You are ARAHIN. Extract waypoints from the user's route request.
 Be terse. No greetings, no emoji, no explanations.

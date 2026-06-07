@@ -177,56 +177,92 @@ if (bounds.length > 0) map.fitBounds(bounds, {padding: [50, 50]});
 }
 
 function app() {
-return {
-prompt: '',
-mode: 'pipeline',
-busy: false,
-result: null,
-plan: function() {
-if (!this.prompt.trim() || this.busy) return;
-this.busy = true;
-this.result = null;
-var logEl = this.$refs.log;
-logEl.innerHTML = '<div class="info">Planning route...</div>';
+	return {
+		prompt: '',
+		mode: 'pipeline',
+		busy: false,
+		result: null,
+		plan: function() {
+			if (!this.prompt.trim() || this.busy) return;
+			this.busy = true;
+			this.result = null;
+			var logEl = this.$refs.log;
+			logEl.innerHTML = '';
 
-initMap();
+			initMap();
 
-// Non-streaming endpoint for simplicity
-var self = this;
-fetch('/api/route', {
-method: 'POST',
-headers: {'Content-Type': 'application/json'},
-body: JSON.stringify({prompt: this.prompt, mode: this.mode})
-})
-.then(function(r) { return r.json(); })
-.then(function(data) {
-self.busy = false;
-if (data.error) {
-logEl.innerHTML = '<div class="error">Error: ' + data.error + '</div>';
-return;
-}
-var html = '';
-data.events.forEach(function(evt) {
-if (evt.type === 'reasoning') html += '<div class="reasoning">' + escapeHtml(evt.content) + '</div>';
-else if (evt.type === 'tool_call') html += '<div class="tool">' + escapeHtml(evt.content) + '</div>';
-else if (evt.type === 'result') html += '<div class="result">' + escapeHtml(evt.content) + '</div>';
-else if (evt.type === 'waypoints') html += '<div class="result">Waypoints: ' + escapeHtml(evt.content) + '</div>';
-else if (evt.type === 'error') html += '<div class="error">Error: ' + escapeHtml(evt.content) + '</div>';
-});
-logEl.innerHTML = html;
-logEl.scrollTop = logEl.scrollHeight;
+			var self = this;
+			var encodedPrompt = encodeURIComponent(this.prompt);
+			var url = '/api/route/stream?prompt=' + encodedPrompt + '&mode=' + this.mode;
+			var source = new EventSource(url);
+			var lastHTML = '';
 
-if (data.waypoints && data.waypoints.length > 0) {
-plotRoute(data.waypoints, data.segments);
-self.result = {waypoints: data.waypoints, total_distance_km: data.total_distance_km, total_duration_min: data.total_duration_min};
-}
-})
-.catch(function(err) {
-self.busy = false;
-logEl.innerHTML = '<div class="error">Network error: ' + err.message + '</div>';
-});
-}
-};
+			source.addEventListener('reasoning', function(e) {
+				logEl.innerHTML += '<div class="reasoning">' + escapeHtml(e.data) + '</div>';
+				logEl.scrollTop = logEl.scrollHeight;
+			});
+
+			source.addEventListener('waypoints', function(e) {
+				logEl.innerHTML += '<div class="result">Waypoints: ' + escapeHtml(e.data) + '</div>';
+				logEl.scrollTop = logEl.scrollHeight;
+			});
+
+			source.addEventListener('tool_call', function(e) {
+				logEl.innerHTML += '<div class="tool">' + escapeHtml(e.data) + '</div>';
+				logEl.scrollTop = logEl.scrollHeight;
+			});
+
+			source.addEventListener('result', function(e) {
+				logEl.innerHTML += '<div class="result">' + escapeHtml(e.data) + '</div>';
+				logEl.scrollTop = logEl.scrollHeight;
+			});
+
+			source.addEventListener('error', function(e) {
+				logEl.innerHTML += '<div class="error">Error: ' + escapeHtml(e.data) + '</div>';
+				logEl.scrollTop = logEl.scrollHeight;
+			});
+
+			source.addEventListener('map', function(e) {
+				try {
+					var data = JSON.parse(e.data);
+					if (data.waypoints) {
+						plotRoute(data.waypoints, data.segments);
+						self.result = {waypoints: data.waypoints, total_distance_km: data.total_distance_km, total_duration_min: data.total_duration_min};
+					}
+				} catch(err) {
+					// map HTML is too large for SSE event, use POST endpoint for final data
+				}
+			});
+
+			source.addEventListener('done', function() {
+				source.close();
+				self.busy = false;
+				// Fetch final result from POST endpoint
+				fetch('/api/route', {
+					method: 'POST',
+					headers: {'Content-Type': 'application/json'},
+					body: JSON.stringify({prompt: self.prompt, mode: self.mode})
+				})
+				.then(function(r) { return r.json(); })
+				.then(function(data) {
+					if (data.waypoints && data.waypoints.length > 0) {
+						plotRoute(data.waypoints, data.segments);
+						self.result = {waypoints: data.waypoints, total_distance_km: data.total_distance_km, total_duration_min: data.total_duration_min};
+					}
+				})
+				.catch(function() {});
+			});
+
+			source.onerror = function() {
+				source.close();
+				self.busy = false;
+				logEl.innerHTML += '<div class="error">Connection lost.</div>';
+			};
+
+			// Fetch final result after stream completes
+			self._finalSource = source;
+		}
+	};
 }
 
 function escapeHtml(s) {
@@ -284,7 +320,7 @@ func (s *Server) handleRoute(w http.ResponseWriter, r *http.Request) {
 	ctx, cancel := context.WithTimeout(r.Context(), 120*time.Second)
 	defer cancel()
 
-	resp := s.runRoute(ctx, req.Prompt, req.Mode)
+	resp := s.runRoute(ctx, req.Prompt, req.Mode, nil)
 
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(resp)
@@ -313,37 +349,41 @@ func (s *Server) handleRouteStream(w http.ResponseWriter, r *http.Request) {
 	ctx, cancel := context.WithTimeout(r.Context(), 120*time.Second)
 	defer cancel()
 
-	// For SSE, we do non-streaming API calls but report each phase
-	// In a full implementation this would use the streaming LLM API
-	resp := s.runRoute(ctx, prompt, mode)
+	// Run route with real-time SSE streaming via callback
+	done := make(chan struct{})
+	var resp routeResponse
+
+	go func() {
+		resp = s.runRoute(ctx, prompt, mode, func(typ, content string) {
+			jsonData, _ := json.Marshal(map[string]string{"type": typ, "content": content})
+			fmt.Fprintf(w, "event: %s\ndata: %s\n\n", typ, jsonData)
+			flusher.Flush()
+		})
+		close(done)
+	}()
+
+	<-done
 
 	if resp.Error != "" {
-		fmt.Fprintf(w, "event: error\ndata: %s\n\n", resp.Error)
-		flusher.Flush()
-		return
+		// Error already sent via callback
 	}
-
-	for _, evt := range resp.Events {
-		jsonData, _ := json.Marshal(map[string]string{"type": evt.Type, "content": evt.Content})
-		fmt.Fprintf(w, "event: %s\ndata: %s\n\n", evt.Type, jsonData)
-		flusher.Flush()
-		time.Sleep(100 * time.Millisecond)
-	}
-
 	if resp.MapHTML != "" {
 		fmt.Fprintf(w, "event: map\ndata: %s\n\n", resp.MapHTML)
 		flusher.Flush()
 	}
-
 	fmt.Fprintf(w, "event: done\ndata: {}\n\n")
 	flusher.Flush()
 }
 
 // runRoute executes the full route planning pipeline.
-func (s *Server) runRoute(ctx context.Context, prompt, mode string) routeResponse {
+// sendEvent is an optional callback for real-time streaming (SSE).
+func (s *Server) runRoute(ctx context.Context, prompt, mode string, sendEvent func(typ, content string)) routeResponse {
 	events := make([]routeEvent, 0)
 	addEvent := func(typ, content string) {
 		events = append(events, routeEvent{Type: typ, Content: content})
+		if sendEvent != nil {
+			sendEvent(typ, content)
+		}
 	}
 
 	modeName := mode

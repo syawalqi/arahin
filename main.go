@@ -46,11 +46,26 @@ func main() {
 			os.Exit(1)
 		}
 	case "route":
-		if len(os.Args) < 3 {
-			fmt.Fprintln(os.Stderr, "usage: arahin route <prompt>")
+		// Parse --mode flag from args
+		mode := cfg.Route.Mode
+		args := os.Args[2:]
+		promptParts := make([]string, 0)
+		for i := 0; i < len(args); i++ {
+			if args[i] == "--mode" && i+1 < len(args) {
+				mode = args[i+1]
+				i++
+			} else if strings.HasPrefix(args[i], "--mode=") {
+				mode = args[i][len("--mode="):]
+			} else {
+				promptParts = append(promptParts, args[i])
+			}
+		}
+		if len(promptParts) == 0 {
+			fmt.Fprintln(os.Stderr, "usage: arahin route [--mode bare|pipeline|agent] <prompt>")
 			os.Exit(1)
 		}
-		prompt := strings.Join(os.Args[2:], " ")
+		prompt := strings.Join(promptParts, " ")
+		cfg.Route.Mode = mode
 		if err := cmd.Route(cfg, prompt); err != nil {
 			fmt.Fprintf(os.Stderr, "route error: %v\n", err)
 			os.Exit(1)

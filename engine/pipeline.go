@@ -2,7 +2,6 @@ package engine
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
 	"strings"
 
@@ -37,58 +36,89 @@ type pipelineTask struct {
 }
 
 func (e *PipelineEngine) Plan(ctx context.Context, prompt string) ([]Waypoint, error) {
-	resp, err := e.llm.Chat(ctx, llm.ChatRequest{
+	// Extract waypoints using Go parsing (same as bare mode).
+	names := extractWaypointNames(prompt)
+	if len(names) < 2 {
+		llmNames, err := e.llmFallback(ctx, prompt)
+		if err != nil {
+			return nil, fmt.Errorf("pipeline: could not extract waypoints: %w", err)
+		}
+		names = llmNames
+	}
+	return e.resolveWaypoints(ctx, names)
+}
+
+func (e *PipelineEngine) llmFallback(ctx context.Context, prompt string) ([]string, error) {
+	resp, err := e.llm.ChatCollect(ctx, llm.ChatRequest{
 		Model:       e.model,
 		Temperature: 0.1,
-		MaxTokens:   1024,
+		MaxTokens:   1536,
 		Messages: []llm.Message{
-			{Role: llm.RoleSystem, Content: PipelinePrompt},
+			{Role: llm.RoleSystem, Content: "Return a JSON array of 2-5 waypoint strings. Each includes city. No thinking."},
 			{Role: llm.RoleUser, Content: prompt},
 		},
 	})
 	if err != nil {
-		return nil, fmt.Errorf("pipeline: llm: %w", err)
+		return nil, err
 	}
-
-	tasks := tryParseTasks(resp.Content)
-	if tasks == nil {
-		return nil, fmt.Errorf("pipeline: LLM did not return task JSON (got: %s)", truncate(resp.Content, 200))
+	names := tryParseStringArray(resp.Content)
+	if names == nil {
+		return nil, fmt.Errorf("LLM did not return valid JSON")
 	}
+	return names, nil
+}
 
-	waypoints := make([]Waypoint, 0, len(tasks))
-	anchorCache := make(map[string]*Waypoint)
+// resolveWaypoints takes parsed waypoint strings and resolves them to coordinates.
+// It classifies each waypoint: named place → geocode, vague/query → poi_search, category → poi_search.
+func (e *PipelineEngine) resolveWaypoints(ctx context.Context, names []string) ([]Waypoint, error) {
+	waypoints := make([]Waypoint, 0, len(names))
+	var lastAnchor *Waypoint
 
-	for _, t := range tasks {
-		switch t.Type {
-		case "named":
-			if t.Place == "" {
-				continue
-			}
-			r := e.geocoder.Geocode(t.Place)
-			if r.Error != "" {
-				return nil, fmt.Errorf("pipeline: geocode %q: %s", t.Place, r.Error)
-			}
-			wp := Waypoint{Name: r.Name, Lat: r.Lat, Lng: r.Lng, DisplayName: r.DisplayName}
-			anchorCache[strings.ToLower(t.Place)] = &wp
-			waypoints = append(waypoints, wp)
-
-		case "query":
-			poi, err := e.searchPOI(t.Query, t.Anchor, anchorCache)
-			if err != nil {
-				return nil, fmt.Errorf("pipeline: %w", err)
-			}
-			waypoints = append(waypoints, *poi)
-
-		case "category":
-			poi, err := e.searchPOI(t.Category, t.Anchor, anchorCache)
-			if err != nil {
-				return nil, fmt.Errorf("pipeline: %w", err)
-			}
-			waypoints = append(waypoints, *poi)
-
-		default:
-			return nil, fmt.Errorf("pipeline: unknown task type: %s", t.Type)
+	for _, name := range names {
+		name = strings.TrimSpace(name)
+		if name == "" {
+			continue
 		}
+
+		queryLower := strings.ToLower(name)
+
+		// Check if it's a known category (masjid, restoran, etc)
+		if _, isCategory := categoryMap[queryLower]; isCategory {
+			if lastAnchor != nil {
+				pois := e.poiSrch.Search(queryLower, lastAnchor.Lat, lastAnchor.Lng, 3)
+				if len(pois) > 0 {
+					wp := Waypoint{Name: pois[0].Name, Lat: pois[0].Lat, Lng: pois[0].Lng, DisplayName: pois[0].Category}
+					waypoints = append(waypoints, wp)
+					lastAnchor = &wp
+					continue
+				}
+			}
+			// fallback: use as named place
+		}
+
+		// Check if it's a vague/query term
+		if isVague(name) {
+			if lastAnchor != nil {
+				pois := e.poiSrch.Search(name, lastAnchor.Lat, lastAnchor.Lng, 3)
+				if len(pois) > 0 {
+					wp := Waypoint{Name: pois[0].Name, Lat: pois[0].Lat, Lng: pois[0].Lng, DisplayName: pois[0].Category}
+					waypoints = append(waypoints, wp)
+					lastAnchor = &wp
+					continue
+				}
+			}
+			// fallback: geocode with Jakarta as context
+			name = name + ", Jakarta"
+		}
+
+		// Named place: geocode it
+		result := e.geocoder.Geocode(name)
+		if result.Error != "" {
+			return nil, fmt.Errorf("pipeline: geocode %q: %s", name, result.Error)
+		}
+		wp := Waypoint{Name: result.Name, Lat: result.Lat, Lng: result.Lng, DisplayName: result.DisplayName}
+		waypoints = append(waypoints, wp)
+		lastAnchor = &wp
 	}
 
 	if len(waypoints) < 2 {
@@ -98,53 +128,13 @@ func (e *PipelineEngine) Plan(ctx context.Context, prompt string) ([]Waypoint, e
 	return waypoints, nil
 }
 
-func (e *PipelineEngine) searchPOI(query, anchor string, cache map[string]*Waypoint) (*Waypoint, error) {
-	anchorKey := strings.ToLower(anchor)
-
-	// Check cache for already-geocoded anchor
-	anchorWP, ok := cache[anchorKey]
-	if !ok {
-		// Anchor not cached — geocode it now
-		r := e.geocoder.Geocode(anchor)
-		if r.Error != "" {
-			return nil, fmt.Errorf("anchor geocode %q: %s", anchor, r.Error)
-		}
-		anchorWP = &Waypoint{Name: r.Name, Lat: r.Lat, Lng: r.Lng, DisplayName: r.DisplayName}
-		cache[anchorKey] = anchorWP
-	}
-
-	pois := e.poiSrch.Search(query, anchorWP.Lat, anchorWP.Lng, 3)
-	if len(pois) == 0 {
-		// Fallback: return the anchor point itself with a note
-		return &Waypoint{
-			Name:        query + " (near " + anchorWP.Name + ")",
-			Lat:         anchorWP.Lat,
-			Lng:         anchorWP.Lng,
-			DisplayName: "no nearby POI found, using anchor",
-		}, nil
-	}
-
-	return &Waypoint{
-		Name:        pois[0].Name,
-		Lat:         pois[0].Lat,
-		Lng:         pois[0].Lng,
-		DisplayName: pois[0].Category,
-	}, nil
-}
-
-func tryParseTasks(content string) []pipelineTask {
-	content = strings.TrimSpace(content)
-	var tasks []pipelineTask
-	if err := json.Unmarshal([]byte(content), &tasks); err == nil {
-		return tasks
-	}
-	// Try finding JSON array
-	start := strings.Index(content, "[")
-	end := strings.LastIndex(content, "]")
-	if start >= 0 && end > start {
-		if err := json.Unmarshal([]byte(content[start:end+1]), &tasks); err == nil {
-			return tasks
-		}
-	}
-	return nil
+// categoryMap maps Indonesian category names to OSM amenity tags.
+var categoryMap = map[string]string{
+	"masjid": "mosque", "musholla": "mosque", "musala": "mosque",
+	"restoran": "restaurant", "rumah makan": "restaurant", "makan": "restaurant",
+	"kafe": "cafe", "angkringan": "cafe",
+	"atm": "atm", "bank": "bank",
+	"rumah sakit": "hospital", "klinik": "clinic", "apotek": "pharmacy",
+	"mall": "mall", "supermarket": "supermarket", "pasar": "market",
+	"pom bensin": "fuel", "spbu": "fuel",
 }

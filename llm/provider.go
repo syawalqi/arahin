@@ -12,10 +12,11 @@ const (
 )
 
 type Message struct {
-	Role       Role       `json:"role"`
-	Content    string     `json:"content"`
-	ToolCallID string     `json:"tool_call_id,omitempty"`
-	ToolCalls  []ToolCall `json:"tool_calls,omitempty"`
+	Role             Role       `json:"role"`
+	Content          string     `json:"content"`
+	ReasoningContent string     `json:"reasoning_content,omitempty"`
+	ToolCallID       string     `json:"tool_call_id,omitempty"`
+	ToolCalls        []ToolCall `json:"tool_calls,omitempty"`
 }
 
 type ToolCall struct {
@@ -50,9 +51,10 @@ type ChatRequest struct {
 }
 
 type ChatResponse struct {
-	Content   string
-	ToolCalls []ToolCall
-	Usage     Usage
+	Content          string
+	ReasoningContent string
+	ToolCalls        []ToolCall
+	Usage            Usage
 }
 
 type Usage struct {
@@ -118,6 +120,7 @@ func ResolveProvider(model, fallback string) string {
 
 type Provider interface {
 	Chat(ctx context.Context, req ChatRequest) (*ChatResponse, error)
+	ChatCollect(ctx context.Context, req ChatRequest) (*ChatResponse, error)
 	ChatStream(ctx context.Context, req ChatRequest) (<-chan StreamEvent, error)
 	Name() string
 	ListModels(ctx context.Context) ([]ModelInfo, error)
