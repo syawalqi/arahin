@@ -1,0 +1,655 @@
+ARAHIN Benchmark Runner
+  Dataset: 100 prompts
+  Modes: ['bare', 'pipeline', 'agent']
+  Total calls: 300
+  Timeout: 120s per call
+  Delay: 1s between calls
+
+[1/300] MSNTB-001 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[2/300] MSNTB-002 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[3/300] MSNTB-003 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[4/300] MSNTB-004 (easy) [bare]
+  → 2 waypoints, P=0.50 R=0.50 F1=0.50
+[5/300] MSNTB-005 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[6/300] MSNTB-006 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[7/300] MSNTB-007 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[8/300] MSNTB-008 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[9/300] MSNTB-009 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[10/300] MSNTB-010 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[11/300] MSNTB-011 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[12/300] MSNTB-012 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[13/300] MSNTB-013 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[14/300] MSNTB-014 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[15/300] MSNTB-015 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[16/300] MSNTB-016 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[17/300] MSNTB-017 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[18/300] MSNTB-018 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[19/300] MSNTB-019 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[20/300] MSNTB-020 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[21/300] MSNTB-021 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[22/300] MSNTB-022 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[23/300] MSNTB-023 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[24/300] MSNTB-024 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[25/300] MSNTB-025 (easy) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[26/300] MSNTB-026 (easy) [bare]
+  → 2 waypoints, P=0.50 R=0.50 F1=0.50
+[27/300] MSNTB-027 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[28/300] MSNTB-028 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[29/300] MSNTB-029 (easy) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[30/300] MSNTB-030 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[31/300] MSNTB-031 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[32/300] MSNTB-032 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[33/300] MSNTB-033 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[34/300] MSNTB-034 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[35/300] MSNTB-035 (easy) [bare]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[36/300] MSNTB-036 (medium) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[37/300] MSNTB-037 (medium) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[38/300] MSNTB-038 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[39/300] MSNTB-039 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[40/300] MSNTB-040 (medium) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[41/300] MSNTB-041 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[42/300] MSNTB-042 (medium) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[43/300] MSNTB-043 (medium) [bare]
+  → 4 waypoints, P=0.50 R=0.67 F1=0.57
+[44/300] MSNTB-044 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[45/300] MSNTB-045 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[46/300] MSNTB-046 (medium) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[47/300] MSNTB-047 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[48/300] MSNTB-048 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[49/300] MSNTB-049 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[50/300] MSNTB-050 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[51/300] MSNTB-051 (medium) [bare]
+  → 2 waypoints, P=0.50 R=0.33 F1=0.40
+[52/300] MSNTB-052 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[53/300] MSNTB-053 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[54/300] MSNTB-054 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[55/300] MSNTB-055 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[56/300] MSNTB-056 (medium) [bare]
+  → 4 waypoints, P=0.25 R=0.33 F1=0.29
+[57/300] MSNTB-057 (medium) [bare]
+  → 2 waypoints, P=0.50 R=0.33 F1=0.40
+[58/300] MSNTB-058 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[59/300] MSNTB-059 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[60/300] MSNTB-060 (medium) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[61/300] MSNTB-061 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[62/300] MSNTB-062 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[63/300] MSNTB-063 (medium) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[64/300] MSNTB-064 (medium) [bare]
+  → 2 waypoints, P=0.50 R=0.33 F1=0.40
+[65/300] MSNTB-065 (medium) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[66/300] MSNTB-066 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[67/300] MSNTB-067 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[68/300] MSNTB-068 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[69/300] MSNTB-069 (medium) [bare]
+  → 4 waypoints, P=0.50 R=0.67 F1=0.57
+[70/300] MSNTB-070 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[71/300] MSNTB-071 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[72/300] MSNTB-072 (medium) [bare]
+  → 4 waypoints, P=0.50 R=0.67 F1=0.57
+[73/300] MSNTB-073 (medium) [bare]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[74/300] MSNTB-074 (medium) [bare]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[75/300] MSNTB-075 (medium) [bare]
+  → 2 waypoints, P=0.50 R=0.33 F1=0.40
+[76/300] MSNTB-076 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[77/300] MSNTB-077 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[78/300] MSNTB-078 (hard) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[79/300] MSNTB-079 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[80/300] MSNTB-080 (hard) [bare]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[81/300] MSNTB-081 (hard) [bare]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[82/300] MSNTB-082 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[83/300] MSNTB-083 (hard) [bare]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[84/300] MSNTB-084 (hard) [bare]
+  → 2 waypoints, P=1.00 R=0.40 F1=0.57
+[85/300] MSNTB-085 (hard) [bare]
+  → 4 waypoints, P=0.75 R=0.60 F1=0.67
+[86/300] MSNTB-086 (hard) [bare]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[87/300] MSNTB-087 (hard) [bare]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[88/300] MSNTB-088 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[89/300] MSNTB-089 (hard) [bare]
+  → 2 waypoints, P=1.00 R=0.40 F1=0.57
+[90/300] MSNTB-090 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[91/300] MSNTB-091 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[92/300] MSNTB-092 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[93/300] MSNTB-093 (hard) [bare]
+  → 4 waypoints, P=0.75 R=0.60 F1=0.67
+[94/300] MSNTB-094 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[95/300] MSNTB-095 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[96/300] MSNTB-096 (hard) [bare]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[97/300] MSNTB-097 (hard) [bare]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[98/300] MSNTB-098 (hard) [bare]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[99/300] MSNTB-099 (hard) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[100/300] MSNTB-100 (hard) [bare]
+  ERROR: [ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+[101/300] MSNTB-001 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[102/300] MSNTB-002 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[103/300] MSNTB-003 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[104/300] MSNTB-004 (easy) [pipeline]
+  → 2 waypoints, P=0.50 R=0.50 F1=0.50
+[105/300] MSNTB-005 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[106/300] MSNTB-006 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[107/300] MSNTB-007 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[108/300] MSNTB-008 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[109/300] MSNTB-009 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[110/300] MSNTB-010 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[111/300] MSNTB-011 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[112/300] MSNTB-012 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[113/300] MSNTB-013 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[114/300] MSNTB-014 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[115/300] MSNTB-015 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[116/300] MSNTB-016 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[117/300] MSNTB-017 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[118/300] MSNTB-018 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[119/300] MSNTB-019 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[120/300] MSNTB-020 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[121/300] MSNTB-021 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[122/300] MSNTB-022 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[123/300] MSNTB-023 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[124/300] MSNTB-024 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[125/300] MSNTB-025 (easy) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[126/300] MSNTB-026 (easy) [pipeline]
+  → 2 waypoints, P=0.50 R=0.50 F1=0.50
+[127/300] MSNTB-027 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[128/300] MSNTB-028 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[129/300] MSNTB-029 (easy) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[130/300] MSNTB-030 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[131/300] MSNTB-031 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[132/300] MSNTB-032 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[133/300] MSNTB-033 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[134/300] MSNTB-034 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[135/300] MSNTB-035 (easy) [pipeline]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[136/300] MSNTB-036 (medium) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[137/300] MSNTB-037 (medium) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[138/300] MSNTB-038 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[139/300] MSNTB-039 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[140/300] MSNTB-040 (medium) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[141/300] MSNTB-041 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[142/300] MSNTB-042 (medium) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[143/300] MSNTB-043 (medium) [pipeline]
+  → 4 waypoints, P=0.50 R=0.67 F1=0.57
+[144/300] MSNTB-044 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[145/300] MSNTB-045 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[146/300] MSNTB-046 (medium) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[147/300] MSNTB-047 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[148/300] MSNTB-048 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[149/300] MSNTB-049 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[150/300] MSNTB-050 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[151/300] MSNTB-051 (medium) [pipeline]
+  → 2 waypoints, P=0.50 R=0.33 F1=0.40
+[152/300] MSNTB-052 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[153/300] MSNTB-053 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[154/300] MSNTB-054 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[155/300] MSNTB-055 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[156/300] MSNTB-056 (medium) [pipeline]
+  → 4 waypoints, P=0.25 R=0.33 F1=0.29
+[157/300] MSNTB-057 (medium) [pipeline]
+  → 2 waypoints, P=0.50 R=0.33 F1=0.40
+[158/300] MSNTB-058 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[159/300] MSNTB-059 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[160/300] MSNTB-060 (medium) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[161/300] MSNTB-061 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[162/300] MSNTB-062 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[163/300] MSNTB-063 (medium) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[164/300] MSNTB-064 (medium) [pipeline]
+  → 2 waypoints, P=0.50 R=0.33 F1=0.40
+[165/300] MSNTB-065 (medium) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[166/300] MSNTB-066 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[167/300] MSNTB-067 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[168/300] MSNTB-068 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[169/300] MSNTB-069 (medium) [pipeline]
+  → 4 waypoints, P=0.50 R=0.67 F1=0.57
+[170/300] MSNTB-070 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[171/300] MSNTB-071 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[172/300] MSNTB-072 (medium) [pipeline]
+  → 4 waypoints, P=0.50 R=0.67 F1=0.57
+[173/300] MSNTB-073 (medium) [pipeline]
+  → 2 waypoints, P=1.00 R=0.67 F1=0.80
+[174/300] MSNTB-074 (medium) [pipeline]
+  → 4 waypoints, P=0.75 R=1.00 F1=0.86
+[175/300] MSNTB-075 (medium) [pipeline]
+  → 2 waypoints, P=0.50 R=0.33 F1=0.40
+[176/300] MSNTB-076 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[177/300] MSNTB-077 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[178/300] MSNTB-078 (hard) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[179/300] MSNTB-079 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[180/300] MSNTB-080 (hard) [pipeline]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[181/300] MSNTB-081 (hard) [pipeline]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[182/300] MSNTB-082 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[183/300] MSNTB-083 (hard) [pipeline]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[184/300] MSNTB-084 (hard) [pipeline]
+  → 2 waypoints, P=1.00 R=0.40 F1=0.57
+[185/300] MSNTB-085 (hard) [pipeline]
+  → 4 waypoints, P=0.75 R=0.60 F1=0.67
+[186/300] MSNTB-086 (hard) [pipeline]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[187/300] MSNTB-087 (hard) [pipeline]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[188/300] MSNTB-088 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[189/300] MSNTB-089 (hard) [pipeline]
+  → 2 waypoints, P=1.00 R=0.40 F1=0.57
+[190/300] MSNTB-090 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[191/300] MSNTB-091 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[192/300] MSNTB-092 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[193/300] MSNTB-093 (hard) [pipeline]
+  → 4 waypoints, P=0.75 R=0.60 F1=0.67
+[194/300] MSNTB-094 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[195/300] MSNTB-095 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[196/300] MSNTB-096 (hard) [pipeline]
+  → 3 waypoints, P=0.67 R=0.40 F1=0.50
+[197/300] MSNTB-097 (hard) [pipeline]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[198/300] MSNTB-098 (hard) [pipeline]
+  → 3 waypoints, P=1.00 R=0.60 F1=0.75
+[199/300] MSNTB-099 (hard) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[200/300] MSNTB-100 (hard) [pipeline]
+  ERROR: [ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints
+[201/300] MSNTB-001 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[202/300] MSNTB-002 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[203/300] MSNTB-003 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[204/300] MSNTB-004 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[205/300] MSNTB-005 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[206/300] MSNTB-006 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[207/300] MSNTB-007 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[208/300] MSNTB-008 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[209/300] MSNTB-009 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[210/300] MSNTB-010 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[211/300] MSNTB-011 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[212/300] MSNTB-012 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[213/300] MSNTB-013 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[214/300] MSNTB-014 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[215/300] MSNTB-015 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[216/300] MSNTB-016 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[217/300] MSNTB-017 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[218/300] MSNTB-018 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[219/300] MSNTB-019 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[220/300] MSNTB-020 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[221/300] MSNTB-021 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[222/300] MSNTB-022 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[223/300] MSNTB-023 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[224/300] MSNTB-024 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[225/300] MSNTB-025 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[226/300] MSNTB-026 (easy) [agent]
+  → 2 waypoints, P=0.50 R=0.50 F1=0.50
+[227/300] MSNTB-027 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[228/300] MSNTB-028 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[229/300] MSNTB-029 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[230/300] MSNTB-030 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[231/300] MSNTB-031 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[232/300] MSNTB-032 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[233/300] MSNTB-033 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[234/300] MSNTB-034 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[235/300] MSNTB-035 (easy) [agent]
+  → 2 waypoints, P=1.00 R=1.00 F1=1.00
+[236/300] MSNTB-036 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[237/300] MSNTB-037 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[238/300] MSNTB-038 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[239/300] MSNTB-039 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[240/300] MSNTB-040 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[241/300] MSNTB-041 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[242/300] MSNTB-042 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[243/300] MSNTB-043 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[244/300] MSNTB-044 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[245/300] MSNTB-045 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[246/300] MSNTB-046 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[247/300] MSNTB-047 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[248/300] MSNTB-048 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[249/300] MSNTB-049 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[250/300] MSNTB-050 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[251/300] MSNTB-051 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[252/300] MSNTB-052 (medium) [agent]
+  → 3 waypoints, P=0.67 R=0.67 F1=0.67
+[253/300] MSNTB-053 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[254/300] MSNTB-054 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[255/300] MSNTB-055 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[256/300] MSNTB-056 (medium) [agent]
+  → 3 waypoints, P=0.67 R=0.67 F1=0.67
+[257/300] MSNTB-057 (medium) [agent]
+  → 3 waypoints, P=0.67 R=0.67 F1=0.67
+[258/300] MSNTB-058 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[259/300] MSNTB-059 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[260/300] MSNTB-060 (medium) [agent]
+  → 3 waypoints, P=0.33 R=0.33 F1=0.33
+[261/300] MSNTB-061 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[262/300] MSNTB-062 (medium) [agent]
+  → 3 waypoints, P=0.67 R=0.67 F1=0.67
+[263/300] MSNTB-063 (medium) [agent]
+  → 3 waypoints, P=0.67 R=0.67 F1=0.67
+[264/300] MSNTB-064 (medium) [agent]
+  ERROR: [ARAHIN] Mode: agent | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+[265/300] MSNTB-065 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[266/300] MSNTB-066 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[267/300] MSNTB-067 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[268/300] MSNTB-068 (medium) [agent]
+  → 3 waypoints, P=0.67 R=0.67 F1=0.67
+[269/300] MSNTB-069 (medium) [agent]
+  → 3 waypoints, P=0.67 R=0.67 F1=0.67
+[270/300] MSNTB-070 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[271/300] MSNTB-071 (medium) [agent]
+  → 3 waypoints, P=0.67 R=0.67 F1=0.67
+[272/300] MSNTB-072 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[273/300] MSNTB-073 (medium) [agent]
+  → 3 waypoints, P=1.00 R=1.00 F1=1.00
+[274/300] MSNTB-074 (medium) [agent]
+  → 3 waypoints, P=0.67 R=0.67 F1=0.67
+[275/300] MSNTB-075 (medium) [agent]
+  → 3 waypoints, P=0.67 R=0.67 F1=0.67
+[276/300] MSNTB-076 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[277/300] MSNTB-077 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[278/300] MSNTB-078 (hard) [agent]
+  → 4 waypoints, P=1.00 R=1.00 F1=1.00
+[279/300] MSNTB-079 (hard) [agent]
+  → 5 waypoints, P=0.80 R=0.80 F1=0.80
+[280/300] MSNTB-080 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[281/300] MSNTB-081 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[282/300] MSNTB-082 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[283/300] MSNTB-083 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[284/300] MSNTB-084 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[285/300] MSNTB-085 (hard) [agent]
+  → 5 waypoints, P=0.80 R=0.80 F1=0.80
+[286/300] MSNTB-086 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[287/300] MSNTB-087 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[288/300] MSNTB-088 (hard) [agent]
+  → 5 waypoints, P=0.80 R=0.80 F1=0.80
+[289/300] MSNTB-089 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[290/300] MSNTB-090 (hard) [agent]
+  → 5 waypoints, P=0.80 R=0.80 F1=0.80
+[291/300] MSNTB-091 (hard) [agent]
+  → 5 waypoints, P=0.80 R=0.80 F1=0.80
+[292/300] MSNTB-092 (hard) [agent]
+  → 5 waypoints, P=0.80 R=0.80 F1=0.80
+[293/300] MSNTB-093 (hard) [agent]
+  ERROR: [ARAHIN] Mode: agent | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+[294/300] MSNTB-094 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[295/300] MSNTB-095 (hard) [agent]
+  → 5 waypoints, P=0.60 R=0.60 F1=0.60
+[296/300] MSNTB-096 (hard) [agent]
+  → 5 waypoints, P=0.80 R=0.80 F1=0.80
+[297/300] MSNTB-097 (hard) [agent]
+  → 5 waypoints, P=1.00 R=1.00 F1=1.00
+[298/300] MSNTB-098 (hard) [agent]
+  → 5 waypoints, P=0.80 R=0.80 F1=0.80
+[299/300] MSNTB-099 (hard) [agent]
+  → 5 waypoints, P=0.80 R=1.00 F1=0.89
+[300/300] MSNTB-100 (hard) [agent]
+  ERROR: [ARAHIN] Mode: agent | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+
+Benchmark complete: 300 calls, 29 errors
+Results saved to: /root/arahin/benchmark/results
+  bare: P=0.748 R=0.659 F1=0.687 (n=100)
+  pipeline: P=0.748 R=0.659 F1=0.687 (n=100)
+  agent: P=0.903 R=0.905 F1=0.904 (n=100)

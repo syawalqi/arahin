@@ -1,0 +1,388 @@
+id,difficulty,mode,prompt,n_ground_truth,n_extracted,tp,fp,fn,precision,recall,f1,total_distance_km,total_time_min,error
+MSNTB-001,easy,bare,Dari Monas ke Museum Nasional,2,2,2,0,0,1.0,1.0,1.0,2.9,4,
+MSNTB-002,easy,bare,Dari Masjid Istiqlal ke Gereja Katedral,2,2,2,0,0,1.0,1.0,1.0,520.6,679,
+MSNTB-003,easy,bare,Dari Kota Tua ke Ancol,2,2,2,0,0,1.0,1.0,1.0,6.6,6,
+MSNTB-004,easy,bare,Dari Grand Indonesia ke Plaza Senayan,2,2,1,1,1,0.5,0.5,0.5,0.0,0,
+MSNTB-005,easy,bare,Dari Ragunan ke Taman Mini,2,2,2,0,0,1.0,1.0,1.0,10.6,10,
+MSNTB-006,easy,bare,Dari Sarinah ke Bundaran HI,2,2,2,0,0,1.0,1.0,1.0,1.2,2,
+MSNTB-007,easy,bare,Dari Kemang ke Kuningan,2,2,2,0,0,1.0,1.0,1.0,249.2,191,
+MSNTB-008,easy,bare,Dari Senayan City ke SCBD,2,2,2,0,0,1.0,1.0,1.0,5.6,6,
+MSNTB-009,easy,bare,Dari Gondangdia ke Cikini,2,2,2,0,0,1.0,1.0,1.0,2.4,4,
+MSNTB-010,easy,bare,Dari Taman Ismail Marzuki ke Taman Suropati,2,2,2,0,0,1.0,1.0,1.0,2.9,5,
+MSNTB-011,easy,bare,Dari Pasar Senen ke Salemba,2,2,2,0,0,1.0,1.0,1.0,2345.5,3621,
+MSNTB-012,easy,bare,Dari Kelapa Gading ke Sunter,2,2,2,0,0,1.0,1.0,1.0,5.4,7,
+MSNTB-013,easy,bare,Dari Pluit ke Pantai Indah Kapuk,2,2,2,0,0,1.0,1.0,1.0,8.9,12,
+MSNTB-014,easy,bare,Dari Grogol ke Slipi,2,2,2,0,0,1.0,1.0,1.0,8.8,7,
+MSNTB-015,easy,bare,Dari Mangga Dua ke Kemayoran,2,2,2,0,0,1.0,1.0,1.0,4.1,5,
+MSNTB-016,easy,bare,Dari Tebet ke Pancoran,2,2,2,0,0,1.0,1.0,1.0,7.9,9,
+MSNTB-017,easy,bare,Dari Kalibata ke Pasar Minggu,2,2,2,0,0,1.0,1.0,1.0,2.9,3,
+MSNTB-018,easy,bare,Dari Condet ke Ragunan,2,2,2,0,0,1.0,1.0,1.0,6.3,8,
+MSNTB-019,easy,bare,Dari Palmerah ke Kemanggisan,2,2,2,0,0,1.0,1.0,1.0,7.9,7,
+MSNTB-020,easy,bare,Dari Pondok Indah ke Cilandak,2,2,2,0,0,1.0,1.0,1.0,4.3,4,
+MSNTB-021,easy,bare,Dari Lebak Bulus ke Fatmawati,2,2,2,0,0,1.0,1.0,1.0,7.0,8,
+MSNTB-022,easy,bare,Dari Malioboro ke Kraton,2,2,2,0,0,1.0,1.0,1.0,2.2,4,
+MSNTB-023,easy,bare,Dari Tugu Yogyakarta ke Taman Sari,2,2,2,0,0,1.0,1.0,1.0,7.1,9,
+MSNTB-024,easy,bare,Dari Prambanan ke Borobudur,2,2,2,0,0,1.0,1.0,1.0,53.3,45,
+MSNTB-025,easy,bare,Dari Benteng Vredenburg ke Beringharjo,2,0,0,0,2,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""Benteng vredenburg"": geocode failed: Benteng vredenburg
+"
+MSNTB-026,easy,bare,Dari Monjali ke UGM,2,2,1,1,1,0.5,0.5,0.5,3.8,6,
+MSNTB-027,easy,bare,Dari Malioboro ke Nol Kilometer,2,2,2,0,0,1.0,1.0,1.0,822.5,1327,
+MSNTB-028,easy,bare,Dari Kraton ke Taman Sari,2,2,2,0,0,1.0,1.0,1.0,13.5,15,
+MSNTB-029,easy,bare,Dari Sonobodoyo ke Museum Affandi,2,0,0,0,2,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""Sonobodoyo"": geocode failed: Sonobodoyo
+"
+MSNTB-030,easy,bare,Dari Kotagede ke Ratu Boko,2,2,2,0,0,1.0,1.0,1.0,17.1,18,
+MSNTB-031,easy,bare,Dari Gedung Sate ke Alun-Alun Bandung,2,2,2,0,0,1.0,1.0,1.0,4.0,5,
+MSNTB-032,easy,bare,Dari Braga ke Cihampelas,2,2,2,0,0,1.0,1.0,1.0,0.0,0,
+MSNTB-033,easy,bare,Dari Paris Van Java ke Trans Studio,2,2,2,0,0,1.0,1.0,1.0,0.0,0,
+MSNTB-034,easy,bare,Dari Dago ke Tebing Keraton,2,2,2,0,0,1.0,1.0,1.0,177.1,151,
+MSNTB-035,easy,bare,Dari Stasiun Bandung ke Gedung Sate,2,2,2,0,0,1.0,1.0,1.0,4.7,6,
+MSNTB-036,medium,bare,"Dari Monas ke Ragunan, mampir ke Kuningan dulu",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""Kuningan dulu"": geocode failed: Kuningan dulu
+"
+MSNTB-037,medium,bare,Rute dari Kota Tua lewat Ancol ke Mangga Dua,3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""Kota tua lewat ancol"": geocode failed: Kota tua lewat ancol
+"
+MSNTB-038,medium,bare,"Dari Grand Indonesia ke Istiqlal, mampir ke Sarinah",3,4,3,1,0,0.75,1.0,0.8571,5346.0,5894,
+MSNTB-039,medium,bare,"Dari Plaza Senayan ke Taman Mini, lewat Cawang",3,2,2,0,1,1.0,0.6667,0.8,16.2,15,
+MSNTB-040,medium,bare,"Mau jalan dari Bundaran HI ke Kemang, mampir makan dulu di Senayan",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""makan dulu di senayan"": geocode failed: makan dulu di senayan
+"
+MSNTB-041,medium,bare,"Dari Taman Ismail Marzuki ke Kalibata, lewat Cikini",3,2,2,0,1,1.0,0.6667,0.8,12.3,15,
+MSNTB-042,medium,bare,"Rute dari Senayan City ke Pasar Minggu, mampir ke Ragunan dulu",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""Ragunan dulu"": geocode failed: Ragunan dulu
+"
+MSNTB-043,medium,bare,"Dari Kuningan ke Gondangdia, mampir ke Taman Suropati",3,4,2,2,1,0.5,0.6667,0.5714,252.4,193,
+MSNTB-044,medium,bare,"Dari SCBD ke Tebet, lewat Pancoran",3,2,2,0,1,1.0,0.6667,0.8,9.8,11,
+MSNTB-045,medium,bare,"Dari Kemayoran ke Condet, mampir ke Cawang",3,4,3,1,0,0.75,1.0,0.8571,31.6,34,
+MSNTB-046,medium,bare,"Mau ke Monas dari Kelapa Gading, mampir ke Sunter dulu",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""Sunter dulu"": geocode failed: Sunter dulu
+"
+MSNTB-047,medium,bare,"Dari Pluit ke Ancol, lewat Muara Karang",3,2,2,0,1,1.0,0.6667,0.8,10.7,10,
+MSNTB-048,medium,bare,"Rute dari Grogol ke Senen, mampir ke Pecenongan",3,4,3,1,0,0.75,1.0,0.8571,18.7,19,
+MSNTB-049,medium,bare,"Dari Setiabudi ke Menteng, lewat Sudirman",3,2,2,0,1,1.0,0.6667,0.8,2.2,3,
+MSNTB-050,medium,bare,"Dari Tanah Abang ke Pasar Senen, mampir ke Kramat",3,4,3,1,0,0.75,1.0,0.8571,13.0,16,
+MSNTB-051,medium,bare,"Dari Benhil ke Gondangdia, lewat Thamrin",3,2,1,1,2,0.5,0.3333,0.4,5.5,7,
+MSNTB-052,medium,bare,"Dari PIK ke Kelapa Gading, mampir ke Sunter",3,4,3,1,0,0.75,1.0,0.8571,5.4,7,
+MSNTB-053,medium,bare,"Dari Bintaro ke Ragunan, lewat Lebak Bulus",3,2,2,0,1,1.0,0.6667,0.8,9.3,9,
+MSNTB-054,medium,bare,"Dari JIS ke Kota Tua, mampir ke Mangga Dua",3,4,3,1,0,0.75,1.0,0.8571,11819.5,9747,
+MSNTB-055,medium,bare,"Dari Pejaten ke Cilandak, lewat Pasar Minggu",3,2,2,0,1,1.0,0.6667,0.8,99.1,77,
+MSNTB-056,medium,bare,"Dari TMII ke Monas, mampir ke Cikini",3,4,1,3,2,0.25,0.3333,0.2857,7506.5,9263,
+MSNTB-057,medium,bare,"Dari Mampang ke Tugu Proklamasi, lewat Menteng",3,2,1,1,2,0.5,0.3333,0.4,29.3,28,
+MSNTB-058,medium,bare,"Dari Jati Padang ke Kemang, mampir ke Pejaten",3,4,3,1,0,0.75,1.0,0.8571,141.3,122,
+MSNTB-059,medium,bare,"Dari Sudirman ke Gambir, lewat Senen",3,2,2,0,1,1.0,0.6667,0.8,4.7,6,
+MSNTB-060,medium,bare,"Dari Malioboro ke Prambanan, mampir ke Monjali",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""ke monjali"": geocode failed: ke monjali
+"
+MSNTB-061,medium,bare,"Rute dari Borobudur ke Taman Sari, lewat Kraton",3,2,2,0,1,1.0,0.6667,0.8,511.3,389,
+MSNTB-062,medium,bare,"Dari UGM ke Tugu Yogyakarta, mampir ke Malioboro",3,4,3,1,0,0.75,1.0,0.8571,8.6,12,
+MSNTB-063,medium,bare,"Mau ke Prambanan dari Malioboro, mampir ke Vredenburg dulu",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""Vredenburg dulu"": geocode failed: Vredenburg dulu
+"
+MSNTB-064,medium,bare,"Dari Monjali ke Beringharjo, lewat Titik Nol KM",3,2,1,1,2,0.5,0.3333,0.4,8.1,10,
+MSNTB-065,medium,bare,"Dari Sonobodoyo ke Taman Sari, mampir ke Kraton",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""Sonobodoyo"": geocode failed: Sonobodoyo
+"
+MSNTB-066,medium,bare,"Rute dari Kotagede ke UGM, lewat Affandi",3,2,2,0,1,1.0,0.6667,0.8,9.1,11,
+MSNTB-067,medium,bare,"Dari Gembira Loka ke Prambanan, mampir ke Ratu Boko",3,4,3,1,0,0.75,1.0,0.8571,545.8,415,
+MSNTB-068,medium,bare,"Dari Parangtritis ke Borobudur, lewat Monjali",3,2,2,0,1,1.0,0.6667,0.8,67.4,55,
+MSNTB-069,medium,bare,"Dari UII ke Malioboro, mampir ke Taman Pelangi",3,4,2,2,1,0.5,0.6667,0.5714,0.0,0,
+MSNTB-070,medium,bare,"Dari Gedung Sate ke Paris Van Java, mampir ke Braga",3,4,3,1,0,0.75,1.0,0.8571,0.0,0,
+MSNTB-071,medium,bare,"Rute dari Trans Studio ke Floating Market, lewat Dago",3,2,2,0,1,1.0,0.6667,0.8,4679.1,3453,
+MSNTB-072,medium,bare,"Dari Alun-Alun ke Cihampelas, mampir ke Pasar Baru",3,4,2,2,1,0.5,0.6667,0.5714,570.9,452,
+MSNTB-073,medium,bare,"Dari Stasiun Bandung ke Kebun Binatang, lewat Braga",3,2,2,0,1,1.0,0.6667,0.8,2030.1,1774,
+MSNTB-074,medium,bare,"Dari ITB ke Tebing Keraton, mampir ke Tahura",3,4,3,1,0,0.75,1.0,0.8571,10063.7,8058,
+MSNTB-075,medium,bare,"Dari UNPAD ke Gedung Sate, lewat Cibeunying",3,2,1,1,2,0.5,0.3333,0.4,4.2,5,
+MSNTB-076,hard,bare,"Dari Monas, mau mampir makan di Pecenongan, terus ke Istiqlal, lanjut ke Kota Tua, dan pulang lewat Mangga Dua",5,3,2,1,3,0.6667,0.4,0.5,12210.2,10026,
+MSNTB-077,hard,bare,"Rute keliling Jakarta: mulai dari Ancol, mampir ke Kota Tua, lewat Monas, lanjut ke Grand Indonesia, dan berakhir di Senayan",5,3,2,1,3,0.6667,0.4,0.5,1515.1,963,
+MSNTB-078,hard,bare,"Mau jalan dari Kemang, mampir sarapan di Ragunan, lewat Kuningan, dan berakhir di SCBD",4,0,0,0,4,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""sarapan di ragunan, lewat kuningan, dan berakhir di scbd"": geocode failed: sarapan di ragunan, lewat kuningan, dan berakhir di scbd
+"
+MSNTB-079,hard,bare,"Perjalanan dari PIK ke TMII, mampir di Kelapa Gading, lewat Sunter, dan mampir di Pulo Gadung",5,3,2,1,3,0.6667,0.4,0.5,25.1,22,
+MSNTB-080,hard,bare,"Dari Lebak Bulus, mampir ke Pondok Indah, lanjut ke Cilandak, lewat Pasar Minggu, berakhir di Ragunan",5,3,3,0,2,1.0,0.6,0.75,10.4,11,
+MSNTB-081,hard,bare,"Rute dari Grogol, lewat Tanah Abang, mampir ke Senen, lanjut ke Salemba, berakhir di Menteng",5,3,3,0,2,1.0,0.6,0.75,2358.3,3633,
+MSNTB-082,hard,bare,"Dari JIS, mampir ke Mangga Dua, lewat Kemayoran, lanjut ke Monas, dan berakhir di Taman Proklamasi",5,3,2,1,3,0.6667,0.4,0.5,5673.1,22435,
+MSNTB-083,hard,bare,"Mau keliling Jakarta selatan: dari Fatmawati ke Bintaro, mampir di Lebak Bulus, lanjut ke Cilandak, dan berakhir di Kemang",5,3,3,0,2,1.0,0.6,0.75,12.6,14,
+MSNTB-084,hard,bare,"Dari Sudirman, mampir di Benhil, lewat Thamrin, lanjut ke Cikini, dan berakhir di Taman Suropati",5,2,2,0,3,1.0,0.4,0.5714,3.1,4,
+MSNTB-085,hard,bare,"Rute dari Pluit ke Monas, mampir di PIK, lewat Muara Karang, dan mampir di Ancol sebelum ke Monas",5,4,3,1,2,0.75,0.6,0.6667,15936.3,14626,
+MSNTB-086,hard,bare,"Dari Cawang, lewat Tebet, mampir ke Kalibata, lanjut ke Pejaten, dan berakhir di Condet",5,3,3,0,2,1.0,0.6,0.75,99.8,76,
+MSNTB-087,hard,bare,"Perjalanan dari Setiabudi ke Gambir, mampir di Sudirman, lewat Benhil, dan berakhir di Monas",5,3,3,0,2,1.0,0.6,0.75,538.2,400,
+MSNTB-088,hard,bare,"Dari TMII ke Ancol, mampir di Cawang, lewat Kemayoran, dan berakhir di JIS",5,3,2,1,3,0.6667,0.4,0.5,48.6,43,
+MSNTB-089,hard,bare,"Mau ke Tugu Proklamasi dari Kuningan, mampir di Menteng, lewat Pegangsaan, dan berakhir di Gondangdia",5,2,2,0,3,1.0,0.4,0.5714,257.4,195,
+MSNTB-090,hard,bare,"Rute dari Palmerah ke Tebet, mampir di Slipi, lewat Sudirman, dan berakhir di Cawang",5,3,2,1,3,0.6667,0.4,0.5,26.7,25,
+MSNTB-091,hard,bare,"Rute wisata Jogja: dari Borobudur ke Prambanan, mampir ke Monjali, lewat UGM, dan berakhir di Malioboro",5,3,2,1,3,0.6667,0.4,0.5,74.9,65,
+MSNTB-092,hard,bare,"Dari Parangtritis, mampir ke Ratu Boko, lewat Prambanan, lanjut ke Monjali, dan berakhir di Tugu",5,3,2,1,3,0.6667,0.4,0.5,63.5,59,
+MSNTB-093,hard,bare,"Mau keliling Jogja tengah: dari Kotagede ke Taman Sari, mampir ke Kraton, lewat Beringharjo, berakhir di Malioboro",5,4,3,1,2,0.75,0.6,0.6667,539.8,402,
+MSNTB-094,hard,bare,"Dari UII ke Vredenburg, mampir ke Affandi, lewat Sonobodoyo, dan berakhir di Nol Kilometer",5,3,2,1,3,0.6667,0.4,0.5,0.0,0,
+MSNTB-095,hard,bare,"Rute dari Borobudur ke Tugu Jogja, mampir di Monjali, lewat Gembira Loka, dan berakhir di Malioboro",5,3,2,1,3,0.6667,0.4,0.5,47.8,42,
+MSNTB-096,hard,bare,"Perjalanan dari Prambanan ke Ratu Boko, mampir ke Monjali, lewat UGM, dan berakhir di Taman Pelangi",5,3,2,1,3,0.6667,0.4,0.5,21.7,24,
+MSNTB-097,hard,bare,"Dari Kawah Putih ke Gedung Sate, mampir di Braga, lewat Alun-Alun, dan berakhir di Cihampelas",5,3,3,0,2,1.0,0.6,0.75,52.2,46,
+MSNTB-098,hard,bare,"Rute Bandung: dari Floating Market ke Trans Studio, mampir di Dago, lewat Tebing Keraton, berakhir di Paris Van Java",5,3,3,0,2,1.0,0.6,0.75,10964.7,8588,
+MSNTB-099,hard,bare,"Dari Stasiun Bandung ke Situ Patenggang, mampir di Ranca Upas, lewat Kawah Putih, dan berakhir di Rancabali",4,0,0,0,4,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""di ranca upas, lewat kawah putih, dan berakhir di rancabali"": geocode failed: di ranca upas, lewat kawah putih, dan berakhir di rancabali
+"
+MSNTB-100,hard,bare,"Mau ke Lembang dari ITB, mampir di Dago Pakar, lewat Floating Market, dan berakhir di Farm House",4,0,0,0,4,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: bare | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: bare: geocode ""di dago pakar, lewat floating market, dan berakhir di farm house"": geocode failed: di dago pakar, lewat floating market, dan berakhir di farm house
+"
+MSNTB-001,easy,pipeline,Dari Monas ke Museum Nasional,2,2,2,0,0,1.0,1.0,1.0,2.9,4,
+MSNTB-002,easy,pipeline,Dari Masjid Istiqlal ke Gereja Katedral,2,2,2,0,0,1.0,1.0,1.0,520.6,679,
+MSNTB-003,easy,pipeline,Dari Kota Tua ke Ancol,2,2,2,0,0,1.0,1.0,1.0,6.6,6,
+MSNTB-004,easy,pipeline,Dari Grand Indonesia ke Plaza Senayan,2,2,1,1,1,0.5,0.5,0.5,0.0,0,
+MSNTB-005,easy,pipeline,Dari Ragunan ke Taman Mini,2,2,2,0,0,1.0,1.0,1.0,10.6,10,
+MSNTB-006,easy,pipeline,Dari Sarinah ke Bundaran HI,2,2,2,0,0,1.0,1.0,1.0,1.2,2,
+MSNTB-007,easy,pipeline,Dari Kemang ke Kuningan,2,2,2,0,0,1.0,1.0,1.0,249.2,191,
+MSNTB-008,easy,pipeline,Dari Senayan City ke SCBD,2,2,2,0,0,1.0,1.0,1.0,5.6,6,
+MSNTB-009,easy,pipeline,Dari Gondangdia ke Cikini,2,2,2,0,0,1.0,1.0,1.0,2.4,4,
+MSNTB-010,easy,pipeline,Dari Taman Ismail Marzuki ke Taman Suropati,2,2,2,0,0,1.0,1.0,1.0,2.9,5,
+MSNTB-011,easy,pipeline,Dari Pasar Senen ke Salemba,2,2,2,0,0,1.0,1.0,1.0,2345.5,3621,
+MSNTB-012,easy,pipeline,Dari Kelapa Gading ke Sunter,2,2,2,0,0,1.0,1.0,1.0,5.4,7,
+MSNTB-013,easy,pipeline,Dari Pluit ke Pantai Indah Kapuk,2,2,2,0,0,1.0,1.0,1.0,8.9,12,
+MSNTB-014,easy,pipeline,Dari Grogol ke Slipi,2,2,2,0,0,1.0,1.0,1.0,8.8,7,
+MSNTB-015,easy,pipeline,Dari Mangga Dua ke Kemayoran,2,2,2,0,0,1.0,1.0,1.0,4.1,5,
+MSNTB-016,easy,pipeline,Dari Tebet ke Pancoran,2,2,2,0,0,1.0,1.0,1.0,7.9,9,
+MSNTB-017,easy,pipeline,Dari Kalibata ke Pasar Minggu,2,2,2,0,0,1.0,1.0,1.0,2.9,3,
+MSNTB-018,easy,pipeline,Dari Condet ke Ragunan,2,2,2,0,0,1.0,1.0,1.0,6.3,8,
+MSNTB-019,easy,pipeline,Dari Palmerah ke Kemanggisan,2,2,2,0,0,1.0,1.0,1.0,7.9,7,
+MSNTB-020,easy,pipeline,Dari Pondok Indah ke Cilandak,2,2,2,0,0,1.0,1.0,1.0,4.3,4,
+MSNTB-021,easy,pipeline,Dari Lebak Bulus ke Fatmawati,2,2,2,0,0,1.0,1.0,1.0,7.0,8,
+MSNTB-022,easy,pipeline,Dari Malioboro ke Kraton,2,2,2,0,0,1.0,1.0,1.0,2.2,4,
+MSNTB-023,easy,pipeline,Dari Tugu Yogyakarta ke Taman Sari,2,2,2,0,0,1.0,1.0,1.0,7.1,9,
+MSNTB-024,easy,pipeline,Dari Prambanan ke Borobudur,2,2,2,0,0,1.0,1.0,1.0,53.3,45,
+MSNTB-025,easy,pipeline,Dari Benteng Vredenburg ke Beringharjo,2,0,0,0,2,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""Benteng vredenburg"": geocode failed: Benteng vredenburg
+"
+MSNTB-026,easy,pipeline,Dari Monjali ke UGM,2,2,1,1,1,0.5,0.5,0.5,3.8,6,
+MSNTB-027,easy,pipeline,Dari Malioboro ke Nol Kilometer,2,2,2,0,0,1.0,1.0,1.0,822.5,1327,
+MSNTB-028,easy,pipeline,Dari Kraton ke Taman Sari,2,2,2,0,0,1.0,1.0,1.0,13.5,15,
+MSNTB-029,easy,pipeline,Dari Sonobodoyo ke Museum Affandi,2,0,0,0,2,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""Sonobodoyo"": geocode failed: Sonobodoyo
+"
+MSNTB-030,easy,pipeline,Dari Kotagede ke Ratu Boko,2,2,2,0,0,1.0,1.0,1.0,17.1,18,
+MSNTB-031,easy,pipeline,Dari Gedung Sate ke Alun-Alun Bandung,2,2,2,0,0,1.0,1.0,1.0,4.0,5,
+MSNTB-032,easy,pipeline,Dari Braga ke Cihampelas,2,2,2,0,0,1.0,1.0,1.0,0.0,0,
+MSNTB-033,easy,pipeline,Dari Paris Van Java ke Trans Studio,2,2,2,0,0,1.0,1.0,1.0,0.0,0,
+MSNTB-034,easy,pipeline,Dari Dago ke Tebing Keraton,2,2,2,0,0,1.0,1.0,1.0,177.1,151,
+MSNTB-035,easy,pipeline,Dari Stasiun Bandung ke Gedung Sate,2,2,2,0,0,1.0,1.0,1.0,4.7,6,
+MSNTB-036,medium,pipeline,"Dari Monas ke Ragunan, mampir ke Kuningan dulu",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""Kuningan dulu"": geocode failed: Kuningan dulu
+"
+MSNTB-037,medium,pipeline,Rute dari Kota Tua lewat Ancol ke Mangga Dua,3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""Kota tua lewat ancol"": geocode failed: Kota tua lewat ancol
+"
+MSNTB-038,medium,pipeline,"Dari Grand Indonesia ke Istiqlal, mampir ke Sarinah",3,4,3,1,0,0.75,1.0,0.8571,5346.0,5894,
+MSNTB-039,medium,pipeline,"Dari Plaza Senayan ke Taman Mini, lewat Cawang",3,2,2,0,1,1.0,0.6667,0.8,16.2,15,
+MSNTB-040,medium,pipeline,"Mau jalan dari Bundaran HI ke Kemang, mampir makan dulu di Senayan",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""makan dulu di senayan"": geocode failed: makan dulu di senayan
+"
+MSNTB-041,medium,pipeline,"Dari Taman Ismail Marzuki ke Kalibata, lewat Cikini",3,2,2,0,1,1.0,0.6667,0.8,12.3,15,
+MSNTB-042,medium,pipeline,"Rute dari Senayan City ke Pasar Minggu, mampir ke Ragunan dulu",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""Ragunan dulu"": geocode failed: Ragunan dulu
+"
+MSNTB-043,medium,pipeline,"Dari Kuningan ke Gondangdia, mampir ke Taman Suropati",3,4,2,2,1,0.5,0.6667,0.5714,252.4,193,
+MSNTB-044,medium,pipeline,"Dari SCBD ke Tebet, lewat Pancoran",3,2,2,0,1,1.0,0.6667,0.8,9.8,11,
+MSNTB-045,medium,pipeline,"Dari Kemayoran ke Condet, mampir ke Cawang",3,4,3,1,0,0.75,1.0,0.8571,31.6,34,
+MSNTB-046,medium,pipeline,"Mau ke Monas dari Kelapa Gading, mampir ke Sunter dulu",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""Sunter dulu"": geocode failed: Sunter dulu
+"
+MSNTB-047,medium,pipeline,"Dari Pluit ke Ancol, lewat Muara Karang",3,2,2,0,1,1.0,0.6667,0.8,10.7,10,
+MSNTB-048,medium,pipeline,"Rute dari Grogol ke Senen, mampir ke Pecenongan",3,4,3,1,0,0.75,1.0,0.8571,18.7,19,
+MSNTB-049,medium,pipeline,"Dari Setiabudi ke Menteng, lewat Sudirman",3,2,2,0,1,1.0,0.6667,0.8,2.2,3,
+MSNTB-050,medium,pipeline,"Dari Tanah Abang ke Pasar Senen, mampir ke Kramat",3,4,3,1,0,0.75,1.0,0.8571,13.0,16,
+MSNTB-051,medium,pipeline,"Dari Benhil ke Gondangdia, lewat Thamrin",3,2,1,1,2,0.5,0.3333,0.4,5.5,7,
+MSNTB-052,medium,pipeline,"Dari PIK ke Kelapa Gading, mampir ke Sunter",3,4,3,1,0,0.75,1.0,0.8571,5.4,7,
+MSNTB-053,medium,pipeline,"Dari Bintaro ke Ragunan, lewat Lebak Bulus",3,2,2,0,1,1.0,0.6667,0.8,9.3,9,
+MSNTB-054,medium,pipeline,"Dari JIS ke Kota Tua, mampir ke Mangga Dua",3,4,3,1,0,0.75,1.0,0.8571,11819.5,9747,
+MSNTB-055,medium,pipeline,"Dari Pejaten ke Cilandak, lewat Pasar Minggu",3,2,2,0,1,1.0,0.6667,0.8,99.1,77,
+MSNTB-056,medium,pipeline,"Dari TMII ke Monas, mampir ke Cikini",3,4,1,3,2,0.25,0.3333,0.2857,7506.5,9263,
+MSNTB-057,medium,pipeline,"Dari Mampang ke Tugu Proklamasi, lewat Menteng",3,2,1,1,2,0.5,0.3333,0.4,29.3,28,
+MSNTB-058,medium,pipeline,"Dari Jati Padang ke Kemang, mampir ke Pejaten",3,4,3,1,0,0.75,1.0,0.8571,141.3,122,
+MSNTB-059,medium,pipeline,"Dari Sudirman ke Gambir, lewat Senen",3,2,2,0,1,1.0,0.6667,0.8,4.7,6,
+MSNTB-060,medium,pipeline,"Dari Malioboro ke Prambanan, mampir ke Monjali",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""ke monjali"": geocode failed: ke monjali
+"
+MSNTB-061,medium,pipeline,"Rute dari Borobudur ke Taman Sari, lewat Kraton",3,2,2,0,1,1.0,0.6667,0.8,511.3,389,
+MSNTB-062,medium,pipeline,"Dari UGM ke Tugu Yogyakarta, mampir ke Malioboro",3,4,3,1,0,0.75,1.0,0.8571,8.6,12,
+MSNTB-063,medium,pipeline,"Mau ke Prambanan dari Malioboro, mampir ke Vredenburg dulu",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""Vredenburg dulu"": geocode failed: Vredenburg dulu
+"
+MSNTB-064,medium,pipeline,"Dari Monjali ke Beringharjo, lewat Titik Nol KM",3,2,1,1,2,0.5,0.3333,0.4,8.1,10,
+MSNTB-065,medium,pipeline,"Dari Sonobodoyo ke Taman Sari, mampir ke Kraton",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""Sonobodoyo"": geocode failed: Sonobodoyo
+"
+MSNTB-066,medium,pipeline,"Rute dari Kotagede ke UGM, lewat Affandi",3,2,2,0,1,1.0,0.6667,0.8,9.1,11,
+MSNTB-067,medium,pipeline,"Dari Gembira Loka ke Prambanan, mampir ke Ratu Boko",3,4,3,1,0,0.75,1.0,0.8571,545.8,415,
+MSNTB-068,medium,pipeline,"Dari Parangtritis ke Borobudur, lewat Monjali",3,2,2,0,1,1.0,0.6667,0.8,67.4,55,
+MSNTB-069,medium,pipeline,"Dari UII ke Malioboro, mampir ke Taman Pelangi",3,4,2,2,1,0.5,0.6667,0.5714,0.0,0,
+MSNTB-070,medium,pipeline,"Dari Gedung Sate ke Paris Van Java, mampir ke Braga",3,4,3,1,0,0.75,1.0,0.8571,0.0,0,
+MSNTB-071,medium,pipeline,"Rute dari Trans Studio ke Floating Market, lewat Dago",3,2,2,0,1,1.0,0.6667,0.8,4679.1,3453,
+MSNTB-072,medium,pipeline,"Dari Alun-Alun ke Cihampelas, mampir ke Pasar Baru",3,4,2,2,1,0.5,0.6667,0.5714,570.9,452,
+MSNTB-073,medium,pipeline,"Dari Stasiun Bandung ke Kebun Binatang, lewat Braga",3,2,2,0,1,1.0,0.6667,0.8,2030.1,1774,
+MSNTB-074,medium,pipeline,"Dari ITB ke Tebing Keraton, mampir ke Tahura",3,4,3,1,0,0.75,1.0,0.8571,10063.7,8058,
+MSNTB-075,medium,pipeline,"Dari UNPAD ke Gedung Sate, lewat Cibeunying",3,2,1,1,2,0.5,0.3333,0.4,4.2,5,
+MSNTB-076,hard,pipeline,"Dari Monas, mau mampir makan di Pecenongan, terus ke Istiqlal, lanjut ke Kota Tua, dan pulang lewat Mangga Dua",5,3,2,1,3,0.6667,0.4,0.5,12210.2,10026,
+MSNTB-077,hard,pipeline,"Rute keliling Jakarta: mulai dari Ancol, mampir ke Kota Tua, lewat Monas, lanjut ke Grand Indonesia, dan berakhir di Senayan",5,3,2,1,3,0.6667,0.4,0.5,1515.1,963,
+MSNTB-078,hard,pipeline,"Mau jalan dari Kemang, mampir sarapan di Ragunan, lewat Kuningan, dan berakhir di SCBD",4,0,0,0,4,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""sarapan di ragunan, lewat kuningan, dan berakhir di scbd"": geocode failed: sarapan di ragunan, lewat kuningan, dan berakhir di scbd
+"
+MSNTB-079,hard,pipeline,"Perjalanan dari PIK ke TMII, mampir di Kelapa Gading, lewat Sunter, dan mampir di Pulo Gadung",5,3,2,1,3,0.6667,0.4,0.5,25.1,22,
+MSNTB-080,hard,pipeline,"Dari Lebak Bulus, mampir ke Pondok Indah, lanjut ke Cilandak, lewat Pasar Minggu, berakhir di Ragunan",5,3,3,0,2,1.0,0.6,0.75,10.4,11,
+MSNTB-081,hard,pipeline,"Rute dari Grogol, lewat Tanah Abang, mampir ke Senen, lanjut ke Salemba, berakhir di Menteng",5,3,3,0,2,1.0,0.6,0.75,2358.3,3633,
+MSNTB-082,hard,pipeline,"Dari JIS, mampir ke Mangga Dua, lewat Kemayoran, lanjut ke Monas, dan berakhir di Taman Proklamasi",5,3,2,1,3,0.6667,0.4,0.5,5673.1,22435,
+MSNTB-083,hard,pipeline,"Mau keliling Jakarta selatan: dari Fatmawati ke Bintaro, mampir di Lebak Bulus, lanjut ke Cilandak, dan berakhir di Kemang",5,3,3,0,2,1.0,0.6,0.75,12.6,14,
+MSNTB-084,hard,pipeline,"Dari Sudirman, mampir di Benhil, lewat Thamrin, lanjut ke Cikini, dan berakhir di Taman Suropati",5,2,2,0,3,1.0,0.4,0.5714,3.1,4,
+MSNTB-085,hard,pipeline,"Rute dari Pluit ke Monas, mampir di PIK, lewat Muara Karang, dan mampir di Ancol sebelum ke Monas",5,4,3,1,2,0.75,0.6,0.6667,15936.3,14626,
+MSNTB-086,hard,pipeline,"Dari Cawang, lewat Tebet, mampir ke Kalibata, lanjut ke Pejaten, dan berakhir di Condet",5,3,3,0,2,1.0,0.6,0.75,99.8,76,
+MSNTB-087,hard,pipeline,"Perjalanan dari Setiabudi ke Gambir, mampir di Sudirman, lewat Benhil, dan berakhir di Monas",5,3,3,0,2,1.0,0.6,0.75,538.2,400,
+MSNTB-088,hard,pipeline,"Dari TMII ke Ancol, mampir di Cawang, lewat Kemayoran, dan berakhir di JIS",5,3,2,1,3,0.6667,0.4,0.5,48.6,43,
+MSNTB-089,hard,pipeline,"Mau ke Tugu Proklamasi dari Kuningan, mampir di Menteng, lewat Pegangsaan, dan berakhir di Gondangdia",5,2,2,0,3,1.0,0.4,0.5714,257.4,195,
+MSNTB-090,hard,pipeline,"Rute dari Palmerah ke Tebet, mampir di Slipi, lewat Sudirman, dan berakhir di Cawang",5,3,2,1,3,0.6667,0.4,0.5,26.7,25,
+MSNTB-091,hard,pipeline,"Rute wisata Jogja: dari Borobudur ke Prambanan, mampir ke Monjali, lewat UGM, dan berakhir di Malioboro",5,3,2,1,3,0.6667,0.4,0.5,74.9,65,
+MSNTB-092,hard,pipeline,"Dari Parangtritis, mampir ke Ratu Boko, lewat Prambanan, lanjut ke Monjali, dan berakhir di Tugu",5,3,2,1,3,0.6667,0.4,0.5,63.5,59,
+MSNTB-093,hard,pipeline,"Mau keliling Jogja tengah: dari Kotagede ke Taman Sari, mampir ke Kraton, lewat Beringharjo, berakhir di Malioboro",5,4,3,1,2,0.75,0.6,0.6667,539.8,402,
+MSNTB-094,hard,pipeline,"Dari UII ke Vredenburg, mampir ke Affandi, lewat Sonobodoyo, dan berakhir di Nol Kilometer",5,3,2,1,3,0.6667,0.4,0.5,0.0,0,
+MSNTB-095,hard,pipeline,"Rute dari Borobudur ke Tugu Jogja, mampir di Monjali, lewat Gembira Loka, dan berakhir di Malioboro",5,3,2,1,3,0.6667,0.4,0.5,47.8,42,
+MSNTB-096,hard,pipeline,"Perjalanan dari Prambanan ke Ratu Boko, mampir ke Monjali, lewat UGM, dan berakhir di Taman Pelangi",5,3,2,1,3,0.6667,0.4,0.5,21.7,24,
+MSNTB-097,hard,pipeline,"Dari Kawah Putih ke Gedung Sate, mampir di Braga, lewat Alun-Alun, dan berakhir di Cihampelas",5,3,3,0,2,1.0,0.6,0.75,52.2,46,
+MSNTB-098,hard,pipeline,"Rute Bandung: dari Floating Market ke Trans Studio, mampir di Dago, lewat Tebing Keraton, berakhir di Paris Van Java",5,3,3,0,2,1.0,0.6,0.75,10964.7,8588,
+MSNTB-099,hard,pipeline,"Dari Stasiun Bandung ke Situ Patenggang, mampir di Ranca Upas, lewat Kawah Putih, dan berakhir di Rancabali",4,0,0,0,4,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""di ranca upas, lewat kawah putih, dan berakhir di rancabali"": geocode failed: di ranca upas, lewat kawah putih, dan berakhir di rancabali
+"
+MSNTB-100,hard,pipeline,"Mau ke Lembang dari ITB, mampir di Dago Pakar, lewat Floating Market, dan berakhir di Farm House",4,0,0,0,4,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: pipeline | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: pipeline: geocode ""di dago pakar, lewat floating market, dan berakhir di farm house"": geocode failed: di dago pakar, lewat floating market, dan berakhir di farm house
+"
+MSNTB-001,easy,agent,Dari Monas ke Museum Nasional,2,2,2,0,0,1.0,1.0,1.0,2.9,4,
+MSNTB-002,easy,agent,Dari Masjid Istiqlal ke Gereja Katedral,2,2,2,0,0,1.0,1.0,1.0,2.3,3,
+MSNTB-003,easy,agent,Dari Kota Tua ke Ancol,2,2,2,0,0,1.0,1.0,1.0,6.6,6,
+MSNTB-004,easy,agent,Dari Grand Indonesia ke Plaza Senayan,2,2,2,0,0,1.0,1.0,1.0,7.7,9,
+MSNTB-005,easy,agent,Dari Ragunan ke Taman Mini,2,2,2,0,0,1.0,1.0,1.0,12.0,13,
+MSNTB-006,easy,agent,Dari Sarinah ke Bundaran HI,2,2,2,0,0,1.0,1.0,1.0,1.2,2,
+MSNTB-007,easy,agent,Dari Kemang ke Kuningan,2,2,2,0,0,1.0,1.0,1.0,5.7,8,
+MSNTB-008,easy,agent,Dari Senayan City ke SCBD,2,2,2,0,0,1.0,1.0,1.0,5.6,6,
+MSNTB-009,easy,agent,Dari Gondangdia ke Cikini,2,2,2,0,0,1.0,1.0,1.0,2.4,4,
+MSNTB-010,easy,agent,Dari Taman Ismail Marzuki ke Taman Suropati,2,2,2,0,0,1.0,1.0,1.0,2.9,5,
+MSNTB-011,easy,agent,Dari Pasar Senen ke Salemba,2,2,2,0,0,1.0,1.0,1.0,4.3,7,
+MSNTB-012,easy,agent,Dari Kelapa Gading ke Sunter,2,2,2,0,0,1.0,1.0,1.0,7.4,8,
+MSNTB-013,easy,agent,Dari Pluit ke Pantai Indah Kapuk,2,2,2,0,0,1.0,1.0,1.0,8.9,12,
+MSNTB-014,easy,agent,Dari Grogol ke Slipi,2,2,2,0,0,1.0,1.0,1.0,8.8,7,
+MSNTB-015,easy,agent,Dari Mangga Dua ke Kemayoran,2,2,2,0,0,1.0,1.0,1.0,4.1,5,
+MSNTB-016,easy,agent,Dari Tebet ke Pancoran,2,2,2,0,0,1.0,1.0,1.0,7.9,9,
+MSNTB-017,easy,agent,Dari Kalibata ke Pasar Minggu,2,2,2,0,0,1.0,1.0,1.0,2.9,3,
+MSNTB-018,easy,agent,Dari Condet ke Ragunan,2,2,2,0,0,1.0,1.0,1.0,6.3,8,
+MSNTB-019,easy,agent,Dari Palmerah ke Kemanggisan,2,2,2,0,0,1.0,1.0,1.0,7.9,7,
+MSNTB-020,easy,agent,Dari Pondok Indah ke Cilandak,2,2,2,0,0,1.0,1.0,1.0,4.3,4,
+MSNTB-021,easy,agent,Dari Lebak Bulus ke Fatmawati,2,2,2,0,0,1.0,1.0,1.0,7.0,8,
+MSNTB-022,easy,agent,Dari Malioboro ke Kraton,2,2,2,0,0,1.0,1.0,1.0,2.2,4,
+MSNTB-023,easy,agent,Dari Tugu Yogyakarta ke Taman Sari,2,2,2,0,0,1.0,1.0,1.0,5.1,7,
+MSNTB-024,easy,agent,Dari Prambanan ke Borobudur,2,2,2,0,0,1.0,1.0,1.0,53.0,45,
+MSNTB-025,easy,agent,Dari Benteng Vredenburg ke Beringharjo,2,2,2,0,0,1.0,1.0,1.0,0.1,0,
+MSNTB-026,easy,agent,Dari Monjali ke UGM,2,2,1,1,1,0.5,0.5,0.5,3.8,6,
+MSNTB-027,easy,agent,Dari Malioboro ke Nol Kilometer,2,2,2,0,0,1.0,1.0,1.0,0.7,1,
+MSNTB-028,easy,agent,Dari Kraton ke Taman Sari,2,2,2,0,0,1.0,1.0,1.0,0.7,2,
+MSNTB-029,easy,agent,Dari Sonobodoyo ke Museum Affandi,2,2,2,0,0,1.0,1.0,1.0,6.0,8,
+MSNTB-030,easy,agent,Dari Kotagede ke Ratu Boko,2,2,2,0,0,1.0,1.0,1.0,17.1,18,
+MSNTB-031,easy,agent,Dari Gedung Sate ke Alun-Alun Bandung,2,2,2,0,0,1.0,1.0,1.0,4.0,5,
+MSNTB-032,easy,agent,Dari Braga ke Cihampelas,2,2,2,0,0,1.0,1.0,1.0,19.9,22,
+MSNTB-033,easy,agent,Dari Paris Van Java ke Trans Studio,2,2,2,0,0,1.0,1.0,1.0,10.0,12,
+MSNTB-034,easy,agent,Dari Dago ke Tebing Keraton,2,2,2,0,0,1.0,1.0,1.0,8.5,17,
+MSNTB-035,easy,agent,Dari Stasiun Bandung ke Gedung Sate,2,2,2,0,0,1.0,1.0,1.0,4.7,6,
+MSNTB-036,medium,agent,"Dari Monas ke Ragunan, mampir ke Kuningan dulu",3,3,3,0,0,1.0,1.0,1.0,17.5,20,
+MSNTB-037,medium,agent,Rute dari Kota Tua lewat Ancol ke Mangga Dua,3,3,3,0,0,1.0,1.0,1.0,10.4,10,
+MSNTB-038,medium,agent,"Dari Grand Indonesia ke Istiqlal, mampir ke Sarinah",3,3,3,0,0,1.0,1.0,1.0,6.8,11,
+MSNTB-039,medium,agent,"Dari Plaza Senayan ke Taman Mini, lewat Cawang",3,3,3,0,0,1.0,1.0,1.0,21.0,24,
+MSNTB-040,medium,agent,"Mau jalan dari Bundaran HI ke Kemang, mampir makan dulu di Senayan",3,3,3,0,0,1.0,1.0,1.0,10.7,13,
+MSNTB-041,medium,agent,"Dari Taman Ismail Marzuki ke Kalibata, lewat Cikini",3,3,3,0,0,1.0,1.0,1.0,11.0,15,
+MSNTB-042,medium,agent,"Rute dari Senayan City ke Pasar Minggu, mampir ke Ragunan dulu",3,3,3,0,0,1.0,1.0,1.0,18.4,20,
+MSNTB-043,medium,agent,"Dari Kuningan ke Gondangdia, mampir ke Taman Suropati",3,3,3,0,0,1.0,1.0,1.0,6.1,7,
+MSNTB-044,medium,agent,"Dari SCBD ke Tebet, lewat Pancoran",3,3,3,0,0,1.0,1.0,1.0,13.8,17,
+MSNTB-045,medium,agent,"Dari Kemayoran ke Condet, mampir ke Cawang",3,3,3,0,0,1.0,1.0,1.0,26.4,25,
+MSNTB-046,medium,agent,"Mau ke Monas dari Kelapa Gading, mampir ke Sunter dulu",3,3,3,0,0,1.0,1.0,1.0,23.3,23,
+MSNTB-047,medium,agent,"Dari Pluit ke Ancol, lewat Muara Karang",3,3,3,0,0,1.0,1.0,1.0,12.8,13,
+MSNTB-048,medium,agent,"Rute dari Grogol ke Senen, mampir ke Pecenongan",3,3,3,0,0,1.0,1.0,1.0,12.8,13,
+MSNTB-049,medium,agent,"Dari Setiabudi ke Menteng, lewat Sudirman",3,3,3,0,0,1.0,1.0,1.0,3.9,6,
+MSNTB-050,medium,agent,"Dari Tanah Abang ke Pasar Senen, mampir ke Kramat",3,3,3,0,0,1.0,1.0,1.0,13.0,16,
+MSNTB-051,medium,agent,"Dari Benhil ke Gondangdia, lewat Thamrin",3,3,3,0,0,1.0,1.0,1.0,7.9,10,
+MSNTB-052,medium,agent,"Dari PIK ke Kelapa Gading, mampir ke Sunter",3,3,2,1,1,0.6667,0.6667,0.6667,28.9,26,
+MSNTB-053,medium,agent,"Dari Bintaro ke Ragunan, lewat Lebak Bulus",3,3,3,0,0,1.0,1.0,1.0,16.2,19,
+MSNTB-054,medium,agent,"Dari JIS ke Kota Tua, mampir ke Mangga Dua",3,3,3,0,0,1.0,1.0,1.0,9.9,12,
+MSNTB-055,medium,agent,"Dari Pejaten ke Cilandak, lewat Pasar Minggu",3,3,3,0,0,1.0,1.0,1.0,13.8,14,
+MSNTB-056,medium,agent,"Dari TMII ke Monas, mampir ke Cikini",3,3,2,1,1,0.6667,0.6667,0.6667,18.8,21,
+MSNTB-057,medium,agent,"Dari Mampang ke Tugu Proklamasi, lewat Menteng",3,3,2,1,1,0.6667,0.6667,0.6667,11.7,14,
+MSNTB-058,medium,agent,"Dari Jati Padang ke Kemang, mampir ke Pejaten",3,3,3,0,0,1.0,1.0,1.0,6.2,8,
+MSNTB-059,medium,agent,"Dari Sudirman ke Gambir, lewat Senen",3,3,3,0,0,1.0,1.0,1.0,12.3,18,
+MSNTB-060,medium,agent,"Dari Malioboro ke Prambanan, mampir ke Monjali",3,3,1,2,2,0.3333,0.3333,0.3333,27.1,26,
+MSNTB-061,medium,agent,"Rute dari Borobudur ke Taman Sari, lewat Kraton",3,3,3,0,0,1.0,1.0,1.0,44.8,40,
+MSNTB-062,medium,agent,"Dari UGM ke Tugu Yogyakarta, mampir ke Malioboro",3,3,2,1,1,0.6667,0.6667,0.6667,8.7,12,
+MSNTB-063,medium,agent,"Mau ke Prambanan dari Malioboro, mampir ke Vredenburg dulu",3,3,2,1,1,0.6667,0.6667,0.6667,19.6,22,
+MSNTB-064,medium,agent,"Dari Monjali ke Beringharjo, lewat Titik Nol KM",3,0,0,0,3,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: agent | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: agent: max 12 turns reached without collecting all waypoints
+"
+MSNTB-065,medium,agent,"Dari Sonobodoyo ke Taman Sari, mampir ke Kraton",3,3,3,0,0,1.0,1.0,1.0,2.1,4,
+MSNTB-066,medium,agent,"Rute dari Kotagede ke UGM, lewat Affandi",3,3,3,0,0,1.0,1.0,1.0,9.7,12,
+MSNTB-067,medium,agent,"Dari Gembira Loka ke Prambanan, mampir ke Ratu Boko",3,3,3,0,0,1.0,1.0,1.0,18.3,22,
+MSNTB-068,medium,agent,"Dari Parangtritis ke Borobudur, lewat Monjali",3,3,2,1,1,0.6667,0.6667,0.6667,69.7,57,
+MSNTB-069,medium,agent,"Dari UII ke Malioboro, mampir ke Taman Pelangi",3,3,2,1,1,0.6667,0.6667,0.6667,19.2,19,
+MSNTB-070,medium,agent,"Dari Gedung Sate ke Paris Van Java, mampir ke Braga",3,3,3,0,0,1.0,1.0,1.0,8.7,11,
+MSNTB-071,medium,agent,"Rute dari Trans Studio ke Floating Market, lewat Dago",3,3,2,1,1,0.6667,0.6667,0.6667,18.2,25,
+MSNTB-072,medium,agent,"Dari Alun-Alun ke Cihampelas, mampir ke Pasar Baru",3,3,3,0,0,1.0,1.0,1.0,20.8,24,
+MSNTB-073,medium,agent,"Dari Stasiun Bandung ke Kebun Binatang, lewat Braga",3,3,3,0,0,1.0,1.0,1.0,6.2,9,
+MSNTB-074,medium,agent,"Dari ITB ke Tebing Keraton, mampir ke Tahura",3,3,2,1,1,0.6667,0.6667,0.6667,22.2,39,
+MSNTB-075,medium,agent,"Dari UNPAD ke Gedung Sate, lewat Cibeunying",3,3,2,1,1,0.6667,0.6667,0.6667,12.0,13,
+MSNTB-076,hard,agent,"Dari Monas, mau mampir makan di Pecenongan, terus ke Istiqlal, lanjut ke Kota Tua, dan pulang lewat Mangga Dua",5,5,5,0,0,1.0,1.0,1.0,10.5,13,
+MSNTB-077,hard,agent,"Rute keliling Jakarta: mulai dari Ancol, mampir ke Kota Tua, lewat Monas, lanjut ke Grand Indonesia, dan berakhir di Senayan",5,5,5,0,0,1.0,1.0,1.0,25.8,31,
+MSNTB-078,hard,agent,"Mau jalan dari Kemang, mampir sarapan di Ragunan, lewat Kuningan, dan berakhir di SCBD",4,4,4,0,0,1.0,1.0,1.0,19.2,22,
+MSNTB-079,hard,agent,"Perjalanan dari PIK ke TMII, mampir di Kelapa Gading, lewat Sunter, dan mampir di Pulo Gadung",5,5,4,1,1,0.8,0.8,0.8,45.4,42,
+MSNTB-080,hard,agent,"Dari Lebak Bulus, mampir ke Pondok Indah, lanjut ke Cilandak, lewat Pasar Minggu, berakhir di Ragunan",5,5,5,0,0,1.0,1.0,1.0,23.7,25,
+MSNTB-081,hard,agent,"Rute dari Grogol, lewat Tanah Abang, mampir ke Senen, lanjut ke Salemba, berakhir di Menteng",5,5,5,0,0,1.0,1.0,1.0,24.5,27,
+MSNTB-082,hard,agent,"Dari JIS, mampir ke Mangga Dua, lewat Kemayoran, lanjut ke Monas, dan berakhir di Taman Proklamasi",5,5,5,0,0,1.0,1.0,1.0,21.9,29,
+MSNTB-083,hard,agent,"Mau keliling Jakarta selatan: dari Fatmawati ke Bintaro, mampir di Lebak Bulus, lanjut ke Cilandak, dan berakhir di Kemang",5,5,5,0,0,1.0,1.0,1.0,22.4,27,
+MSNTB-084,hard,agent,"Dari Sudirman, mampir di Benhil, lewat Thamrin, lanjut ke Cikini, dan berakhir di Taman Suropati",5,5,5,0,0,1.0,1.0,1.0,16.0,19,
+MSNTB-085,hard,agent,"Rute dari Pluit ke Monas, mampir di PIK, lewat Muara Karang, dan mampir di Ancol sebelum ke Monas",5,5,4,1,1,0.8,0.8,0.8,34.7,36,
+MSNTB-086,hard,agent,"Dari Cawang, lewat Tebet, mampir ke Kalibata, lanjut ke Pejaten, dan berakhir di Condet",5,5,5,0,0,1.0,1.0,1.0,25.2,27,
+MSNTB-087,hard,agent,"Perjalanan dari Setiabudi ke Gambir, mampir di Sudirman, lewat Benhil, dan berakhir di Monas",5,5,5,0,0,1.0,1.0,1.0,13.5,18,
+MSNTB-088,hard,agent,"Dari TMII ke Ancol, mampir di Cawang, lewat Kemayoran, dan berakhir di JIS",5,5,4,1,1,0.8,0.8,0.8,33.9,36,
+MSNTB-089,hard,agent,"Mau ke Tugu Proklamasi dari Kuningan, mampir di Menteng, lewat Pegangsaan, dan berakhir di Gondangdia",5,5,5,0,0,1.0,1.0,1.0,11.6,15,
+MSNTB-090,hard,agent,"Rute dari Palmerah ke Tebet, mampir di Slipi, lewat Sudirman, dan berakhir di Cawang",5,5,4,1,1,0.8,0.8,0.8,23.8,27,
+MSNTB-091,hard,agent,"Rute wisata Jogja: dari Borobudur ke Prambanan, mampir ke Monjali, lewat UGM, dan berakhir di Malioboro",5,5,4,1,1,0.8,0.8,0.8,73.3,70,
+MSNTB-092,hard,agent,"Dari Parangtritis, mampir ke Ratu Boko, lewat Prambanan, lanjut ke Monjali, dan berakhir di Tugu",5,5,4,1,1,0.8,0.8,0.8,74.3,73,
+MSNTB-093,hard,agent,"Mau keliling Jogja tengah: dari Kotagede ke Taman Sari, mampir ke Kraton, lewat Beringharjo, berakhir di Malioboro",5,0,0,0,5,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: agent | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: agent: max 12 turns reached without collecting all waypoints
+"
+MSNTB-094,hard,agent,"Dari UII ke Vredenburg, mampir ke Affandi, lewat Sonobodoyo, dan berakhir di Nol Kilometer",5,5,5,0,0,1.0,1.0,1.0,21.8,28,
+MSNTB-095,hard,agent,"Rute dari Borobudur ke Tugu Jogja, mampir di Monjali, lewat Gembira Loka, dan berakhir di Malioboro",5,5,3,2,2,0.6,0.6,0.6,56.6,53,
+MSNTB-096,hard,agent,"Perjalanan dari Prambanan ke Ratu Boko, mampir ke Monjali, lewat UGM, dan berakhir di Taman Pelangi",5,5,4,1,1,0.8,0.8,0.8,27.9,37,
+MSNTB-097,hard,agent,"Dari Kawah Putih ke Gedung Sate, mampir di Braga, lewat Alun-Alun, dan berakhir di Cihampelas",5,5,5,0,0,1.0,1.0,1.0,57.2,55,
+MSNTB-098,hard,agent,"Rute Bandung: dari Floating Market ke Trans Studio, mampir di Dago, lewat Tebing Keraton, berakhir di Paris Van Java",5,5,4,1,1,0.8,0.8,0.8,42.0,68,
+MSNTB-099,hard,agent,"Dari Stasiun Bandung ke Situ Patenggang, mampir di Ranca Upas, lewat Kawah Putih, dan berakhir di Rancabali",4,5,4,1,0,0.8,1.0,0.8889,67.4,76,
+MSNTB-100,hard,agent,"Mau ke Lembang dari ITB, mampir di Dago Pakar, lewat Floating Market, dan berakhir di Farm House",4,0,0,0,4,0.0,0.0,0.0,0,0,"[ARAHIN] Mode: agent | Model: deepseek-v4-flash
+[ARAHIN] Extracting waypoints...
+route error: plan: agent: max 12 turns reached without collecting all waypoints
+"

@@ -1,0 +1,3904 @@
+[
+  {
+    "id": "MSNTB-001",
+    "difficulty": "easy",
+    "prompt": "Dari Monas ke Museum Nasional",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Monumen Nasional",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Museum Nasional",
+        "lat": -6.1763,
+        "lng": 106.8226
+      }
+    ],
+    "total_distance_km": 2.9,
+    "total_time_min": 4,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-002",
+    "difficulty": "easy",
+    "prompt": "Dari Masjid Istiqlal ke Gereja Katedral",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Masjid Istiqlal",
+        "lat": -6.1702,
+        "lng": 106.831
+      },
+      {
+        "name": "Gereja Katedral Jakarta",
+        "lat": -6.1692,
+        "lng": 106.8332
+      }
+    ],
+    "total_distance_km": 2.3,
+    "total_time_min": 3,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-003",
+    "difficulty": "easy",
+    "prompt": "Dari Kota Tua ke Ancol",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Kota Tua, Jakarta",
+        "lat": -6.1369,
+        "lng": 106.8151
+      },
+      {
+        "name": "Ancol, Jakarta",
+        "lat": -6.1281,
+        "lng": 106.8451
+      }
+    ],
+    "total_distance_km": 6.6,
+    "total_time_min": 6,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-004",
+    "difficulty": "easy",
+    "prompt": "Dari Grand Indonesia ke Plaza Senayan",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Grand Indonesia",
+        "lat": -6.1959,
+        "lng": 106.8206
+      },
+      {
+        "name": "Plaza Senayan",
+        "lat": -6.2256,
+        "lng": 106.7996
+      }
+    ],
+    "total_distance_km": 7.7,
+    "total_time_min": 9,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-005",
+    "difficulty": "easy",
+    "prompt": "Dari Ragunan ke Taman Mini",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Ragunan",
+        "lat": -6.2977,
+        "lng": 106.8205
+      },
+      {
+        "name": "Taman Mini Indonesia Indah",
+        "lat": -6.3026,
+        "lng": 106.8953
+      }
+    ],
+    "total_distance_km": 12.0,
+    "total_time_min": 13,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-006",
+    "difficulty": "easy",
+    "prompt": "Dari Sarinah ke Bundaran HI",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Sarinah, Jakarta",
+        "lat": -6.1877,
+        "lng": 106.8238
+      },
+      {
+        "name": "Bundaran HI, Jakarta",
+        "lat": -6.195,
+        "lng": 106.8227
+      }
+    ],
+    "total_distance_km": 1.2,
+    "total_time_min": 2,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-007",
+    "difficulty": "easy",
+    "prompt": "Dari Kemang ke Kuningan",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Kemang, Jakarta Selatan",
+        "lat": -6.2611,
+        "lng": 106.8153
+      },
+      {
+        "name": "Kuningan, Jakarta",
+        "lat": -6.2288,
+        "lng": 106.8332
+      }
+    ],
+    "total_distance_km": 5.7,
+    "total_time_min": 8,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-008",
+    "difficulty": "easy",
+    "prompt": "Dari Senayan City ke SCBD",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Senayan City",
+        "lat": -6.2273,
+        "lng": 106.7972
+      },
+      {
+        "name": "SCBD",
+        "lat": -6.2266,
+        "lng": 106.8096
+      }
+    ],
+    "total_distance_km": 5.6,
+    "total_time_min": 6,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-009",
+    "difficulty": "easy",
+    "prompt": "Dari Gondangdia ke Cikini",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Gondangdia",
+        "lat": -6.1859,
+        "lng": 106.8326
+      },
+      {
+        "name": "Cikini",
+        "lat": -6.1985,
+        "lng": 106.8413
+      }
+    ],
+    "total_distance_km": 2.4,
+    "total_time_min": 4,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-010",
+    "difficulty": "easy",
+    "prompt": "Dari Taman Ismail Marzuki ke Taman Suropati",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Taman Ismail Marzuki",
+        "lat": -6.1892,
+        "lng": 106.8399
+      },
+      {
+        "name": "Taman Suropati",
+        "lat": -6.1994,
+        "lng": 106.8326
+      }
+    ],
+    "total_distance_km": 2.9,
+    "total_time_min": 5,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-011",
+    "difficulty": "easy",
+    "prompt": "Dari Pasar Senen ke Salemba",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Pasar Senen",
+        "lat": -6.1744,
+        "lng": 106.8446
+      },
+      {
+        "name": "Salemba",
+        "lat": -6.1934,
+        "lng": 106.8489
+      }
+    ],
+    "total_distance_km": 4.3,
+    "total_time_min": 7,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-012",
+    "difficulty": "easy",
+    "prompt": "Dari Kelapa Gading ke Sunter",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Kelapa Gading",
+        "lat": -6.1599,
+        "lng": 106.9025
+      },
+      {
+        "name": "Sunter",
+        "lat": -6.119,
+        "lng": 106.8962
+      }
+    ],
+    "total_distance_km": 7.4,
+    "total_time_min": 8,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-013",
+    "difficulty": "easy",
+    "prompt": "Dari Pluit ke Pantai Indah Kapuk",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Pluit",
+        "lat": -6.115,
+        "lng": 106.7874
+      },
+      {
+        "name": "Pantai Indah Kapuk",
+        "lat": -6.1089,
+        "lng": 106.7392
+      }
+    ],
+    "total_distance_km": 8.9,
+    "total_time_min": 12,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-014",
+    "difficulty": "easy",
+    "prompt": "Dari Grogol ke Slipi",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Grogol",
+        "lat": -6.162,
+        "lng": 106.7896
+      },
+      {
+        "name": "Slipi",
+        "lat": -6.1951,
+        "lng": 106.8012
+      }
+    ],
+    "total_distance_km": 8.8,
+    "total_time_min": 7,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-015",
+    "difficulty": "easy",
+    "prompt": "Dari Mangga Dua ke Kemayoran",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Mangga Dua, Jakarta",
+        "lat": -6.1362,
+        "lng": 106.826
+      },
+      {
+        "name": "Kemayoran, Jakarta",
+        "lat": -6.1617,
+        "lng": 106.8414
+      }
+    ],
+    "total_distance_km": 4.1,
+    "total_time_min": 5,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-016",
+    "difficulty": "easy",
+    "prompt": "Dari Tebet ke Pancoran",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Tebet",
+        "lat": -6.2264,
+        "lng": 106.8584
+      },
+      {
+        "name": "Pancoran",
+        "lat": -6.2581,
+        "lng": 106.8427
+      }
+    ],
+    "total_distance_km": 7.9,
+    "total_time_min": 9,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-017",
+    "difficulty": "easy",
+    "prompt": "Dari Kalibata ke Pasar Minggu",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Kalibata",
+        "lat": -6.2624,
+        "lng": 106.8403
+      },
+      {
+        "name": "Pasar Minggu",
+        "lat": -6.2833,
+        "lng": 106.8449
+      }
+    ],
+    "total_distance_km": 2.9,
+    "total_time_min": 3,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-018",
+    "difficulty": "easy",
+    "prompt": "Dari Condet ke Ragunan",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Condet",
+        "lat": -6.288,
+        "lng": 106.8557
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2977,
+        "lng": 106.8205
+      }
+    ],
+    "total_distance_km": 6.3,
+    "total_time_min": 8,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-019",
+    "difficulty": "easy",
+    "prompt": "Dari Palmerah ke Kemanggisan",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Palmerah",
+        "lat": -6.2079,
+        "lng": 106.7972
+      },
+      {
+        "name": "Kemanggisan",
+        "lat": -6.1897,
+        "lng": 106.7909
+      }
+    ],
+    "total_distance_km": 7.9,
+    "total_time_min": 7,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-020",
+    "difficulty": "easy",
+    "prompt": "Dari Pondok Indah ke Cilandak",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Pondok Indah",
+        "lat": -6.2756,
+        "lng": 106.7828
+      },
+      {
+        "name": "Cilandak",
+        "lat": -6.2898,
+        "lng": 106.7969
+      }
+    ],
+    "total_distance_km": 4.3,
+    "total_time_min": 4,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-021",
+    "difficulty": "easy",
+    "prompt": "Dari Lebak Bulus ke Fatmawati",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Lebak Bulus",
+        "lat": -6.3017,
+        "lng": 106.7797
+      },
+      {
+        "name": "Fatmawati",
+        "lat": -6.2924,
+        "lng": 106.8012
+      }
+    ],
+    "total_distance_km": 7.0,
+    "total_time_min": 8,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-022",
+    "difficulty": "easy",
+    "prompt": "Dari Malioboro ke Kraton",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Malioboro",
+        "lat": -7.7953,
+        "lng": 110.3657
+      },
+      {
+        "name": "Kraton",
+        "lat": -7.8088,
+        "lng": 110.3627
+      }
+    ],
+    "total_distance_km": 2.2,
+    "total_time_min": 4,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-023",
+    "difficulty": "easy",
+    "prompt": "Dari Tugu Yogyakarta ke Taman Sari",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Tugu Yogyakarta",
+        "lat": -7.7829,
+        "lng": 110.3671
+      },
+      {
+        "name": "Taman Sari Water Castle",
+        "lat": -7.81,
+        "lng": 110.3592
+      }
+    ],
+    "total_distance_km": 5.1,
+    "total_time_min": 7,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-024",
+    "difficulty": "easy",
+    "prompt": "Dari Prambanan ke Borobudur",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.7522,
+        "lng": 110.4915
+      },
+      {
+        "name": "Candi Borobudur",
+        "lat": -7.608,
+        "lng": 110.2038
+      }
+    ],
+    "total_distance_km": 53.0,
+    "total_time_min": 45,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-025",
+    "difficulty": "easy",
+    "prompt": "Dari Benteng Vredenburg ke Beringharjo",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Benteng Vredeburg",
+        "lat": -7.8002,
+        "lng": 110.3663
+      },
+      {
+        "name": "Gang Beringharjo",
+        "lat": -7.7985,
+        "lng": 110.3662
+      }
+    ],
+    "total_distance_km": 0.1,
+    "total_time_min": 0,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-026",
+    "difficulty": "easy",
+    "prompt": "Dari Monjali ke UGM",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Monumen Jogja Kembali (Monjali)",
+        "lat": -7.7496,
+        "lng": 110.3696
+      },
+      {
+        "name": "Universitas Gadjah Mada (UGM)",
+        "lat": -7.7694,
+        "lng": 110.3804
+      }
+    ],
+    "total_distance_km": 3.8,
+    "total_time_min": 6,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-027",
+    "difficulty": "easy",
+    "prompt": "Dari Malioboro ke Nol Kilometer",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Malioboro",
+        "lat": -7.7953,
+        "lng": 110.3657
+      },
+      {
+        "name": "Titik Nol Kilometer",
+        "lat": -7.8014,
+        "lng": 110.3648
+      }
+    ],
+    "total_distance_km": 0.7,
+    "total_time_min": 1,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-028",
+    "difficulty": "easy",
+    "prompt": "Dari Kraton ke Taman Sari",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Kraton Yogyakarta",
+        "lat": -7.8088,
+        "lng": 110.3627
+      },
+      {
+        "name": "Taman Sari Water Castle",
+        "lat": -7.81,
+        "lng": 110.3592
+      }
+    ],
+    "total_distance_km": 0.7,
+    "total_time_min": 2,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-029",
+    "difficulty": "easy",
+    "prompt": "Dari Sonobodoyo ke Museum Affandi",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Museum Sonobudoyo Unit I",
+        "lat": -7.8021,
+        "lng": 110.3638
+      },
+      {
+        "name": "Museum Affandi",
+        "lat": -7.7828,
+        "lng": 110.3963
+      }
+    ],
+    "total_distance_km": 6.0,
+    "total_time_min": 8,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-030",
+    "difficulty": "easy",
+    "prompt": "Dari Kotagede ke Ratu Boko",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Kotagede",
+        "lat": -7.8183,
+        "lng": 110.3979
+      },
+      {
+        "name": "Kawasan Candi Ratu Boko",
+        "lat": -7.7705,
+        "lng": 110.4895
+      }
+    ],
+    "total_distance_km": 17.1,
+    "total_time_min": 18,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-031",
+    "difficulty": "easy",
+    "prompt": "Dari Gedung Sate ke Alun-Alun Bandung",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Gedung Sate",
+        "lat": -6.9025,
+        "lng": 107.6188
+      },
+      {
+        "name": "Alun-Alun Bandung",
+        "lat": -6.9213,
+        "lng": 107.6071
+      }
+    ],
+    "total_distance_km": 4.0,
+    "total_time_min": 5,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-032",
+    "difficulty": "easy",
+    "prompt": "Dari Braga ke Cihampelas",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Braga",
+        "lat": -6.9173,
+        "lng": 107.6053
+      },
+      {
+        "name": "Cihampelas",
+        "lat": -6.9256,
+        "lng": 107.4797
+      }
+    ],
+    "total_distance_km": 19.9,
+    "total_time_min": 22,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-033",
+    "difficulty": "easy",
+    "prompt": "Dari Paris Van Java ke Trans Studio",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Paris Van Java",
+        "lat": -6.8891,
+        "lng": 107.5961
+      },
+      {
+        "name": "Trans Studio Bandung",
+        "lat": -6.9247,
+        "lng": 107.6361
+      }
+    ],
+    "total_distance_km": 10.0,
+    "total_time_min": 12,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-034",
+    "difficulty": "easy",
+    "prompt": "Dari Dago ke Tebing Keraton",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Dago, Bandung",
+        "lat": -6.875,
+        "lng": 107.616
+      },
+      {
+        "name": "Tebing Keraton, Bandung",
+        "lat": -6.8349,
+        "lng": 107.6639
+      }
+    ],
+    "total_distance_km": 8.5,
+    "total_time_min": 17,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-035",
+    "difficulty": "easy",
+    "prompt": "Dari Stasiun Bandung ke Gedung Sate",
+    "mode": "agent",
+    "n_ground_truth": 2,
+    "n_extracted": 2,
+    "waypoints": [
+      {
+        "name": "Stasiun Bandung",
+        "lat": -6.9148,
+        "lng": 107.6009
+      },
+      {
+        "name": "Gedung Sate",
+        "lat": -6.9025,
+        "lng": 107.6188
+      }
+    ],
+    "total_distance_km": 4.7,
+    "total_time_min": 6,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 2,
+      "n_ground_truth": 2
+    }
+  },
+  {
+    "id": "MSNTB-036",
+    "difficulty": "medium",
+    "prompt": "Dari Monas ke Ragunan, mampir ke Kuningan dulu",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Monumen Nasional (Monas)",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Kuningan",
+        "lat": -6.2288,
+        "lng": 106.8332
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2977,
+        "lng": 106.8205
+      }
+    ],
+    "total_distance_km": 17.5,
+    "total_time_min": 20,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-037",
+    "difficulty": "medium",
+    "prompt": "Rute dari Kota Tua lewat Ancol ke Mangga Dua",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Kota Tua, Jakarta",
+        "lat": -6.1369,
+        "lng": 106.8151
+      },
+      {
+        "name": "Ancol, Jakarta",
+        "lat": -6.1281,
+        "lng": 106.8451
+      },
+      {
+        "name": "Mangga Dua, Jakarta",
+        "lat": -6.1362,
+        "lng": 106.826
+      }
+    ],
+    "total_distance_km": 10.4,
+    "total_time_min": 10,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-038",
+    "difficulty": "medium",
+    "prompt": "Dari Grand Indonesia ke Istiqlal, mampir ke Sarinah",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Grand Indonesia",
+        "lat": -6.1959,
+        "lng": 106.8206
+      },
+      {
+        "name": "Sarinah",
+        "lat": -6.1877,
+        "lng": 106.8238
+      },
+      {
+        "name": "Masjid Istiqlal",
+        "lat": -6.1702,
+        "lng": 106.831
+      }
+    ],
+    "total_distance_km": 6.8,
+    "total_time_min": 11,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-039",
+    "difficulty": "medium",
+    "prompt": "Dari Plaza Senayan ke Taman Mini, lewat Cawang",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Plaza Senayan",
+        "lat": -6.2256,
+        "lng": 106.7996
+      },
+      {
+        "name": "Cawang",
+        "lat": -6.2426,
+        "lng": 106.8587
+      },
+      {
+        "name": "Taman Mini Indonesia Indah",
+        "lat": -6.3026,
+        "lng": 106.8953
+      }
+    ],
+    "total_distance_km": 21.0,
+    "total_time_min": 24,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-040",
+    "difficulty": "medium",
+    "prompt": "Mau jalan dari Bundaran HI ke Kemang, mampir makan dulu di Senayan",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Bundaran Hotel Indonesia",
+        "lat": -6.195,
+        "lng": 106.8227
+      },
+      {
+        "name": "Senayan",
+        "lat": -6.2266,
+        "lng": 106.8116
+      },
+      {
+        "name": "Kemang",
+        "lat": -6.2611,
+        "lng": 106.8153
+      }
+    ],
+    "total_distance_km": 10.7,
+    "total_time_min": 13,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-041",
+    "difficulty": "medium",
+    "prompt": "Dari Taman Ismail Marzuki ke Kalibata, lewat Cikini",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Taman Ismail Marzuki",
+        "lat": -6.1892,
+        "lng": 106.8399
+      },
+      {
+        "name": "Cikini",
+        "lat": -6.1985,
+        "lng": 106.8413
+      },
+      {
+        "name": "Kalibata",
+        "lat": -6.2624,
+        "lng": 106.8403
+      }
+    ],
+    "total_distance_km": 11.0,
+    "total_time_min": 15,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-042",
+    "difficulty": "medium",
+    "prompt": "Rute dari Senayan City ke Pasar Minggu, mampir ke Ragunan dulu",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Senayan City",
+        "lat": -6.2273,
+        "lng": 106.7972
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2977,
+        "lng": 106.8205
+      },
+      {
+        "name": "Pasar Minggu",
+        "lat": -6.2833,
+        "lng": 106.8449
+      }
+    ],
+    "total_distance_km": 18.4,
+    "total_time_min": 20,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-043",
+    "difficulty": "medium",
+    "prompt": "Dari Kuningan ke Gondangdia, mampir ke Taman Suropati",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Kuningan, Jakarta",
+        "lat": -6.2288,
+        "lng": 106.8332
+      },
+      {
+        "name": "Taman Suropati, Jakarta",
+        "lat": -6.1994,
+        "lng": 106.8326
+      },
+      {
+        "name": "Gondangdia, Jakarta",
+        "lat": -6.1859,
+        "lng": 106.8326
+      }
+    ],
+    "total_distance_km": 6.1,
+    "total_time_min": 7,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-044",
+    "difficulty": "medium",
+    "prompt": "Dari SCBD ke Tebet, lewat Pancoran",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "SCBD, Jakarta",
+        "lat": -6.2266,
+        "lng": 106.8096
+      },
+      {
+        "name": "Pancoran, Jakarta",
+        "lat": -6.2581,
+        "lng": 106.8427
+      },
+      {
+        "name": "Tebet, Jakarta",
+        "lat": -6.2264,
+        "lng": 106.8584
+      }
+    ],
+    "total_distance_km": 13.8,
+    "total_time_min": 17,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-045",
+    "difficulty": "medium",
+    "prompt": "Dari Kemayoran ke Condet, mampir ke Cawang",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Kemayoran",
+        "lat": -6.1617,
+        "lng": 106.8414
+      },
+      {
+        "name": "Cawang",
+        "lat": -6.2426,
+        "lng": 106.8587
+      },
+      {
+        "name": "Condet",
+        "lat": -6.288,
+        "lng": 106.8557
+      }
+    ],
+    "total_distance_km": 26.4,
+    "total_time_min": 25,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-046",
+    "difficulty": "medium",
+    "prompt": "Mau ke Monas dari Kelapa Gading, mampir ke Sunter dulu",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Kelapa Gading",
+        "lat": -6.1599,
+        "lng": 106.9025
+      },
+      {
+        "name": "Sunter",
+        "lat": -6.119,
+        "lng": 106.8962
+      },
+      {
+        "name": "Monas",
+        "lat": -6.1754,
+        "lng": 106.8272
+      }
+    ],
+    "total_distance_km": 23.3,
+    "total_time_min": 23,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-047",
+    "difficulty": "medium",
+    "prompt": "Dari Pluit ke Ancol, lewat Muara Karang",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Pluit, Jakarta",
+        "lat": -6.115,
+        "lng": 106.7874
+      },
+      {
+        "name": "Muara Karang, Jakarta",
+        "lat": -6.1167,
+        "lng": 106.7798
+      },
+      {
+        "name": "Ancol, Jakarta",
+        "lat": -6.1281,
+        "lng": 106.8451
+      }
+    ],
+    "total_distance_km": 12.8,
+    "total_time_min": 13,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-048",
+    "difficulty": "medium",
+    "prompt": "Rute dari Grogol ke Senen, mampir ke Pecenongan",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Grogol",
+        "lat": -6.162,
+        "lng": 106.7896
+      },
+      {
+        "name": "Pecenongan",
+        "lat": -6.1677,
+        "lng": 106.8282
+      },
+      {
+        "name": "Senen",
+        "lat": -6.1744,
+        "lng": 106.8446
+      }
+    ],
+    "total_distance_km": 12.8,
+    "total_time_min": 13,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-049",
+    "difficulty": "medium",
+    "prompt": "Dari Setiabudi ke Menteng, lewat Sudirman",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Setiabudi",
+        "lat": -6.2073,
+        "lng": 106.8256
+      },
+      {
+        "name": "Sudirman",
+        "lat": -6.2024,
+        "lng": 106.8234
+      },
+      {
+        "name": "Menteng",
+        "lat": -6.195,
+        "lng": 106.8322
+      }
+    ],
+    "total_distance_km": 3.9,
+    "total_time_min": 6,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-050",
+    "difficulty": "medium",
+    "prompt": "Dari Tanah Abang ke Pasar Senen, mampir ke Kramat",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Tanah Abang",
+        "lat": -6.1857,
+        "lng": 106.8109
+      },
+      {
+        "name": "Kramat",
+        "lat": -6.1936,
+        "lng": 106.8565
+      },
+      {
+        "name": "Pasar Senen",
+        "lat": -6.1744,
+        "lng": 106.8446
+      }
+    ],
+    "total_distance_km": 13.0,
+    "total_time_min": 16,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-051",
+    "difficulty": "medium",
+    "prompt": "Dari Benhil ke Gondangdia, lewat Thamrin",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Benhil",
+        "lat": -6.2004,
+        "lng": 106.8084
+      },
+      {
+        "name": "Thamrin",
+        "lat": -6.1856,
+        "lng": 106.8221
+      },
+      {
+        "name": "Gondangdia",
+        "lat": -6.1859,
+        "lng": 106.8326
+      }
+    ],
+    "total_distance_km": 7.9,
+    "total_time_min": 10,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-052",
+    "difficulty": "medium",
+    "prompt": "Dari PIK ke Kelapa Gading, mampir ke Sunter",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Pantai Indah Kapuk",
+        "lat": -6.1089,
+        "lng": 106.7392
+      },
+      {
+        "name": "Sunter",
+        "lat": -6.119,
+        "lng": 106.8962
+      },
+      {
+        "name": "Kelapa Gading",
+        "lat": -6.1599,
+        "lng": 106.9025
+      }
+    ],
+    "total_distance_km": 28.9,
+    "total_time_min": 26,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-053",
+    "difficulty": "medium",
+    "prompt": "Dari Bintaro ke Ragunan, lewat Lebak Bulus",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Bintaro",
+        "lat": -6.2737,
+        "lng": 106.7477
+      },
+      {
+        "name": "Lebak Bulus",
+        "lat": -6.3017,
+        "lng": 106.7797
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2977,
+        "lng": 106.8205
+      }
+    ],
+    "total_distance_km": 16.2,
+    "total_time_min": 19,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-054",
+    "difficulty": "medium",
+    "prompt": "Dari JIS ke Kota Tua, mampir ke Mangga Dua",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "JIS",
+        "lat": -6.125,
+        "lng": 106.8609
+      },
+      {
+        "name": "Mangga Dua",
+        "lat": -6.1362,
+        "lng": 106.826
+      },
+      {
+        "name": "Kota Tua",
+        "lat": -6.1369,
+        "lng": 106.8151
+      }
+    ],
+    "total_distance_km": 9.9,
+    "total_time_min": 12,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-055",
+    "difficulty": "medium",
+    "prompt": "Dari Pejaten ke Cilandak, lewat Pasar Minggu",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Pejaten",
+        "lat": -6.2784,
+        "lng": 106.8298
+      },
+      {
+        "name": "Pasar Minggu",
+        "lat": -6.2833,
+        "lng": 106.8449
+      },
+      {
+        "name": "Cilandak",
+        "lat": -6.2898,
+        "lng": 106.7969
+      }
+    ],
+    "total_distance_km": 13.8,
+    "total_time_min": 14,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-056",
+    "difficulty": "medium",
+    "prompt": "Dari TMII ke Monas, mampir ke Cikini",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "TMII",
+        "lat": -6.2818,
+        "lng": 106.8758
+      },
+      {
+        "name": "Cikini",
+        "lat": -6.1985,
+        "lng": 106.8413
+      },
+      {
+        "name": "Monas",
+        "lat": -6.1754,
+        "lng": 106.8272
+      }
+    ],
+    "total_distance_km": 18.8,
+    "total_time_min": 21,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-057",
+    "difficulty": "medium",
+    "prompt": "Dari Mampang ke Tugu Proklamasi, lewat Menteng",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Mampang Prapatan",
+        "lat": -6.2509,
+        "lng": 106.823
+      },
+      {
+        "name": "Menteng",
+        "lat": -6.195,
+        "lng": 106.8322
+      },
+      {
+        "name": "Tugu Proklamasi",
+        "lat": -6.2032,
+        "lng": 106.8469
+      }
+    ],
+    "total_distance_km": 11.7,
+    "total_time_min": 14,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-058",
+    "difficulty": "medium",
+    "prompt": "Dari Jati Padang ke Kemang, mampir ke Pejaten",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Jati Padang",
+        "lat": -6.2872,
+        "lng": 106.8305
+      },
+      {
+        "name": "Pejaten",
+        "lat": -6.2784,
+        "lng": 106.8298
+      },
+      {
+        "name": "Kemang",
+        "lat": -6.2611,
+        "lng": 106.8153
+      }
+    ],
+    "total_distance_km": 6.2,
+    "total_time_min": 8,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-059",
+    "difficulty": "medium",
+    "prompt": "Dari Sudirman ke Gambir, lewat Senen",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Sudirman",
+        "lat": -6.2024,
+        "lng": 106.8234
+      },
+      {
+        "name": "Senen",
+        "lat": -6.1744,
+        "lng": 106.8446
+      },
+      {
+        "name": "Gambir",
+        "lat": -6.1767,
+        "lng": 106.8306
+      }
+    ],
+    "total_distance_km": 12.3,
+    "total_time_min": 18,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-060",
+    "difficulty": "medium",
+    "prompt": "Dari Malioboro ke Prambanan, mampir ke Monjali",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Malioboro, Yogyakarta",
+        "lat": -7.7953,
+        "lng": 110.3657
+      },
+      {
+        "name": "Monjali (Monumen Jogja Kembali)",
+        "lat": -7.7496,
+        "lng": 110.3696
+      },
+      {
+        "name": "Prambanan, Yogyakarta",
+        "lat": -7.7854,
+        "lng": 110.4961
+      }
+    ],
+    "total_distance_km": 27.1,
+    "total_time_min": 26,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 1,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.3333,
+      "recall": 0.3333,
+      "f1": 0.3333,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-061",
+    "difficulty": "medium",
+    "prompt": "Rute dari Borobudur ke Taman Sari, lewat Kraton",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Candi Borobudur",
+        "lat": -7.608,
+        "lng": 110.2038
+      },
+      {
+        "name": "Keraton Ngayogyakarta Hadiningrat",
+        "lat": -7.8076,
+        "lng": 110.3639
+      },
+      {
+        "name": "Taman Sari Water Castle",
+        "lat": -7.81,
+        "lng": 110.3592
+      }
+    ],
+    "total_distance_km": 44.8,
+    "total_time_min": 40,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-062",
+    "difficulty": "medium",
+    "prompt": "Dari UGM ke Tugu Yogyakarta, mampir ke Malioboro",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Universitas Gadjah Mada (UGM)",
+        "lat": -7.7694,
+        "lng": 110.3804
+      },
+      {
+        "name": "Malioboro",
+        "lat": -7.7953,
+        "lng": 110.3657
+      },
+      {
+        "name": "Tugu Yogyakarta",
+        "lat": -7.7829,
+        "lng": 110.3671
+      }
+    ],
+    "total_distance_km": 8.7,
+    "total_time_min": 12,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-063",
+    "difficulty": "medium",
+    "prompt": "Mau ke Prambanan dari Malioboro, mampir ke Vredenburg dulu",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Malioboro, Yogyakarta",
+        "lat": -7.7953,
+        "lng": 110.3657
+      },
+      {
+        "name": "Fort Vredeburg, Yogyakarta",
+        "lat": -7.7998,
+        "lng": 110.3663
+      },
+      {
+        "name": "Prambanan, Yogyakarta",
+        "lat": -7.7854,
+        "lng": 110.4961
+      }
+    ],
+    "total_distance_km": 19.6,
+    "total_time_min": 22,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-064",
+    "difficulty": "medium",
+    "prompt": "Dari Monjali ke Beringharjo, lewat Titik Nol KM",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 0,
+    "waypoints": [],
+    "total_distance_km": 0,
+    "total_time_min": 0,
+    "error": "[ARAHIN] Mode: agent | Model: deepseek-v4-flash\n[ARAHIN] Extracting waypoints...\nroute error: plan: agent: max 12 turns reached without collecting all waypoints\n",
+    "exit_code": 1,
+    "score": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n_extracted": 0,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-065",
+    "difficulty": "medium",
+    "prompt": "Dari Sonobodoyo ke Taman Sari, mampir ke Kraton",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Museum Sonobudoyo Unit I (Sonobodoyo)",
+        "lat": -7.8021,
+        "lng": 110.3638
+      },
+      {
+        "name": "Kraton Yogyakarta",
+        "lat": -7.8088,
+        "lng": 110.3627
+      },
+      {
+        "name": "Tamansari (Taman Sari)",
+        "lat": -7.8101,
+        "lng": 110.359
+      }
+    ],
+    "total_distance_km": 2.1,
+    "total_time_min": 4,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-066",
+    "difficulty": "medium",
+    "prompt": "Rute dari Kotagede ke UGM, lewat Affandi",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Kotagede",
+        "lat": -7.8183,
+        "lng": 110.3979
+      },
+      {
+        "name": "Affandi",
+        "lat": -7.7693,
+        "lng": 110.3909
+      },
+      {
+        "name": "UGM (Universitas Gadjah Mada)",
+        "lat": -7.7694,
+        "lng": 110.3804
+      }
+    ],
+    "total_distance_km": 9.7,
+    "total_time_min": 12,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-067",
+    "difficulty": "medium",
+    "prompt": "Dari Gembira Loka ke Prambanan, mampir ke Ratu Boko",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Gembira Loka",
+        "lat": -7.8023,
+        "lng": 110.3988
+      },
+      {
+        "name": "Ratu Boko",
+        "lat": -7.7705,
+        "lng": 110.4895
+      },
+      {
+        "name": "Prambanan",
+        "lat": -7.7854,
+        "lng": 110.4961
+      }
+    ],
+    "total_distance_km": 18.3,
+    "total_time_min": 22,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-068",
+    "difficulty": "medium",
+    "prompt": "Dari Parangtritis ke Borobudur, lewat Monjali",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Parangtritis",
+        "lat": -8.0032,
+        "lng": 110.3167
+      },
+      {
+        "name": "Monumen Jogja Kembali (Monjali)",
+        "lat": -7.7496,
+        "lng": 110.3696
+      },
+      {
+        "name": "Candi Borobudur",
+        "lat": -7.608,
+        "lng": 110.2038
+      }
+    ],
+    "total_distance_km": 69.7,
+    "total_time_min": 57,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-069",
+    "difficulty": "medium",
+    "prompt": "Dari UII ke Malioboro, mampir ke Taman Pelangi",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "UII, Yogyakarta",
+        "lat": -7.6888,
+        "lng": 110.4159
+      },
+      {
+        "name": "Taman Pelangi Jogja - Taman Lampion",
+        "lat": -7.7503,
+        "lng": 110.3695
+      },
+      {
+        "name": "Malioboro, Yogyakarta",
+        "lat": -7.7953,
+        "lng": 110.3657
+      }
+    ],
+    "total_distance_km": 19.2,
+    "total_time_min": 19,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-070",
+    "difficulty": "medium",
+    "prompt": "Dari Gedung Sate ke Paris Van Java, mampir ke Braga",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Gedung Sate",
+        "lat": -6.9025,
+        "lng": 107.6188
+      },
+      {
+        "name": "Braga",
+        "lat": -6.9173,
+        "lng": 107.6053
+      },
+      {
+        "name": "Paris Van Java",
+        "lat": -6.8891,
+        "lng": 107.5961
+      }
+    ],
+    "total_distance_km": 8.7,
+    "total_time_min": 11,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-071",
+    "difficulty": "medium",
+    "prompt": "Rute dari Trans Studio ke Floating Market, lewat Dago",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Trans Studio Bandung",
+        "lat": -6.9247,
+        "lng": 107.6361
+      },
+      {
+        "name": "Dago",
+        "lat": -6.875,
+        "lng": 107.616
+      },
+      {
+        "name": "Lembang Floating Market",
+        "lat": -6.8188,
+        "lng": 107.618
+      }
+    ],
+    "total_distance_km": 18.2,
+    "total_time_min": 25,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-072",
+    "difficulty": "medium",
+    "prompt": "Dari Alun-Alun ke Cihampelas, mampir ke Pasar Baru",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Alun-Alun Bandung",
+        "lat": -6.9213,
+        "lng": 107.6071
+      },
+      {
+        "name": "Pasar Baru",
+        "lat": -6.9174,
+        "lng": 107.6038
+      },
+      {
+        "name": "Cihampelas",
+        "lat": -6.9256,
+        "lng": 107.4797
+      }
+    ],
+    "total_distance_km": 20.8,
+    "total_time_min": 24,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-073",
+    "difficulty": "medium",
+    "prompt": "Dari Stasiun Bandung ke Kebun Binatang, lewat Braga",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Stasiun Bandung",
+        "lat": -6.9148,
+        "lng": 107.6009
+      },
+      {
+        "name": "Braga",
+        "lat": -6.9173,
+        "lng": 107.6053
+      },
+      {
+        "name": "Kebun Binatang Bandung",
+        "lat": -6.8911,
+        "lng": 107.6069
+      }
+    ],
+    "total_distance_km": 6.2,
+    "total_time_min": 9,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-074",
+    "difficulty": "medium",
+    "prompt": "Dari ITB ke Tebing Keraton, mampir ke Tahura",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "Institut Teknologi Bandung",
+        "lat": -6.8904,
+        "lng": 107.6103
+      },
+      {
+        "name": "Taman Hutan Raya Ir. H. Juanda",
+        "lat": -6.8412,
+        "lng": 107.6504
+      },
+      {
+        "name": "Tebing Keraton",
+        "lat": -6.8349,
+        "lng": 107.6639
+      }
+    ],
+    "total_distance_km": 22.2,
+    "total_time_min": 39,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-075",
+    "difficulty": "medium",
+    "prompt": "Dari UNPAD ke Gedung Sate, lewat Cibeunying",
+    "mode": "agent",
+    "n_ground_truth": 3,
+    "n_extracted": 3,
+    "waypoints": [
+      {
+        "name": "UNPAD",
+        "lat": -6.8732,
+        "lng": 107.6172
+      },
+      {
+        "name": "Cibeunying",
+        "lat": -6.9113,
+        "lng": 107.6382
+      },
+      {
+        "name": "Gedung Sate",
+        "lat": -6.9025,
+        "lng": 107.6188
+      }
+    ],
+    "total_distance_km": 12.0,
+    "total_time_min": 13,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "n_extracted": 3,
+      "n_ground_truth": 3
+    }
+  },
+  {
+    "id": "MSNTB-076",
+    "difficulty": "hard",
+    "prompt": "Dari Monas, mau mampir makan di Pecenongan, terus ke Istiqlal, lanjut ke Kota Tua, dan pulang lewat Mangga Dua",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Monumen Nasional (Monas)",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Pecenongan",
+        "lat": -6.1677,
+        "lng": 106.8282
+      },
+      {
+        "name": "Masjid Istiqlal",
+        "lat": -6.1702,
+        "lng": 106.831
+      },
+      {
+        "name": "Kota Tua",
+        "lat": -6.1369,
+        "lng": 106.8151
+      },
+      {
+        "name": "Mangga Dua",
+        "lat": -6.1362,
+        "lng": 106.826
+      }
+    ],
+    "total_distance_km": 10.5,
+    "total_time_min": 13,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-077",
+    "difficulty": "hard",
+    "prompt": "Rute keliling Jakarta: mulai dari Ancol, mampir ke Kota Tua, lewat Monas, lanjut ke Grand Indonesia, dan berakhir di Senayan",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Ancol",
+        "lat": -6.1281,
+        "lng": 106.8451
+      },
+      {
+        "name": "Kota Tua",
+        "lat": -6.1369,
+        "lng": 106.8151
+      },
+      {
+        "name": "Monas",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Grand Indonesia",
+        "lat": -6.1959,
+        "lng": 106.8206
+      },
+      {
+        "name": "Senayan",
+        "lat": -6.2266,
+        "lng": 106.8116
+      }
+    ],
+    "total_distance_km": 25.8,
+    "total_time_min": 31,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-078",
+    "difficulty": "hard",
+    "prompt": "Mau jalan dari Kemang, mampir sarapan di Ragunan, lewat Kuningan, dan berakhir di SCBD",
+    "mode": "agent",
+    "n_ground_truth": 4,
+    "n_extracted": 4,
+    "waypoints": [
+      {
+        "name": "Kemang, Jakarta",
+        "lat": -6.2611,
+        "lng": 106.8153
+      },
+      {
+        "name": "Ragunan, Jakarta",
+        "lat": -6.2977,
+        "lng": 106.8205
+      },
+      {
+        "name": "Kuningan, Jakarta",
+        "lat": -6.2288,
+        "lng": 106.8332
+      },
+      {
+        "name": "SCBD, Jakarta",
+        "lat": -6.2266,
+        "lng": 106.8096
+      }
+    ],
+    "total_distance_km": 19.2,
+    "total_time_min": 22,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 4,
+      "n_ground_truth": 4
+    }
+  },
+  {
+    "id": "MSNTB-079",
+    "difficulty": "hard",
+    "prompt": "Perjalanan dari PIK ke TMII, mampir di Kelapa Gading, lewat Sunter, dan mampir di Pulo Gadung",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Pantai Indah Kapuk (PIK)",
+        "lat": -6.1089,
+        "lng": 106.7392
+      },
+      {
+        "name": "Sunter",
+        "lat": -6.119,
+        "lng": 106.8962
+      },
+      {
+        "name": "Kelapa Gading",
+        "lat": -6.1599,
+        "lng": 106.9025
+      },
+      {
+        "name": "Pulo Gadung",
+        "lat": -6.1911,
+        "lng": 106.8906
+      },
+      {
+        "name": "TMII",
+        "lat": -6.2818,
+        "lng": 106.8758
+      }
+    ],
+    "total_distance_km": 45.4,
+    "total_time_min": 42,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-080",
+    "difficulty": "hard",
+    "prompt": "Dari Lebak Bulus, mampir ke Pondok Indah, lanjut ke Cilandak, lewat Pasar Minggu, berakhir di Ragunan",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Lebak Bulus",
+        "lat": -6.3017,
+        "lng": 106.7797
+      },
+      {
+        "name": "Pondok Indah",
+        "lat": -6.2756,
+        "lng": 106.7828
+      },
+      {
+        "name": "Cilandak",
+        "lat": -6.2898,
+        "lng": 106.7969
+      },
+      {
+        "name": "Pasar Minggu",
+        "lat": -6.2833,
+        "lng": 106.8449
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2977,
+        "lng": 106.8205
+      }
+    ],
+    "total_distance_km": 23.7,
+    "total_time_min": 25,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-081",
+    "difficulty": "hard",
+    "prompt": "Rute dari Grogol, lewat Tanah Abang, mampir ke Senen, lanjut ke Salemba, berakhir di Menteng",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Grogol",
+        "lat": -6.162,
+        "lng": 106.7896
+      },
+      {
+        "name": "Tanah Abang",
+        "lat": -6.1857,
+        "lng": 106.8109
+      },
+      {
+        "name": "Senen",
+        "lat": -6.1744,
+        "lng": 106.8446
+      },
+      {
+        "name": "Salemba",
+        "lat": -6.1934,
+        "lng": 106.8489
+      },
+      {
+        "name": "Menteng",
+        "lat": -6.195,
+        "lng": 106.8322
+      }
+    ],
+    "total_distance_km": 24.5,
+    "total_time_min": 27,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-082",
+    "difficulty": "hard",
+    "prompt": "Dari JIS, mampir ke Mangga Dua, lewat Kemayoran, lanjut ke Monas, dan berakhir di Taman Proklamasi",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "JIS",
+        "lat": -6.125,
+        "lng": 106.8609
+      },
+      {
+        "name": "Mangga Dua",
+        "lat": -6.1362,
+        "lng": 106.826
+      },
+      {
+        "name": "Kemayoran",
+        "lat": -6.1617,
+        "lng": 106.8414
+      },
+      {
+        "name": "Monas",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Taman Proklamasi",
+        "lat": -6.2031,
+        "lng": 106.8466
+      }
+    ],
+    "total_distance_km": 21.9,
+    "total_time_min": 29,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-083",
+    "difficulty": "hard",
+    "prompt": "Mau keliling Jakarta selatan: dari Fatmawati ke Bintaro, mampir di Lebak Bulus, lanjut ke Cilandak, dan berakhir di Kemang",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Fatmawati",
+        "lat": -6.2924,
+        "lng": 106.8012
+      },
+      {
+        "name": "Lebak Bulus",
+        "lat": -6.3017,
+        "lng": 106.7797
+      },
+      {
+        "name": "Bintaro",
+        "lat": -6.2682,
+        "lng": 106.7648
+      },
+      {
+        "name": "Cilandak",
+        "lat": -6.2898,
+        "lng": 106.7969
+      },
+      {
+        "name": "Kemang",
+        "lat": -6.2611,
+        "lng": 106.8153
+      }
+    ],
+    "total_distance_km": 22.4,
+    "total_time_min": 27,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-084",
+    "difficulty": "hard",
+    "prompt": "Dari Sudirman, mampir di Benhil, lewat Thamrin, lanjut ke Cikini, dan berakhir di Taman Suropati",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Sudirman, Jakarta",
+        "lat": -6.2024,
+        "lng": 106.8234
+      },
+      {
+        "name": "Bendungan Hilir (Benhil)",
+        "lat": -6.215,
+        "lng": 106.8179
+      },
+      {
+        "name": "Thamrin, Jakarta",
+        "lat": -6.1856,
+        "lng": 106.8221
+      },
+      {
+        "name": "Cikini, Jakarta",
+        "lat": -6.1985,
+        "lng": 106.8413
+      },
+      {
+        "name": "Taman Suropati",
+        "lat": -6.1994,
+        "lng": 106.8326
+      }
+    ],
+    "total_distance_km": 16.0,
+    "total_time_min": 19,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-085",
+    "difficulty": "hard",
+    "prompt": "Rute dari Pluit ke Monas, mampir di PIK, lewat Muara Karang, dan mampir di Ancol sebelum ke Monas",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Pluit",
+        "lat": -6.115,
+        "lng": 106.7874
+      },
+      {
+        "name": "Pantai Indah Kapuk",
+        "lat": -6.1089,
+        "lng": 106.7392
+      },
+      {
+        "name": "Muara Karang",
+        "lat": -6.1167,
+        "lng": 106.7798
+      },
+      {
+        "name": "Ancol",
+        "lat": -6.1281,
+        "lng": 106.8451
+      },
+      {
+        "name": "Monas",
+        "lat": -6.1754,
+        "lng": 106.8272
+      }
+    ],
+    "total_distance_km": 34.7,
+    "total_time_min": 36,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-086",
+    "difficulty": "hard",
+    "prompt": "Dari Cawang, lewat Tebet, mampir ke Kalibata, lanjut ke Pejaten, dan berakhir di Condet",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Cawang",
+        "lat": -6.2459,
+        "lng": 106.8712
+      },
+      {
+        "name": "Tebet",
+        "lat": -6.2264,
+        "lng": 106.8584
+      },
+      {
+        "name": "Kalibata",
+        "lat": -6.2624,
+        "lng": 106.8403
+      },
+      {
+        "name": "Pejaten",
+        "lat": -6.2784,
+        "lng": 106.8298
+      },
+      {
+        "name": "Condet",
+        "lat": -6.288,
+        "lng": 106.8557
+      }
+    ],
+    "total_distance_km": 25.2,
+    "total_time_min": 27,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-087",
+    "difficulty": "hard",
+    "prompt": "Perjalanan dari Setiabudi ke Gambir, mampir di Sudirman, lewat Benhil, dan berakhir di Monas",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Setiabudi",
+        "lat": -6.2073,
+        "lng": 106.8256
+      },
+      {
+        "name": "Sudirman",
+        "lat": -6.2024,
+        "lng": 106.8234
+      },
+      {
+        "name": "Benhil",
+        "lat": -6.2004,
+        "lng": 106.8084
+      },
+      {
+        "name": "Gambir",
+        "lat": -6.1767,
+        "lng": 106.8306
+      },
+      {
+        "name": "Monas",
+        "lat": -6.1754,
+        "lng": 106.8272
+      }
+    ],
+    "total_distance_km": 13.5,
+    "total_time_min": 18,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-088",
+    "difficulty": "hard",
+    "prompt": "Dari TMII ke Ancol, mampir di Cawang, lewat Kemayoran, dan berakhir di JIS",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "TMII",
+        "lat": -6.2818,
+        "lng": 106.8758
+      },
+      {
+        "name": "Cawang",
+        "lat": -6.2426,
+        "lng": 106.8587
+      },
+      {
+        "name": "Kemayoran",
+        "lat": -6.1617,
+        "lng": 106.8414
+      },
+      {
+        "name": "Ancol",
+        "lat": -6.1281,
+        "lng": 106.8451
+      },
+      {
+        "name": "JIS",
+        "lat": -6.125,
+        "lng": 106.8609
+      }
+    ],
+    "total_distance_km": 33.9,
+    "total_time_min": 36,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-089",
+    "difficulty": "hard",
+    "prompt": "Mau ke Tugu Proklamasi dari Kuningan, mampir di Menteng, lewat Pegangsaan, dan berakhir di Gondangdia",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Kuningan, Jakarta",
+        "lat": -6.2288,
+        "lng": 106.8332
+      },
+      {
+        "name": "Menteng, Jakarta",
+        "lat": -6.195,
+        "lng": 106.8322
+      },
+      {
+        "name": "Pegangsaan, Jakarta",
+        "lat": -6.2019,
+        "lng": 106.8475
+      },
+      {
+        "name": "Tugu Proklamasi, Jakarta",
+        "lat": -6.2032,
+        "lng": 106.8469
+      },
+      {
+        "name": "Gondangdia, Jakarta",
+        "lat": -6.1859,
+        "lng": 106.8326
+      }
+    ],
+    "total_distance_km": 11.6,
+    "total_time_min": 15,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-090",
+    "difficulty": "hard",
+    "prompt": "Rute dari Palmerah ke Tebet, mampir di Slipi, lewat Sudirman, dan berakhir di Cawang",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Palmerah",
+        "lat": -6.2079,
+        "lng": 106.7972
+      },
+      {
+        "name": "Slipi",
+        "lat": -6.1951,
+        "lng": 106.8012
+      },
+      {
+        "name": "Sudirman",
+        "lat": -6.2024,
+        "lng": 106.8234
+      },
+      {
+        "name": "Tebet",
+        "lat": -6.2264,
+        "lng": 106.8584
+      },
+      {
+        "name": "Cawang",
+        "lat": -6.2426,
+        "lng": 106.8587
+      }
+    ],
+    "total_distance_km": 23.8,
+    "total_time_min": 27,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-091",
+    "difficulty": "hard",
+    "prompt": "Rute wisata Jogja: dari Borobudur ke Prambanan, mampir ke Monjali, lewat UGM, dan berakhir di Malioboro",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Candi Borobudur",
+        "lat": -7.608,
+        "lng": 110.2038
+      },
+      {
+        "name": "Monumen Jogja Kembali (Monjali)",
+        "lat": -7.7496,
+        "lng": 110.3696
+      },
+      {
+        "name": "Universitas Gadjah Mada (UGM)",
+        "lat": -7.7694,
+        "lng": 110.3804
+      },
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.7522,
+        "lng": 110.4915
+      },
+      {
+        "name": "Jalan Malioboro",
+        "lat": -7.7932,
+        "lng": 110.3658
+      }
+    ],
+    "total_distance_km": 73.3,
+    "total_time_min": 70,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-092",
+    "difficulty": "hard",
+    "prompt": "Dari Parangtritis, mampir ke Ratu Boko, lewat Prambanan, lanjut ke Monjali, dan berakhir di Tugu",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Parangtritis",
+        "lat": -8.0032,
+        "lng": 110.3167
+      },
+      {
+        "name": "Kawasan Candi Ratu Boko",
+        "lat": -7.7705,
+        "lng": 110.4895
+      },
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.7522,
+        "lng": 110.4915
+      },
+      {
+        "name": "Monumen Jogja Kembali",
+        "lat": -7.7496,
+        "lng": 110.3696
+      },
+      {
+        "name": "Tugu Pal Putih Yogyakarta",
+        "lat": -7.7829,
+        "lng": 110.3671
+      }
+    ],
+    "total_distance_km": 74.3,
+    "total_time_min": 73,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-093",
+    "difficulty": "hard",
+    "prompt": "Mau keliling Jogja tengah: dari Kotagede ke Taman Sari, mampir ke Kraton, lewat Beringharjo, berakhir di Malioboro",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 0,
+    "waypoints": [],
+    "total_distance_km": 0,
+    "total_time_min": 0,
+    "error": "[ARAHIN] Mode: agent | Model: deepseek-v4-flash\n[ARAHIN] Extracting waypoints...\nroute error: plan: agent: max 12 turns reached without collecting all waypoints\n",
+    "exit_code": 1,
+    "score": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n_extracted": 0,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-094",
+    "difficulty": "hard",
+    "prompt": "Dari UII ke Vredenburg, mampir ke Affandi, lewat Sonobodoyo, dan berakhir di Nol Kilometer",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Universitas Islam Indonesia",
+        "lat": -7.6881,
+        "lng": 110.4138
+      },
+      {
+        "name": "Museum Affandi",
+        "lat": -7.7828,
+        "lng": 110.3963
+      },
+      {
+        "name": "Museum Sonobudoyo",
+        "lat": -7.8021,
+        "lng": 110.3638
+      },
+      {
+        "name": "Benteng Vredeburg",
+        "lat": -7.8002,
+        "lng": 110.3663
+      },
+      {
+        "name": "Titik Nol Kilometer Yogyakarta",
+        "lat": -7.8014,
+        "lng": 110.3648
+      }
+    ],
+    "total_distance_km": 21.8,
+    "total_time_min": 28,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-095",
+    "difficulty": "hard",
+    "prompt": "Rute dari Borobudur ke Tugu Jogja, mampir di Monjali, lewat Gembira Loka, dan berakhir di Malioboro",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Candi Borobudur",
+        "lat": -7.608,
+        "lng": 110.2038
+      },
+      {
+        "name": "Monumen Jogja Kembali (Monjali)",
+        "lat": -7.7496,
+        "lng": 110.3696
+      },
+      {
+        "name": "Tugu Pal Putih Yogyakarta (Tugu Jogja)",
+        "lat": -7.7829,
+        "lng": 110.3671
+      },
+      {
+        "name": "Kebun Binatang Gembira Loka",
+        "lat": -7.8055,
+        "lng": 110.397
+      },
+      {
+        "name": "Malioboro",
+        "lat": -7.7953,
+        "lng": 110.3657
+      }
+    ],
+    "total_distance_km": 56.6,
+    "total_time_min": 53,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 3,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1": 0.6,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-096",
+    "difficulty": "hard",
+    "prompt": "Perjalanan dari Prambanan ke Ratu Boko, mampir ke Monjali, lewat UGM, dan berakhir di Taman Pelangi",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.7522,
+        "lng": 110.4915
+      },
+      {
+        "name": "Kawasan Candi Ratu Boko",
+        "lat": -7.7705,
+        "lng": 110.4895
+      },
+      {
+        "name": "Universitas Gadjah Mada",
+        "lat": -7.7694,
+        "lng": 110.3804
+      },
+      {
+        "name": "Monumen Jogja Kembali",
+        "lat": -7.7496,
+        "lng": 110.3696
+      },
+      {
+        "name": "Taman Pelangi Jogja - Taman Lampion",
+        "lat": -7.7503,
+        "lng": 110.3695
+      }
+    ],
+    "total_distance_km": 27.9,
+    "total_time_min": 37,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-097",
+    "difficulty": "hard",
+    "prompt": "Dari Kawah Putih ke Gedung Sate, mampir di Braga, lewat Alun-Alun, dan berakhir di Cihampelas",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Kawah Putih",
+        "lat": -7.1661,
+        "lng": 107.4023
+      },
+      {
+        "name": "Braga",
+        "lat": -6.9173,
+        "lng": 107.6053
+      },
+      {
+        "name": "Alun-Alun Bandung",
+        "lat": -6.9215,
+        "lng": 107.6076
+      },
+      {
+        "name": "Gedung Sate",
+        "lat": -6.9025,
+        "lng": 107.6188
+      },
+      {
+        "name": "Jalan Cihampelas",
+        "lat": -6.8864,
+        "lng": 107.6042
+      }
+    ],
+    "total_distance_km": 57.2,
+    "total_time_min": 55,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-098",
+    "difficulty": "hard",
+    "prompt": "Rute Bandung: dari Floating Market ke Trans Studio, mampir di Dago, lewat Tebing Keraton, berakhir di Paris Van Java",
+    "mode": "agent",
+    "n_ground_truth": 5,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Floating Market, Bandung",
+        "lat": -6.8188,
+        "lng": 107.618
+      },
+      {
+        "name": "Dago, Bandung",
+        "lat": -6.875,
+        "lng": 107.616
+      },
+      {
+        "name": "Tebing Keraton, Bandung",
+        "lat": -6.8349,
+        "lng": 107.6639
+      },
+      {
+        "name": "Trans Studio, Bandung",
+        "lat": -6.9247,
+        "lng": 107.6361
+      },
+      {
+        "name": "Paris Van Java, Bandung",
+        "lat": -6.8891,
+        "lng": 107.5961
+      }
+    ],
+    "total_distance_km": 42.0,
+    "total_time_min": 68,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "n_extracted": 5,
+      "n_ground_truth": 5
+    }
+  },
+  {
+    "id": "MSNTB-099",
+    "difficulty": "hard",
+    "prompt": "Dari Stasiun Bandung ke Situ Patenggang, mampir di Ranca Upas, lewat Kawah Putih, dan berakhir di Rancabali",
+    "mode": "agent",
+    "n_ground_truth": 4,
+    "n_extracted": 5,
+    "waypoints": [
+      {
+        "name": "Stasiun Bandung",
+        "lat": -6.9148,
+        "lng": 107.6009
+      },
+      {
+        "name": "Ranca Upas",
+        "lat": -7.1382,
+        "lng": 107.3921
+      },
+      {
+        "name": "Kawah Putih",
+        "lat": -7.1661,
+        "lng": 107.4023
+      },
+      {
+        "name": "Situ Patenggang",
+        "lat": -7.1653,
+        "lng": 107.3698
+      },
+      {
+        "name": "Rancabali",
+        "lat": -7.154,
+        "lng": 107.371
+      }
+    ],
+    "total_distance_km": 67.4,
+    "total_time_min": 76,
+    "error": null,
+    "exit_code": 0,
+    "score": {
+      "tp": 4,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8889,
+      "n_extracted": 5,
+      "n_ground_truth": 4
+    }
+  },
+  {
+    "id": "MSNTB-100",
+    "difficulty": "hard",
+    "prompt": "Mau ke Lembang dari ITB, mampir di Dago Pakar, lewat Floating Market, dan berakhir di Farm House",
+    "mode": "agent",
+    "n_ground_truth": 4,
+    "n_extracted": 0,
+    "waypoints": [],
+    "total_distance_km": 0,
+    "total_time_min": 0,
+    "error": "[ARAHIN] Mode: agent | Model: deepseek-v4-flash\n[ARAHIN] Extracting waypoints...\nroute error: plan: agent: max 12 turns reached without collecting all waypoints\n",
+    "exit_code": 1,
+    "score": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n_extracted": 0,
+      "n_ground_truth": 4
+    }
+  }
+]

@@ -1,0 +1,2262 @@
+[
+  {
+    "id": "MSNTB-001",
+    "difficulty": "easy",
+    "prompt": "Dari Monas ke Museum Nasional",
+    "ground_truth": [
+      {
+        "name": "Monumen Nasional",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Museum Nasional",
+        "lat": -6.1763,
+        "lng": 106.8226
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-002",
+    "difficulty": "easy",
+    "prompt": "Dari Masjid Istiqlal ke Gereja Katedral",
+    "ground_truth": [
+      {
+        "name": "Istiqlal Mosque",
+        "lat": -6.1701,
+        "lng": 106.8305
+      },
+      {
+        "name": "Gereja Katedral",
+        "lat": -6.1698,
+        "lng": 106.8319
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-003",
+    "difficulty": "easy",
+    "prompt": "Dari Kota Tua ke Ancol",
+    "ground_truth": [
+      {
+        "name": "Kota Tua",
+        "lat": -6.1376,
+        "lng": 106.8137
+      },
+      {
+        "name": "Ancol",
+        "lat": -6.1219,
+        "lng": 106.8433
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-004",
+    "difficulty": "easy",
+    "prompt": "Dari Grand Indonesia ke Plaza Senayan",
+    "ground_truth": [
+      {
+        "name": "Grand Indonesia",
+        "lat": -6.1947,
+        "lng": 106.8184
+      },
+      {
+        "name": "Plaza Senayan",
+        "lat": -6.2285,
+        "lng": 106.7989
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-005",
+    "difficulty": "easy",
+    "prompt": "Dari Ragunan ke Taman Mini",
+    "ground_truth": [
+      {
+        "name": "Ragunan",
+        "lat": -6.2907,
+        "lng": 106.8213
+      },
+      {
+        "name": "Taman Mini",
+        "lat": -6.3027,
+        "lng": 106.8891
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-006",
+    "difficulty": "easy",
+    "prompt": "Dari Sarinah ke Bundaran HI",
+    "ground_truth": [
+      {
+        "name": "Sarinah",
+        "lat": -6.1933,
+        "lng": 106.8216
+      },
+      {
+        "name": "Bundaran HI",
+        "lat": -6.1947,
+        "lng": 106.8184
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-007",
+    "difficulty": "easy",
+    "prompt": "Dari Kemang ke Kuningan",
+    "ground_truth": [
+      {
+        "name": "Kemang",
+        "lat": -6.2465,
+        "lng": 106.8148
+      },
+      {
+        "name": "Kuningan",
+        "lat": -6.2367,
+        "lng": 106.8388
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-008",
+    "difficulty": "easy",
+    "prompt": "Dari Senayan City ke SCBD",
+    "ground_truth": [
+      {
+        "name": "Senayan City",
+        "lat": -6.2285,
+        "lng": 106.7989
+      },
+      {
+        "name": "SCBD",
+        "lat": -6.2267,
+        "lng": 106.8117
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-009",
+    "difficulty": "easy",
+    "prompt": "Dari Gondangdia ke Cikini",
+    "ground_truth": [
+      {
+        "name": "Gondangdia",
+        "lat": -6.1822,
+        "lng": 106.8375
+      },
+      {
+        "name": "Cikini",
+        "lat": -6.1891,
+        "lng": 106.8389
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-010",
+    "difficulty": "easy",
+    "prompt": "Dari Taman Ismail Marzuki ke Taman Suropati",
+    "ground_truth": [
+      {
+        "name": "Taman Ismail Marzuki",
+        "lat": -6.1933,
+        "lng": 106.8389
+      },
+      {
+        "name": "Taman Suropati",
+        "lat": -6.1914,
+        "lng": 106.8364
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-011",
+    "difficulty": "easy",
+    "prompt": "Dari Pasar Senen ke Salemba",
+    "ground_truth": [
+      {
+        "name": "Pasar Senen",
+        "lat": -6.1753,
+        "lng": 106.8436
+      },
+      {
+        "name": "Salemba",
+        "lat": -6.1864,
+        "lng": 106.8514
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-012",
+    "difficulty": "easy",
+    "prompt": "Dari Kelapa Gading ke Sunter",
+    "ground_truth": [
+      {
+        "name": "Kelapa Gading",
+        "lat": -6.1578,
+        "lng": 106.9064
+      },
+      {
+        "name": "Sunter",
+        "lat": -6.1578,
+        "lng": 106.8864
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-013",
+    "difficulty": "easy",
+    "prompt": "Dari Pluit ke Pantai Indah Kapuk",
+    "ground_truth": [
+      {
+        "name": "Pluit",
+        "lat": -6.1003,
+        "lng": 106.8072
+      },
+      {
+        "name": "Pantai Indah Kapuk",
+        "lat": -6.1089,
+        "lng": 106.7836
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-014",
+    "difficulty": "easy",
+    "prompt": "Dari Grogol ke Slipi",
+    "ground_truth": [
+      {
+        "name": "Grogol",
+        "lat": -6.1667,
+        "lng": 106.7892
+      },
+      {
+        "name": "Slipi",
+        "lat": -6.1989,
+        "lng": 106.7881
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-015",
+    "difficulty": "easy",
+    "prompt": "Dari Mangga Dua ke Kemayoran",
+    "ground_truth": [
+      {
+        "name": "Mangga Dua",
+        "lat": -6.1464,
+        "lng": 106.8307
+      },
+      {
+        "name": "Kemayoran",
+        "lat": -6.1575,
+        "lng": 106.8564
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-016",
+    "difficulty": "easy",
+    "prompt": "Dari Tebet ke Pancoran",
+    "ground_truth": [
+      {
+        "name": "Tebet",
+        "lat": -6.2217,
+        "lng": 106.8614
+      },
+      {
+        "name": "Pancoran",
+        "lat": -6.2455,
+        "lng": 106.8536
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-017",
+    "difficulty": "easy",
+    "prompt": "Dari Kalibata ke Pasar Minggu",
+    "ground_truth": [
+      {
+        "name": "Kalibata",
+        "lat": -6.26,
+        "lng": 106.8464
+      },
+      {
+        "name": "Pasar Minggu",
+        "lat": -6.2936,
+        "lng": 106.8464
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-018",
+    "difficulty": "easy",
+    "prompt": "Dari Condet ke Ragunan",
+    "ground_truth": [
+      {
+        "name": "Condet",
+        "lat": -6.2736,
+        "lng": 106.8583
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2907,
+        "lng": 106.8213
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-019",
+    "difficulty": "easy",
+    "prompt": "Dari Palmerah ke Kemanggisan",
+    "ground_truth": [
+      {
+        "name": "Palmerah",
+        "lat": -6.1847,
+        "lng": 106.7914
+      },
+      {
+        "name": "Kemanggisan",
+        "lat": -6.1847,
+        "lng": 106.7914
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-020",
+    "difficulty": "easy",
+    "prompt": "Dari Pondok Indah ke Cilandak",
+    "ground_truth": [
+      {
+        "name": "Pondok Indah",
+        "lat": -6.2617,
+        "lng": 106.7836
+      },
+      {
+        "name": "Cilandak",
+        "lat": -6.2767,
+        "lng": 106.8014
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-021",
+    "difficulty": "easy",
+    "prompt": "Dari Lebak Bulus ke Fatmawati",
+    "ground_truth": [
+      {
+        "name": "Lebak Bulus",
+        "lat": -6.2889,
+        "lng": 106.7753
+      },
+      {
+        "name": "Fatmawati",
+        "lat": -6.2617,
+        "lng": 106.7936
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-022",
+    "difficulty": "easy",
+    "prompt": "Dari Malioboro ke Kraton",
+    "ground_truth": [
+      {
+        "name": "Malioboro",
+        "lat": -7.7926,
+        "lng": 110.3658
+      },
+      {
+        "name": "Kraton Yogyakarta",
+        "lat": -7.8055,
+        "lng": 110.3642
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-023",
+    "difficulty": "easy",
+    "prompt": "Dari Tugu Yogyakarta ke Taman Sari",
+    "ground_truth": [
+      {
+        "name": "Tugu Yogyakarta",
+        "lat": -7.7879,
+        "lng": 110.3672
+      },
+      {
+        "name": "Taman Sari",
+        "lat": -7.8106,
+        "lng": 110.3594
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-024",
+    "difficulty": "easy",
+    "prompt": "Dari Prambanan ke Borobudur",
+    "ground_truth": [
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.752,
+        "lng": 110.4914
+      },
+      {
+        "name": "Candi Borobudur",
+        "lat": -7.6079,
+        "lng": 110.2038
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-025",
+    "difficulty": "easy",
+    "prompt": "Dari Benteng Vredenburg ke Beringharjo",
+    "ground_truth": [
+      {
+        "name": "Benteng Vredenburg",
+        "lat": -7.7983,
+        "lng": 110.3697
+      },
+      {
+        "name": "Pasar Beringharjo",
+        "lat": -7.7926,
+        "lng": 110.3658
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-026",
+    "difficulty": "easy",
+    "prompt": "Dari Monjali ke UGM",
+    "ground_truth": [
+      {
+        "name": "Monumen Yogya Kembali",
+        "lat": -7.7397,
+        "lng": 110.3972
+      },
+      {
+        "name": "UGM",
+        "lat": -7.7756,
+        "lng": 110.3842
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-027",
+    "difficulty": "easy",
+    "prompt": "Dari Malioboro ke Nol Kilometer",
+    "ground_truth": [
+      {
+        "name": "Malioboro",
+        "lat": -7.7926,
+        "lng": 110.3658
+      },
+      {
+        "name": "Nol Kilometer",
+        "lat": -7.7926,
+        "lng": 110.3658
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-028",
+    "difficulty": "easy",
+    "prompt": "Dari Kraton ke Taman Sari",
+    "ground_truth": [
+      {
+        "name": "Kraton Yogyakarta",
+        "lat": -7.8055,
+        "lng": 110.3642
+      },
+      {
+        "name": "Taman Sari",
+        "lat": -7.8106,
+        "lng": 110.3594
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-029",
+    "difficulty": "easy",
+    "prompt": "Dari Sonobodoyo ke Museum Affandi",
+    "ground_truth": [
+      {
+        "name": "Museum Sonobudoyo",
+        "lat": -7.8014,
+        "lng": 110.3625
+      },
+      {
+        "name": "Museum Affandi",
+        "lat": -7.7817,
+        "lng": 110.3767
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-030",
+    "difficulty": "easy",
+    "prompt": "Dari Kotagede ke Ratu Boko",
+    "ground_truth": [
+      {
+        "name": "Kotagede",
+        "lat": -7.8089,
+        "lng": 110.3978
+      },
+      {
+        "name": "Candi Ratu Boko",
+        "lat": -7.7703,
+        "lng": 110.4856
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-031",
+    "difficulty": "easy",
+    "prompt": "Dari Gedung Sate ke Alun-Alun Bandung",
+    "ground_truth": [
+      {
+        "name": "Gedung Sate",
+        "lat": -6.8905,
+        "lng": 107.6107
+      },
+      {
+        "name": "Alun-Alun Bandung",
+        "lat": -6.9175,
+        "lng": 107.6191
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-032",
+    "difficulty": "easy",
+    "prompt": "Dari Braga ke Cihampelas",
+    "ground_truth": [
+      {
+        "name": "Braga",
+        "lat": -6.9175,
+        "lng": 107.6117
+      },
+      {
+        "name": "Cihampelas",
+        "lat": -6.8925,
+        "lng": 107.5917
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-033",
+    "difficulty": "easy",
+    "prompt": "Dari Paris Van Java ke Trans Studio",
+    "ground_truth": [
+      {
+        "name": "Paris Van Java",
+        "lat": -6.8836,
+        "lng": 107.5917
+      },
+      {
+        "name": "Trans Studio Bandung",
+        "lat": -6.9281,
+        "lng": 107.6333
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-034",
+    "difficulty": "easy",
+    "prompt": "Dari Dago ke Tebing Keraton",
+    "ground_truth": [
+      {
+        "name": "Dago",
+        "lat": -6.8636,
+        "lng": 107.61
+      },
+      {
+        "name": "Tebing Keraton",
+        "lat": -6.8336,
+        "lng": 107.6167
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-035",
+    "difficulty": "easy",
+    "prompt": "Dari Stasiun Bandung ke Gedung Sate",
+    "ground_truth": [
+      {
+        "name": "Stasiun Bandung",
+        "lat": -6.9175,
+        "lng": 107.6042
+      },
+      {
+        "name": "Gedung Sate",
+        "lat": -6.8905,
+        "lng": 107.6107
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-036",
+    "difficulty": "medium",
+    "prompt": "Dari Monas ke Ragunan, mampir ke Kuningan dulu",
+    "ground_truth": [
+      {
+        "name": "Monumen Nasional",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Kuningan",
+        "lat": -6.2367,
+        "lng": 106.8388
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2907,
+        "lng": 106.8213
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-037",
+    "difficulty": "medium",
+    "prompt": "Rute dari Kota Tua lewat Ancol ke Mangga Dua",
+    "ground_truth": [
+      {
+        "name": "Kota Tua",
+        "lat": -6.1376,
+        "lng": 106.8137
+      },
+      {
+        "name": "Ancol",
+        "lat": -6.1219,
+        "lng": 106.8433
+      },
+      {
+        "name": "Mangga Dua",
+        "lat": -6.1464,
+        "lng": 106.8307
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-038",
+    "difficulty": "medium",
+    "prompt": "Dari Grand Indonesia ke Istiqlal, mampir ke Sarinah",
+    "ground_truth": [
+      {
+        "name": "Grand Indonesia",
+        "lat": -6.1947,
+        "lng": 106.8184
+      },
+      {
+        "name": "Sarinah",
+        "lat": -6.1933,
+        "lng": 106.8216
+      },
+      {
+        "name": "Istiqlal Mosque",
+        "lat": -6.1701,
+        "lng": 106.8305
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-039",
+    "difficulty": "medium",
+    "prompt": "Dari Plaza Senayan ke Taman Mini, lewat Cawang",
+    "ground_truth": [
+      {
+        "name": "Plaza Senayan",
+        "lat": -6.2285,
+        "lng": 106.7989
+      },
+      {
+        "name": "Cawang",
+        "lat": -6.2294,
+        "lng": 106.8608
+      },
+      {
+        "name": "Taman Mini",
+        "lat": -6.3027,
+        "lng": 106.8891
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-040",
+    "difficulty": "medium",
+    "prompt": "Mau jalan dari Bundaran HI ke Kemang, mampir makan dulu di Senayan",
+    "ground_truth": [
+      {
+        "name": "Bundaran HI",
+        "lat": -6.1947,
+        "lng": 106.8184
+      },
+      {
+        "name": "Senayan City",
+        "lat": -6.2285,
+        "lng": 106.7989
+      },
+      {
+        "name": "Kemang",
+        "lat": -6.2465,
+        "lng": 106.8148
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-041",
+    "difficulty": "medium",
+    "prompt": "Dari Taman Ismail Marzuki ke Kalibata, lewat Cikini",
+    "ground_truth": [
+      {
+        "name": "Taman Ismail Marzuki",
+        "lat": -6.1933,
+        "lng": 106.8389
+      },
+      {
+        "name": "Cikini",
+        "lat": -6.1891,
+        "lng": 106.8389
+      },
+      {
+        "name": "Kalibata",
+        "lat": -6.26,
+        "lng": 106.8464
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-042",
+    "difficulty": "medium",
+    "prompt": "Rute dari Senayan City ke Pasar Minggu, mampir ke Ragunan dulu",
+    "ground_truth": [
+      {
+        "name": "Senayan City",
+        "lat": -6.2285,
+        "lng": 106.7989
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2907,
+        "lng": 106.8213
+      },
+      {
+        "name": "Pasar Minggu",
+        "lat": -6.2936,
+        "lng": 106.8464
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-043",
+    "difficulty": "medium",
+    "prompt": "Dari Kuningan ke Gondangdia, mampir ke Taman Suropati",
+    "ground_truth": [
+      {
+        "name": "Kuningan",
+        "lat": -6.2367,
+        "lng": 106.8388
+      },
+      {
+        "name": "Taman Suropati",
+        "lat": -6.1914,
+        "lng": 106.8364
+      },
+      {
+        "name": "Gondangdia",
+        "lat": -6.1822,
+        "lng": 106.8375
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-044",
+    "difficulty": "medium",
+    "prompt": "Dari SCBD ke Tebet, lewat Pancoran",
+    "ground_truth": [
+      {
+        "name": "SCBD",
+        "lat": -6.2267,
+        "lng": 106.8117
+      },
+      {
+        "name": "Pancoran",
+        "lat": -6.2455,
+        "lng": 106.8536
+      },
+      {
+        "name": "Tebet",
+        "lat": -6.2217,
+        "lng": 106.8614
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-045",
+    "difficulty": "medium",
+    "prompt": "Dari Kemayoran ke Condet, mampir ke Cawang",
+    "ground_truth": [
+      {
+        "name": "Kemayoran",
+        "lat": -6.1575,
+        "lng": 106.8564
+      },
+      {
+        "name": "Cawang",
+        "lat": -6.2294,
+        "lng": 106.8608
+      },
+      {
+        "name": "Condet",
+        "lat": -6.2736,
+        "lng": 106.8583
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-046",
+    "difficulty": "medium",
+    "prompt": "Mau ke Monas dari Kelapa Gading, mampir ke Sunter dulu",
+    "ground_truth": [
+      {
+        "name": "Sunter",
+        "lat": -6.1578,
+        "lng": 106.8864
+      },
+      {
+        "name": "Kelapa Gading",
+        "lat": -6.1578,
+        "lng": 106.9064
+      },
+      {
+        "name": "Monumen Nasional",
+        "lat": -6.1754,
+        "lng": 106.8272
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-047",
+    "difficulty": "medium",
+    "prompt": "Dari Pluit ke Ancol, lewat Muara Karang",
+    "ground_truth": [
+      {
+        "name": "Pluit",
+        "lat": -6.1003,
+        "lng": 106.8072
+      },
+      {
+        "name": "Muara Karang",
+        "lat": -6.1003,
+        "lng": 106.7836
+      },
+      {
+        "name": "Ancol",
+        "lat": -6.1219,
+        "lng": 106.8433
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-048",
+    "difficulty": "medium",
+    "prompt": "Rute dari Grogol ke Senen, mampir ke Pecenongan",
+    "ground_truth": [
+      {
+        "name": "Grogol",
+        "lat": -6.1667,
+        "lng": 106.7892
+      },
+      {
+        "name": "Pecenongan",
+        "lat": -6.1633,
+        "lng": 106.8281
+      },
+      {
+        "name": "Senen",
+        "lat": -6.1753,
+        "lng": 106.8436
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-049",
+    "difficulty": "medium",
+    "prompt": "Dari Setiabudi ke Menteng, lewat Sudirman",
+    "ground_truth": [
+      {
+        "name": "Setiabudi",
+        "lat": -6.2091,
+        "lng": 106.8251
+      },
+      {
+        "name": "Sudirman",
+        "lat": -6.2091,
+        "lng": 106.8251
+      },
+      {
+        "name": "Menteng",
+        "lat": -6.1891,
+        "lng": 106.8389
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-050",
+    "difficulty": "medium",
+    "prompt": "Dari Tanah Abang ke Pasar Senen, mampir ke Kramat",
+    "ground_truth": [
+      {
+        "name": "Tanah Abang",
+        "lat": -6.1856,
+        "lng": 106.8117
+      },
+      {
+        "name": "Kramat",
+        "lat": -6.1864,
+        "lng": 106.8514
+      },
+      {
+        "name": "Pasar Senen",
+        "lat": -6.1753,
+        "lng": 106.8436
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-051",
+    "difficulty": "medium",
+    "prompt": "Dari Benhil ke Gondangdia, lewat Thamrin",
+    "ground_truth": [
+      {
+        "name": "Bendungan Hilir",
+        "lat": -6.205,
+        "lng": 106.8133
+      },
+      {
+        "name": "Thamrin",
+        "lat": -6.1947,
+        "lng": 106.8184
+      },
+      {
+        "name": "Gondangdia",
+        "lat": -6.1822,
+        "lng": 106.8375
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-052",
+    "difficulty": "medium",
+    "prompt": "Dari PIK ke Kelapa Gading, mampir ke Sunter",
+    "ground_truth": [
+      {
+        "name": "PIK",
+        "lat": -6.1089,
+        "lng": 106.7836
+      },
+      {
+        "name": "Sunter",
+        "lat": -6.1578,
+        "lng": 106.8864
+      },
+      {
+        "name": "Kelapa Gading",
+        "lat": -6.1578,
+        "lng": 106.9064
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-053",
+    "difficulty": "medium",
+    "prompt": "Dari Bintaro ke Ragunan, lewat Lebak Bulus",
+    "ground_truth": [
+      {
+        "name": "Bintaro",
+        "lat": -6.2436,
+        "lng": 106.7583
+      },
+      {
+        "name": "Lebak Bulus",
+        "lat": -6.2889,
+        "lng": 106.7753
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2907,
+        "lng": 106.8213
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-054",
+    "difficulty": "medium",
+    "prompt": "Dari JIS ke Kota Tua, mampir ke Mangga Dua",
+    "ground_truth": [
+      {
+        "name": "Jakarta International Stadium",
+        "lat": -6.1219,
+        "lng": 106.8636
+      },
+      {
+        "name": "Mangga Dua",
+        "lat": -6.1464,
+        "lng": 106.8307
+      },
+      {
+        "name": "Kota Tua",
+        "lat": -6.1376,
+        "lng": 106.8137
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-055",
+    "difficulty": "medium",
+    "prompt": "Dari Pejaten ke Cilandak, lewat Pasar Minggu",
+    "ground_truth": [
+      {
+        "name": "Pejaten",
+        "lat": -6.2617,
+        "lng": 106.8364
+      },
+      {
+        "name": "Pasar Minggu",
+        "lat": -6.2936,
+        "lng": 106.8464
+      },
+      {
+        "name": "Cilandak",
+        "lat": -6.2767,
+        "lng": 106.8014
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-056",
+    "difficulty": "medium",
+    "prompt": "Dari TMII ke Monas, mampir ke Cikini",
+    "ground_truth": [
+      {
+        "name": "Taman Mini",
+        "lat": -6.3027,
+        "lng": 106.8891
+      },
+      {
+        "name": "Cikini",
+        "lat": -6.1891,
+        "lng": 106.8389
+      },
+      {
+        "name": "Monumen Nasional",
+        "lat": -6.1754,
+        "lng": 106.8272
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-057",
+    "difficulty": "medium",
+    "prompt": "Dari Mampang ke Tugu Proklamasi, lewat Menteng",
+    "ground_truth": [
+      {
+        "name": "Mampang",
+        "lat": -6.2367,
+        "lng": 106.8336
+      },
+      {
+        "name": "Menteng",
+        "lat": -6.1891,
+        "lng": 106.8389
+      },
+      {
+        "name": "Taman Proklamasi",
+        "lat": -6.1875,
+        "lng": 106.8408
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-058",
+    "difficulty": "medium",
+    "prompt": "Dari Jati Padang ke Kemang, mampir ke Pejaten",
+    "ground_truth": [
+      {
+        "name": "Jati Padang",
+        "lat": -6.2717,
+        "lng": 106.8364
+      },
+      {
+        "name": "Pejaten",
+        "lat": -6.2617,
+        "lng": 106.8364
+      },
+      {
+        "name": "Kemang",
+        "lat": -6.2465,
+        "lng": 106.8148
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-059",
+    "difficulty": "medium",
+    "prompt": "Dari Sudirman ke Gambir, lewat Senen",
+    "ground_truth": [
+      {
+        "name": "Sudirman",
+        "lat": -6.2091,
+        "lng": 106.8251
+      },
+      {
+        "name": "Senen",
+        "lat": -6.1753,
+        "lng": 106.8436
+      },
+      {
+        "name": "Gambir",
+        "lat": -6.1754,
+        "lng": 106.8272
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-060",
+    "difficulty": "medium",
+    "prompt": "Dari Malioboro ke Prambanan, mampir ke Monjali",
+    "ground_truth": [
+      {
+        "name": "Malioboro",
+        "lat": -7.7926,
+        "lng": 110.3658
+      },
+      {
+        "name": "Monumen Yogya Kembali",
+        "lat": -7.7397,
+        "lng": 110.3972
+      },
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.752,
+        "lng": 110.4914
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-061",
+    "difficulty": "medium",
+    "prompt": "Rute dari Borobudur ke Taman Sari, lewat Kraton",
+    "ground_truth": [
+      {
+        "name": "Candi Borobudur",
+        "lat": -7.6079,
+        "lng": 110.2038
+      },
+      {
+        "name": "Kraton Yogyakarta",
+        "lat": -7.8055,
+        "lng": 110.3642
+      },
+      {
+        "name": "Taman Sari",
+        "lat": -7.8106,
+        "lng": 110.3594
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-062",
+    "difficulty": "medium",
+    "prompt": "Dari UGM ke Tugu Yogyakarta, mampir ke Malioboro",
+    "ground_truth": [
+      {
+        "name": "UGM",
+        "lat": -7.7756,
+        "lng": 110.3842
+      },
+      {
+        "name": "Tugu Yogyakarta",
+        "lat": -7.7879,
+        "lng": 110.3672
+      },
+      {
+        "name": "Malioboro",
+        "lat": -7.7926,
+        "lng": 110.3658
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-063",
+    "difficulty": "medium",
+    "prompt": "Mau ke Prambanan dari Malioboro, mampir ke Vredenburg dulu",
+    "ground_truth": [
+      {
+        "name": "Malioboro",
+        "lat": -7.7926,
+        "lng": 110.3658
+      },
+      {
+        "name": "Benteng Vredenburg",
+        "lat": -7.7983,
+        "lng": 110.3697
+      },
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.752,
+        "lng": 110.4914
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-064",
+    "difficulty": "medium",
+    "prompt": "Dari Monjali ke Beringharjo, lewat Titik Nol KM",
+    "ground_truth": [
+      {
+        "name": "Monumen Yogya Kembali",
+        "lat": -7.7397,
+        "lng": 110.3972
+      },
+      {
+        "name": "Nol Kilometer",
+        "lat": -7.7926,
+        "lng": 110.3658
+      },
+      {
+        "name": "Pasar Beringharjo",
+        "lat": -7.7926,
+        "lng": 110.3658
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-065",
+    "difficulty": "medium",
+    "prompt": "Dari Sonobodoyo ke Taman Sari, mampir ke Kraton",
+    "ground_truth": [
+      {
+        "name": "Museum Sonobudoyo",
+        "lat": -7.8014,
+        "lng": 110.3625
+      },
+      {
+        "name": "Kraton Yogyakarta",
+        "lat": -7.8055,
+        "lng": 110.3642
+      },
+      {
+        "name": "Taman Sari",
+        "lat": -7.8106,
+        "lng": 110.3594
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-066",
+    "difficulty": "medium",
+    "prompt": "Rute dari Kotagede ke UGM, lewat Affandi",
+    "ground_truth": [
+      {
+        "name": "Kotagede",
+        "lat": -7.8089,
+        "lng": 110.3978
+      },
+      {
+        "name": "Museum Affandi",
+        "lat": -7.7817,
+        "lng": 110.3767
+      },
+      {
+        "name": "UGM",
+        "lat": -7.7756,
+        "lng": 110.3842
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-067",
+    "difficulty": "medium",
+    "prompt": "Dari Gembira Loka ke Prambanan, mampir ke Ratu Boko",
+    "ground_truth": [
+      {
+        "name": "Gembira Loka Zoo",
+        "lat": -7.7864,
+        "lng": 110.3856
+      },
+      {
+        "name": "Candi Ratu Boko",
+        "lat": -7.7703,
+        "lng": 110.4856
+      },
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.752,
+        "lng": 110.4914
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-068",
+    "difficulty": "medium",
+    "prompt": "Dari Parangtritis ke Borobudur, lewat Monjali",
+    "ground_truth": [
+      {
+        "name": "Pantai Parangtritis",
+        "lat": -7.9781,
+        "lng": 110.3519
+      },
+      {
+        "name": "Monumen Yogya Kembali",
+        "lat": -7.7397,
+        "lng": 110.3972
+      },
+      {
+        "name": "Candi Borobudur",
+        "lat": -7.6079,
+        "lng": 110.2038
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-069",
+    "difficulty": "medium",
+    "prompt": "Dari UII ke Malioboro, mampir ke Taman Pelangi",
+    "ground_truth": [
+      {
+        "name": "Universitas Islam Indonesia",
+        "lat": -7.7386,
+        "lng": 110.4014
+      },
+      {
+        "name": "Taman Pelangi",
+        "lat": -7.7478,
+        "lng": 110.4056
+      },
+      {
+        "name": "Malioboro",
+        "lat": -7.7926,
+        "lng": 110.3658
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-070",
+    "difficulty": "medium",
+    "prompt": "Dari Gedung Sate ke Paris Van Java, mampir ke Braga",
+    "ground_truth": [
+      {
+        "name": "Gedung Sate",
+        "lat": -6.8905,
+        "lng": 107.6107
+      },
+      {
+        "name": "Braga",
+        "lat": -6.9175,
+        "lng": 107.6117
+      },
+      {
+        "name": "Paris Van Java",
+        "lat": -6.8836,
+        "lng": 107.5917
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-071",
+    "difficulty": "medium",
+    "prompt": "Rute dari Trans Studio ke Floating Market, lewat Dago",
+    "ground_truth": [
+      {
+        "name": "Trans Studio Bandung",
+        "lat": -6.9281,
+        "lng": 107.6333
+      },
+      {
+        "name": "Dago",
+        "lat": -6.8636,
+        "lng": 107.61
+      },
+      {
+        "name": "Floating Market Lembang",
+        "lat": -6.7936,
+        "lng": 107.6136
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-072",
+    "difficulty": "medium",
+    "prompt": "Dari Alun-Alun ke Cihampelas, mampir ke Pasar Baru",
+    "ground_truth": [
+      {
+        "name": "Alun-Alun Bandung",
+        "lat": -6.9175,
+        "lng": 107.6191
+      },
+      {
+        "name": "Pasar Baru",
+        "lat": -6.9214,
+        "lng": 107.6042
+      },
+      {
+        "name": "Cihampelas",
+        "lat": -6.8925,
+        "lng": 107.5917
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-073",
+    "difficulty": "medium",
+    "prompt": "Dari Stasiun Bandung ke Kebun Binatang, lewat Braga",
+    "ground_truth": [
+      {
+        "name": "Stasiun Bandung",
+        "lat": -6.9175,
+        "lng": 107.6042
+      },
+      {
+        "name": "Braga",
+        "lat": -6.9175,
+        "lng": 107.6117
+      },
+      {
+        "name": "Kebun Binatang Bandung",
+        "lat": -6.8836,
+        "lng": 107.62
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-074",
+    "difficulty": "medium",
+    "prompt": "Dari ITB ke Tebing Keraton, mampir ke Tahura",
+    "ground_truth": [
+      {
+        "name": "Institut Teknologi Bandung",
+        "lat": -6.8914,
+        "lng": 107.5917
+      },
+      {
+        "name": "Tahura Juanda",
+        "lat": -6.8636,
+        "lng": 107.61
+      },
+      {
+        "name": "Tebing Keraton",
+        "lat": -6.8336,
+        "lng": 107.6167
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-075",
+    "difficulty": "medium",
+    "prompt": "Dari UNPAD ke Gedung Sate, lewat Cibeunying",
+    "ground_truth": [
+      {
+        "name": "Universitas Padjadjaran",
+        "lat": -6.9375,
+        "lng": 107.625
+      },
+      {
+        "name": "Bundaran Cibeunying",
+        "lat": -6.8864,
+        "lng": 107.6267
+      },
+      {
+        "name": "Gedung Sate",
+        "lat": -6.8905,
+        "lng": 107.6107
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-076",
+    "difficulty": "hard",
+    "prompt": "Dari Monas, mau mampir makan di Pecenongan, terus ke Istiqlal, lanjut ke Kota Tua, dan pulang lewat Mangga Dua",
+    "ground_truth": [
+      {
+        "name": "Monumen Nasional",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Pecenongan",
+        "lat": -6.1633,
+        "lng": 106.8281
+      },
+      {
+        "name": "Istiqlal Mosque",
+        "lat": -6.1701,
+        "lng": 106.8305
+      },
+      {
+        "name": "Kota Tua",
+        "lat": -6.1376,
+        "lng": 106.8137
+      },
+      {
+        "name": "Mangga Dua",
+        "lat": -6.1464,
+        "lng": 106.8307
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-077",
+    "difficulty": "hard",
+    "prompt": "Rute keliling Jakarta: mulai dari Ancol, mampir ke Kota Tua, lewat Monas, lanjut ke Grand Indonesia, dan berakhir di Senayan",
+    "ground_truth": [
+      {
+        "name": "Ancol",
+        "lat": -6.1219,
+        "lng": 106.8433
+      },
+      {
+        "name": "Kota Tua",
+        "lat": -6.1376,
+        "lng": 106.8137
+      },
+      {
+        "name": "Monumen Nasional",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Grand Indonesia",
+        "lat": -6.1947,
+        "lng": 106.8184
+      },
+      {
+        "name": "Plaza Senayan",
+        "lat": -6.2285,
+        "lng": 106.7989
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-078",
+    "difficulty": "hard",
+    "prompt": "Mau jalan dari Kemang, mampir sarapan di Ragunan, lewat Kuningan, dan berakhir di SCBD",
+    "ground_truth": [
+      {
+        "name": "Kemang",
+        "lat": -6.2465,
+        "lng": 106.8148
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2907,
+        "lng": 106.8213
+      },
+      {
+        "name": "Kuningan",
+        "lat": -6.2367,
+        "lng": 106.8388
+      },
+      {
+        "name": "SCBD",
+        "lat": -6.2267,
+        "lng": 106.8117
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-079",
+    "difficulty": "hard",
+    "prompt": "Perjalanan dari PIK ke TMII, mampir di Kelapa Gading, lewat Sunter, dan mampir di Pulo Gadung",
+    "ground_truth": [
+      {
+        "name": "PIK",
+        "lat": -6.1089,
+        "lng": 106.7836
+      },
+      {
+        "name": "Kelapa Gading",
+        "lat": -6.1578,
+        "lng": 106.9064
+      },
+      {
+        "name": "Sunter",
+        "lat": -6.1578,
+        "lng": 106.8864
+      },
+      {
+        "name": "Pulo Gadung",
+        "lat": -6.1728,
+        "lng": 106.8653
+      },
+      {
+        "name": "Taman Mini",
+        "lat": -6.3027,
+        "lng": 106.8891
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-080",
+    "difficulty": "hard",
+    "prompt": "Dari Lebak Bulus, mampir ke Pondok Indah, lanjut ke Cilandak, lewat Pasar Minggu, berakhir di Ragunan",
+    "ground_truth": [
+      {
+        "name": "Lebak Bulus",
+        "lat": -6.2889,
+        "lng": 106.7753
+      },
+      {
+        "name": "Pondok Indah",
+        "lat": -6.2617,
+        "lng": 106.7836
+      },
+      {
+        "name": "Cilandak",
+        "lat": -6.2767,
+        "lng": 106.8014
+      },
+      {
+        "name": "Pasar Minggu",
+        "lat": -6.2936,
+        "lng": 106.8464
+      },
+      {
+        "name": "Ragunan",
+        "lat": -6.2907,
+        "lng": 106.8213
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-081",
+    "difficulty": "hard",
+    "prompt": "Rute dari Grogol, lewat Tanah Abang, mampir ke Senen, lanjut ke Salemba, berakhir di Menteng",
+    "ground_truth": [
+      {
+        "name": "Grogol",
+        "lat": -6.1667,
+        "lng": 106.7892
+      },
+      {
+        "name": "Tanah Abang",
+        "lat": -6.1856,
+        "lng": 106.8117
+      },
+      {
+        "name": "Pasar Senen",
+        "lat": -6.1753,
+        "lng": 106.8436
+      },
+      {
+        "name": "Salemba",
+        "lat": -6.1864,
+        "lng": 106.8514
+      },
+      {
+        "name": "Menteng",
+        "lat": -6.1891,
+        "lng": 106.8389
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-082",
+    "difficulty": "hard",
+    "prompt": "Dari JIS, mampir ke Mangga Dua, lewat Kemayoran, lanjut ke Monas, dan berakhir di Taman Proklamasi",
+    "ground_truth": [
+      {
+        "name": "Jakarta International Stadium",
+        "lat": -6.1219,
+        "lng": 106.8636
+      },
+      {
+        "name": "Mangga Dua",
+        "lat": -6.1464,
+        "lng": 106.8307
+      },
+      {
+        "name": "Kemayoran",
+        "lat": -6.1575,
+        "lng": 106.8564
+      },
+      {
+        "name": "Monumen Nasional",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Taman Proklamasi",
+        "lat": -6.1875,
+        "lng": 106.8408
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-083",
+    "difficulty": "hard",
+    "prompt": "Mau keliling Jakarta selatan: dari Fatmawati ke Bintaro, mampir di Lebak Bulus, lanjut ke Cilandak, dan berakhir di Kemang",
+    "ground_truth": [
+      {
+        "name": "Fatmawati",
+        "lat": -6.2617,
+        "lng": 106.7936
+      },
+      {
+        "name": "Bintaro",
+        "lat": -6.2436,
+        "lng": 106.7583
+      },
+      {
+        "name": "Lebak Bulus",
+        "lat": -6.2889,
+        "lng": 106.7753
+      },
+      {
+        "name": "Cilandak",
+        "lat": -6.2767,
+        "lng": 106.8014
+      },
+      {
+        "name": "Kemang",
+        "lat": -6.2465,
+        "lng": 106.8148
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-084",
+    "difficulty": "hard",
+    "prompt": "Dari Sudirman, mampir di Benhil, lewat Thamrin, lanjut ke Cikini, dan berakhir di Taman Suropati",
+    "ground_truth": [
+      {
+        "name": "Sudirman",
+        "lat": -6.2091,
+        "lng": 106.8251
+      },
+      {
+        "name": "Bendungan Hilir",
+        "lat": -6.205,
+        "lng": 106.8133
+      },
+      {
+        "name": "Thamrin",
+        "lat": -6.1947,
+        "lng": 106.8184
+      },
+      {
+        "name": "Cikini",
+        "lat": -6.1891,
+        "lng": 106.8389
+      },
+      {
+        "name": "Taman Suropati",
+        "lat": -6.1914,
+        "lng": 106.8364
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-085",
+    "difficulty": "hard",
+    "prompt": "Rute dari Pluit ke Monas, mampir di PIK, lewat Muara Karang, dan mampir di Ancol sebelum ke Monas",
+    "ground_truth": [
+      {
+        "name": "Pluit",
+        "lat": -6.1003,
+        "lng": 106.8072
+      },
+      {
+        "name": "PIK",
+        "lat": -6.1089,
+        "lng": 106.7836
+      },
+      {
+        "name": "Muara Karang",
+        "lat": -6.1003,
+        "lng": 106.7836
+      },
+      {
+        "name": "Ancol",
+        "lat": -6.1219,
+        "lng": 106.8433
+      },
+      {
+        "name": "Monumen Nasional",
+        "lat": -6.1754,
+        "lng": 106.8272
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-086",
+    "difficulty": "hard",
+    "prompt": "Dari Cawang, lewat Tebet, mampir ke Kalibata, lanjut ke Pejaten, dan berakhir di Condet",
+    "ground_truth": [
+      {
+        "name": "Cawang",
+        "lat": -6.2294,
+        "lng": 106.8608
+      },
+      {
+        "name": "Tebet",
+        "lat": -6.2217,
+        "lng": 106.8614
+      },
+      {
+        "name": "Kalibata",
+        "lat": -6.26,
+        "lng": 106.8464
+      },
+      {
+        "name": "Pejaten",
+        "lat": -6.2617,
+        "lng": 106.8364
+      },
+      {
+        "name": "Condet",
+        "lat": -6.2736,
+        "lng": 106.8583
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-087",
+    "difficulty": "hard",
+    "prompt": "Perjalanan dari Setiabudi ke Gambir, mampir di Sudirman, lewat Benhil, dan berakhir di Monas",
+    "ground_truth": [
+      {
+        "name": "Setiabudi",
+        "lat": -6.2091,
+        "lng": 106.8251
+      },
+      {
+        "name": "Sudirman",
+        "lat": -6.2091,
+        "lng": 106.8251
+      },
+      {
+        "name": "Bendungan Hilir",
+        "lat": -6.205,
+        "lng": 106.8133
+      },
+      {
+        "name": "Gambir",
+        "lat": -6.1754,
+        "lng": 106.8272
+      },
+      {
+        "name": "Monumen Nasional",
+        "lat": -6.1754,
+        "lng": 106.8272
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-088",
+    "difficulty": "hard",
+    "prompt": "Dari TMII ke Ancol, mampir di Cawang, lewat Kemayoran, dan berakhir di JIS",
+    "ground_truth": [
+      {
+        "name": "Taman Mini",
+        "lat": -6.3027,
+        "lng": 106.8891
+      },
+      {
+        "name": "Cawang",
+        "lat": -6.2294,
+        "lng": 106.8608
+      },
+      {
+        "name": "Kemayoran",
+        "lat": -6.1575,
+        "lng": 106.8564
+      },
+      {
+        "name": "Ancol",
+        "lat": -6.1219,
+        "lng": 106.8433
+      },
+      {
+        "name": "Jakarta International Stadium",
+        "lat": -6.1219,
+        "lng": 106.8636
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-089",
+    "difficulty": "hard",
+    "prompt": "Mau ke Tugu Proklamasi dari Kuningan, mampir di Menteng, lewat Pegangsaan, dan berakhir di Gondangdia",
+    "ground_truth": [
+      {
+        "name": "Kuningan",
+        "lat": -6.2367,
+        "lng": 106.8388
+      },
+      {
+        "name": "Menteng",
+        "lat": -6.1891,
+        "lng": 106.8389
+      },
+      {
+        "name": "Pegangsaan",
+        "lat": -6.1891,
+        "lng": 106.8389
+      },
+      {
+        "name": "Tugu Proklamasi",
+        "lat": -6.1875,
+        "lng": 106.8408
+      },
+      {
+        "name": "Gondangdia",
+        "lat": -6.1822,
+        "lng": 106.8375
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-090",
+    "difficulty": "hard",
+    "prompt": "Rute dari Palmerah ke Tebet, mampir di Slipi, lewat Sudirman, dan berakhir di Cawang",
+    "ground_truth": [
+      {
+        "name": "Palmerah",
+        "lat": -6.1847,
+        "lng": 106.7914
+      },
+      {
+        "name": "Slipi",
+        "lat": -6.1989,
+        "lng": 106.7881
+      },
+      {
+        "name": "Sudirman",
+        "lat": -6.2091,
+        "lng": 106.8251
+      },
+      {
+        "name": "Cawang",
+        "lat": -6.2294,
+        "lng": 106.8608
+      },
+      {
+        "name": "Tebet",
+        "lat": -6.2217,
+        "lng": 106.8614
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-091",
+    "difficulty": "hard",
+    "prompt": "Rute wisata Jogja: dari Borobudur ke Prambanan, mampir ke Monjali, lewat UGM, dan berakhir di Malioboro",
+    "ground_truth": [
+      {
+        "name": "Candi Borobudur",
+        "lat": -7.6079,
+        "lng": 110.2038
+      },
+      {
+        "name": "Monumen Yogya Kembali",
+        "lat": -7.7397,
+        "lng": 110.3972
+      },
+      {
+        "name": "UGM",
+        "lat": -7.7756,
+        "lng": 110.3842
+      },
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.752,
+        "lng": 110.4914
+      },
+      {
+        "name": "Malioboro",
+        "lat": -7.7926,
+        "lng": 110.3658
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-092",
+    "difficulty": "hard",
+    "prompt": "Dari Parangtritis, mampir ke Ratu Boko, lewat Prambanan, lanjut ke Monjali, dan berakhir di Tugu",
+    "ground_truth": [
+      {
+        "name": "Pantai Parangtritis",
+        "lat": -7.9781,
+        "lng": 110.3519
+      },
+      {
+        "name": "Candi Ratu Boko",
+        "lat": -7.7703,
+        "lng": 110.4856
+      },
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.752,
+        "lng": 110.4914
+      },
+      {
+        "name": "Monumen Yogya Kembali",
+        "lat": -7.7397,
+        "lng": 110.3972
+      },
+      {
+        "name": "Tugu Yogyakarta",
+        "lat": -7.7879,
+        "lng": 110.3672
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-093",
+    "difficulty": "hard",
+    "prompt": "Mau keliling Jogja tengah: dari Kotagede ke Taman Sari, mampir ke Kraton, lewat Beringharjo, berakhir di Malioboro",
+    "ground_truth": [
+      {
+        "name": "Kotagede",
+        "lat": -7.8089,
+        "lng": 110.3978
+      },
+      {
+        "name": "Taman Sari",
+        "lat": -7.8106,
+        "lng": 110.3594
+      },
+      {
+        "name": "Kraton Yogyakarta",
+        "lat": -7.8055,
+        "lng": 110.3642
+      },
+      {
+        "name": "Pasar Beringharjo",
+        "lat": -7.7926,
+        "lng": 110.3658
+      },
+      {
+        "name": "Malioboro",
+        "lat": -7.7926,
+        "lng": 110.3658
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-094",
+    "difficulty": "hard",
+    "prompt": "Dari UII ke Vredenburg, mampir ke Affandi, lewat Sonobodoyo, dan berakhir di Nol Kilometer",
+    "ground_truth": [
+      {
+        "name": "Universitas Islam Indonesia",
+        "lat": -7.7386,
+        "lng": 110.4014
+      },
+      {
+        "name": "Museum Affandi",
+        "lat": -7.7817,
+        "lng": 110.3767
+      },
+      {
+        "name": "Museum Sonobudoyo",
+        "lat": -7.8014,
+        "lng": 110.3625
+      },
+      {
+        "name": "Benteng Vredenburg",
+        "lat": -7.7983,
+        "lng": 110.3697
+      },
+      {
+        "name": "Nol Kilometer",
+        "lat": -7.7926,
+        "lng": 110.3658
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-095",
+    "difficulty": "hard",
+    "prompt": "Rute dari Borobudur ke Tugu Jogja, mampir di Monjali, lewat Gembira Loka, dan berakhir di Malioboro",
+    "ground_truth": [
+      {
+        "name": "Candi Borobudur",
+        "lat": -7.6079,
+        "lng": 110.2038
+      },
+      {
+        "name": "Monumen Yogya Kembali",
+        "lat": -7.7397,
+        "lng": 110.3972
+      },
+      {
+        "name": "Gembira Loka Zoo",
+        "lat": -7.7864,
+        "lng": 110.3856
+      },
+      {
+        "name": "Tugu Yogyakarta",
+        "lat": -7.7879,
+        "lng": 110.3672
+      },
+      {
+        "name": "Malioboro",
+        "lat": -7.7926,
+        "lng": 110.3658
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-096",
+    "difficulty": "hard",
+    "prompt": "Perjalanan dari Prambanan ke Ratu Boko, mampir ke Monjali, lewat UGM, dan berakhir di Taman Pelangi",
+    "ground_truth": [
+      {
+        "name": "Candi Prambanan",
+        "lat": -7.752,
+        "lng": 110.4914
+      },
+      {
+        "name": "Candi Ratu Boko",
+        "lat": -7.7703,
+        "lng": 110.4856
+      },
+      {
+        "name": "Monumen Yogya Kembali",
+        "lat": -7.7397,
+        "lng": 110.3972
+      },
+      {
+        "name": "UGM",
+        "lat": -7.7756,
+        "lng": 110.3842
+      },
+      {
+        "name": "Taman Pelangi",
+        "lat": -7.7478,
+        "lng": 110.4056
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-097",
+    "difficulty": "hard",
+    "prompt": "Dari Kawah Putih ke Gedung Sate, mampir di Braga, lewat Alun-Alun, dan berakhir di Cihampelas",
+    "ground_truth": [
+      {
+        "name": "Kawah Putih",
+        "lat": -7.1661,
+        "lng": 107.4025
+      },
+      {
+        "name": "Gedung Sate",
+        "lat": -6.8905,
+        "lng": 107.6107
+      },
+      {
+        "name": "Braga",
+        "lat": -6.9175,
+        "lng": 107.6117
+      },
+      {
+        "name": "Alun-Alun Bandung",
+        "lat": -6.9175,
+        "lng": 107.6191
+      },
+      {
+        "name": "Cihampelas",
+        "lat": -6.8925,
+        "lng": 107.5917
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-098",
+    "difficulty": "hard",
+    "prompt": "Rute Bandung: dari Floating Market ke Trans Studio, mampir di Dago, lewat Tebing Keraton, berakhir di Paris Van Java",
+    "ground_truth": [
+      {
+        "name": "Floating Market Lembang",
+        "lat": -6.7936,
+        "lng": 107.6136
+      },
+      {
+        "name": "Dago",
+        "lat": -6.8636,
+        "lng": 107.61
+      },
+      {
+        "name": "Tebing Keraton",
+        "lat": -6.8336,
+        "lng": 107.6167
+      },
+      {
+        "name": "Trans Studio Bandung",
+        "lat": -6.9281,
+        "lng": 107.6333
+      },
+      {
+        "name": "Paris Van Java",
+        "lat": -6.8836,
+        "lng": 107.5917
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-099",
+    "difficulty": "hard",
+    "prompt": "Dari Stasiun Bandung ke Situ Patenggang, mampir di Ranca Upas, lewat Kawah Putih, dan berakhir di Rancabali",
+    "ground_truth": [
+      {
+        "name": "Stasiun Bandung",
+        "lat": -6.9175,
+        "lng": 107.6042
+      },
+      {
+        "name": "Kawah Putih",
+        "lat": -7.1661,
+        "lng": 107.4025
+      },
+      {
+        "name": "Situ Patenggang",
+        "lat": -7.1336,
+        "lng": 107.3836
+      },
+      {
+        "name": "Ranca Upas",
+        "lat": -7.1336,
+        "lng": 107.4136
+      }
+    ]
+  },
+  {
+    "id": "MSNTB-100",
+    "difficulty": "hard",
+    "prompt": "Mau ke Lembang dari ITB, mampir di Dago Pakar, lewat Floating Market, dan berakhir di Farm House",
+    "ground_truth": [
+      {
+        "name": "Institut Teknologi Bandung",
+        "lat": -6.8914,
+        "lng": 107.5917
+      },
+      {
+        "name": "Dago Pakar",
+        "lat": -6.8336,
+        "lng": 107.6167
+      },
+      {
+        "name": "Floating Market Lembang",
+        "lat": -6.7936,
+        "lng": 107.6136
+      },
+      {
+        "name": "Farm House Lembang",
+        "lat": -6.7936,
+        "lng": 107.6036
+      }
+    ]
+  }
+]

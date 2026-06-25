@@ -96,6 +96,7 @@ func Route(cfg *config.Config, prompt string) error {
 		seg, err := tools.GetRoute(orderedGeocode[i], orderedGeocode[i+1])
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "  [WARN] route %s -> %s: %v\n", ordered[i].Name, ordered[i+1].Name, err)
+			segments = append(segments, nil)
 			continue
 		}
 		segments = append(segments, seg)
